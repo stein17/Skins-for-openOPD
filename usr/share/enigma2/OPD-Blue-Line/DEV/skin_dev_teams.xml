@@ -1,0 +1,730 @@
+<skin>
+ <!--######################################### -->
+  <!-- D E V - T E A M S  -->
+  <!--######################################### -->
+  <!--######################################### -->
+  <!-- ATV_DEV_TEAM_Screens_FHD  -->
+  <!--######################################### -->
+
+  <!-- QuickMenu FHD  -->
+  <screen name="QuickMenu" position="0,0" size="1920,1080" title="Quick Launch Menu" flags="wfNoBorder" backgroundColor="transparent" borderWidth="0" borderColor="transparent">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <widget name="list" position="28,100" size="600,730" itemHeight="75" font="Regular; 34" scrollbarMode="showNever" transparent="1" />
+    <widget name="sublist" position="650,100" size="600,730" itemHeight="75" font="Regular;32" scrollbarMode="showNever" transparent="1" />
+    <widget name="description" position="28,850" size="1220,128" font="Regular; 32" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <eLabel name="vertikalline" position="28,840" size="1220,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  </screen>
+  <!-- ATV QuickMenuDevices FHD  -->
+  <screen name="QuickMenuDevices" position="0,0" size="1920,1080" title="Devices" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+<ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/info.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_info.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <eLabel text="Detected Devices:" position="25,126" size="765,65" font="Regular;36" halign="left" foregroundColor="red" backgroundColor="black" transparent="1" />
+    <widget source="devicelist" render="Listbox" position="25,213" size="765,740" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+				 MultiContentEntryText(pos = (135, 0), size = (900, 45), font=0, text = 0),
+				 MultiContentEntryText(pos = (165, 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (120, 120), png = 2),
+				],
+				"fonts": [gFont("Regular", 36),gFont("Regular", 30)],
+				"itemHeight": 128
+				}
+			</convert>
+    </widget>
+    <widget name="lab1" zPosition="2" position="70,213" size="675,60" font="Regular;33" backgroundColor="black" foregroundColor="white" halign="center" transparent="1" />
+  </screen>
+  <!-- ATV Infopanel FHD  -->
+  <screen name="Infopanel" position="0,0" size="1920,1080" title="Info Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+<ePixmap position="1006,133" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="Mlist" position="30,130" size="875,820" zPosition="1" itemHeight="75" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="label1" position="950,130" size="300,540" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/info.png" transparent="1" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  </screen>
+
+  <!--ATV SetupInfo FHD -->
+  <screen name="SetupInfo" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Setup" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <ePixmap position="1391,288" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/setup.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget name="labelInfo" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_osd3d FHD -->
+  <screen name="setup_osd3d" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="OSD 3D Setup" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1391,288" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_osd_menu_osd3dsetup.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV VideoSetup FHD -->
+  <screen name="VideoSetup" position="0,0" size="1920,1080" title="Video Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Basic settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/service_info.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV AudioSetup FHD -->
+  <screen name="AudioSetup" position="0,0" size="1920,1080" title="Audio Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Basic settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/audio.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epgsettings FHD -->
+  <screen name="setup_epgsettings" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="EPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_epg_setup.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epgmulti FHD -->
+  <screen name="setup_epgmulti" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="MultiEPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_setup_epgmulti.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epgenhanced FHD -->
+  <screen name="setup_epgenhanced" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="SingleEPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_setup_epgenhanced.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epginfobar FHD -->
+  <screen name="setup_epginfobar" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="InfobarEPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_setup_epginfobar.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epginfobargraphical FHD -->
+  <screen name="setup_epginfobargraphical" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Graphical InfobarEPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_setup_epginfobargraphical.png" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_epggraphical FHD -->
+  <screen name="setup_epggraphical" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="GraphicalEPG settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_epg_setup_epggraphical.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1086,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_subtitlesetup FHD -->
+  <screen name="setup_subtitlesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Subtitle settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_subtitle_setup.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_dvdplayer FHD -->
+  <screen name="setup_dvdplayer" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="DVD-Player Setup" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_dvdplayer_setup.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_logs FHD -->
+  <screen name="setup_logs" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Logs settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_logs_setup.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_time FHD -->
+  <screen name="setup_time" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Time settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_time_setup.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_keyboard FHD -->
+  <screen name="setup_keyboard" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Keyboard setup" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_keyboard.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_userinterface FHD -->
+  <screen name="setup_userinterface" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Settings..." position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_osd_menu_user_interface.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_recording FHD -->
+  <screen name="setup_recording" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Recording settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_recording_setup.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_timeshift FHD -->
+  <screen name="setup_timeshift" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_timshift_setup.png" transparent="1" alphatest="blend" />
+    <eLabel text="Setup Timeshift" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_specialfeatures FHD -->
+  <screen name="setup_specialfeatures" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Special Features" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_extended_specialfeatures_menu.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_display FHD -->
+  <screen name="setup_display" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Display settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_display_display_setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_channelselection FHD -->
+  <screen name="setup_channelselection" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Channel selection settings" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1222,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_system_channelselection_setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_usage FHD -->
+  <screen name="setup_usage" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Settings..." position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_system_usage_setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_remotesetup FHD -->
+  <screen name="setup_remotesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Button Setup" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="50" font="Regular;34" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_system_remote_setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_autolanguagesetup FHD -->
+  <screen name="setup_autolanguagesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Auto language selection" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1225,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/menu_system_autolanguage_setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!--ATV setup_harddisk FHD -->
+  <screen name="setup_harddisk" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Setup Harddisk" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="config" position="30,130" size="1160,765" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="1256,650" size="633,310" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="HelpWindow" position="1256,130" size="633,180" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="footnote" position="31,915" size="1160,38" font="Regular;24" halign="right" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1380,290" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/hdd.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!-- ATV SoftcamPanel FHD  -->
+  <screen name="SoftcamPanel" position="0,0" size="1920,1080" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+<ePixmap position="1006,133" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <eLabel position="30,315" size="875,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <eLabel position="30,432" size="875,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="config" position="30,130" size="875,180" enableWrapAround="1" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+    <widget name="actifcam" font="Regular;30" position="30,324" size="525,48" halign="center" />
+    <widget name="actifcam2" font="Regular;30" position="30,376" size="525,48" halign="center" />
+    <widget name="ecminfo" font="Regular;30" position="30,442" size="875,500" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1307,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1387,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <eLabel name="" position="1288,999" size="180,80" />
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/softcam.png" transparent="1" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  </screen>
+  <!-- ATV DriverManagerFile FHD  -->
+  <screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1920,1080" title="Select file to execute" transparent="0" backgroundColor="transparent">
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+	<ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/hdd.png" transparent="1" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget backgroundColor="background" font="Regular;32" name="driverfile" position="30,130" size="875,80" transparent="1" foregroundColor="white" />
+    <widget backgroundColor="background" itemHeight="50" name="filelist" position="33,247" size="875,540" transparent="1" zPosition="3" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- ATV ButtonSetupSelect FHD  -->
+  <screen name="ButtonSetupSelect" position="0,0" size="1920,1080" title="Tasteneinstellungen" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Tasteneinstellungen" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+	<ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <eLabel name="vertikalline" position="30,780" size="875,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/remotecontrol.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="list" position="30,130" size="875,630" scrollbarMode="showOnDemand" font="Regular;40" itemHeight="60" transparent="1" enableWrapAround="1" zPosition="5" />
+    <widget name="choosen" position="30,800" size="875,150" scrollbarMode="showOnDemand" font="Regular;40" itemHeight="60" halign="left" foregroundColor="green" backgroundColor="bluelabel" transparent="1" zPosition="5" />
+    <widget name="description" position="950,130" size="300,540" font="Regular;32" valign="center" halign="center" backgroundColor="bluelabel" transparent="1" zPosition="5" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- ATV HistoryZapBrowser FHD  -->
+  <screen name="ZapHistoryBrowser" position="0,0" size="1920,1080" title="ZapHistoryBrowser" backgroundColor="transparent">
+    <widget name="list" position="30,130" size="875,800" scrollbarMode="showOnDemand" itemHeight="45" font="Regular;32" backgroundColor="background" transparent="1" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/menu_system_remote_setup.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+ <!-- ATV OPENA_TV_HauptScreen FHD  -->
+  <screen name="RestartNetwork" position="center,center" size="1020,210" title="Restart Network Adapter" backgroundColor="background" flags="wfNoBorder">
+    <ePixmap name="InfoPixmap" pixmap="OPD-Blue-Line/icons/input_info.png" position="12,12" size="80,80" alphatest="blend" />
+    <eLabel position="101,12" size="908,75" backgroundColor="background" zPosition="-1" />
+    <widget source="Title" render="Label" position="101,12" foregroundColor="cyan1" size="908,75" noWrap="1" valign="bottom" font="Regular;51" backgroundColor="background" transparent="1" />
+    <widget name="label" position="8,120" size="1005,75" font="Regular;35" valign="center" halign="center" backgroundColor="background" foregroundColor="white" zPosition="2" />
+  </screen>
+  <!-- ATV installedPlugins FHD  -->
+  <screen name="installedPlugins" position="center,center" size="1020,210" title="Install Plugins" backgroundColor="background" flags="wfNoBorder">
+    <ePixmap name="InfoPixmap" pixmap="OPD-Blue-Line/icons/input_info.png" position="12,12" size="80,80" alphatest="blend" />
+    <eLabel position="101,12" size="908,75" backgroundColor="background" zPosition="-1" />
+    <widget source="Title" render="Label" position="101,14" foregroundColor="cyan1" size="908,75" noWrap="1" valign="bottom" font="Regular;51" backgroundColor="background" transparent="1" zPosition="2" />
+    <widget name="label" position="8,120" size="1005,75" font="Regular;35" valign="center" halign="center" backgroundColor="background" foregroundColor="white" />
+  </screen>
+  <!-- ATV RestoreMyMetrixHD FHD  -->
+  <screen name="RestoreMyMetrixHD" position="center,center" size="1020,210" title="Restore MetrixHD Settings" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap name="InfoPixmap" pixmap="OPD-Blue-Line/icons/input_info.png" position="12,12" size="80,80" alphatest="blend" />
+    <widget source="Title" render="Label" position="101,12" foregroundColor="cyan1" size="908,75" noWrap="1" valign="bottom" font="Regular;51" backgroundColor="background" transparent="1" />
+    <eLabel name="line1" position="0,104" size="1020,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="1" />
+    <eLabel position="101,12" size="908,75" backgroundColor="background" zPosition="-1" />
+    <widget name="label" position="8,120" size="1005,75" font="Regular;33" valign="center" halign="center" backgroundColor="background" foregroundColor="white" />
+  </screen>
+<!-- MemoryInfo FHD  -->
+<screen name="MemoryInfo" title="MemoryInfo" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="Title" render="Label" position="11,25" size="900,50" font="Regular; 36" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget name="slide" position="681,162" render="Progress" borderWidth="2" foregroundColor="dark" zPosition="4" size="470,44" transparent="1" />
+    <widget name="pused" position="683,165" zPosition="5" size="200,40" font="Regular; 28" transparent="1" halign="right" />
+    <widget name="pfree" position="950,165" zPosition="5" size="200,40" font="Regular; 28" halign="left" transparent="1" />
+    <widget name="rmemvalue" position="950,223" size="220,675" zPosition="7" font="Regular; 30" itemHeight="50" halign="left" transparent="0" />
+    <widget name="rmemtext" position="613,223" size="270,675" zPosition="7" font="Regular; 30" itemHeight="50" halign="right" transparent="0" />
+    <widget name="lmemtext" position="21,100" size="270,880" zPosition="7" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="right" transparent="0" />
+    <widget name="lmemvalue" position="308,100" size="220,880" zPosition="8" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="left" transparent="0" />
+    <widget name="params" rowsincolumn="25" size="1280,1080" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,995" size="240,80" zPosition="1" valign="center" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- CutListEditor FHD -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_extended_recording_setup.png" transparent="1" />
+    <eLabel name="vertikalline" position="33,597" size="1200,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget name="Video" position="533,130" zPosition="1" size="711,400" backgroundColor="transparent" />
+    <widget source="session.CurrentService" render="Label" position="135,705" size="700,80" font="Regular; 36" halign="center" valign="center" foregroundColor="cyan1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="255,830" zPosition="1" size="630,50" font="Regular; 40" halign="left" valign="center" backgroundColor="background" foregroundColor="green">
+      <convert type="ServicePosition">Position,Detailed</convert>
+    </widget>
+    <widget name="SeekState" position="30,830" zPosition="1" size="200,50" halign="right" font="Regular; 40" valign="center" backgroundColor="background" foregroundColor="red" />
+    <widget source="cutlist" position="30,130" zPosition="1" size="450,400" scrollbarMode="showOnDemand" transparent="1" render="Listbox">
+      <convert type="TemplatedMultiContent">
+	{"template": 
+		[
+		MultiContentEntryText(size=(425, 40), text = 1, backcolor = MultiContentTemplateColor(3)),
+		MultiContentEntryText(pos=(425,0), size=(100, 40), text = 2, flags = RT_HALIGN_RIGHT, 
+		backcolor = MultiContentTemplateColor(3))],"fonts": [gFont("Regular", 40)],"itemHeight": 50}
+	</convert>
+    </widget>
+    <widget name="Timeline" position="30,903" size="850,50" backgroundColor="white" pointer="skin_default/position_arrow.png:3,5" foregroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/mmp/mp_buttons.png" alphatest="blend" position="399,1013" size="450,56" transparent="1" zPosition="4" />
+  </screen>
+</skin>
