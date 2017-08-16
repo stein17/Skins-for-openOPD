@@ -1,0 +1,420 @@
+  <skin>
+<!--SecondInfobar Horizontal color progress-->
+<screen backgroundColor="background" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1920,1080" title="SecondInfoBar">
+  <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+  <widget source="session.Event_Now" render="OPDRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=8000,wrap=1,always=0,repeat=2,oneshot=1" position="25,161" size="1170,340" font="Regular;36" foregroundColor="foregroundClock" halign="center" transparent="1" zPosition="2">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="session.Event_Next" render="OPDRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=8000,wrap=1,always=0,repeat=2,oneshot=1" position="27,585" size="1170,340" font="Regular;36" halign="center" valign="top" foregroundColor="foregroundClock" transparent="1" zPosition="2">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="25,100" size="1100,50" font="Regular; 40" halign="left" backgroundColor="black" transparent="1" zPosition="2" foregroundColor="cyan1">
+    <convert type="EventName">NameNow</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="998,945" size="200,40" font="Regular;36" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Picon" position="1258,539" size="100,60" zPosition="6" transparent="1" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1362,545" size="150,50" font="Regular;36" halign="right" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1522,545" size="150,50" font="Regular;36" halign="left" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1673,545" size="180,50" font="Regular;36" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+  <convert type="EventTime">Remaining</convert>
+  <convert type="RemainingToText">InMinutes</convert>
+</widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="OPD-Blue-Line/p_bar_color2.png" position="1252,610" size="640,10" zPosition="1" transparent="1" borderWidth="1" borderColor="darkgrey2">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/icons/ico_rec_off.png" position="1130,110" size="80,26" zPosition="2" />
+  <widget alphatest="blend" pixmap="OPD-Blue-Line/icons/ico_rec_on.png" position="1130,110" render="Pixmap" size="80,26" source="session.RecordState" zPosition="5">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1032,1030" size="90,36" font="Regular; 30" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="foregroundClock">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="1122,1030" size="30,36" font="Regular; 30" halign="center" backgroundColor="black" transparent="1" valign="center" foregroundColor="foregroundClock" />
+  <widget source="session.CurrentService" render="Label" position="1154,1030" size="90,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="foregroundClock">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+ 
+  <widget source="session.CurrentService" position="1566,1030" size="63,35" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">0,719</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1566,1030" size="63,35" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_hd_off.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1079</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1566,1030" size="63,35" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_hd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1080</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1566,1030" size="63,35" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_uhd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_dolby_off.png" position="1659,1030" size="63,35" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsStereo</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_dolby_on.png" position="1659,1030" size="63,35" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_format_off.png" position="1753,1030" size="63,35" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsNotWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_format_on.png" position="1752,1030" size="63,35" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_txt_on.png" position="1845,1030" size="63,35" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_iptv_on.png" alphatest="blend" position="1287,1030" zPosition="3" size="63,35" transparent="1">
+    <convert type="ServiceInfo">IsStream</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" position="1473,1030" size="63,35" zPosition="2" pixmap="OPD-Blue-Line/icons/ico_hbbtv_on.png" alphatest="blend">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="OPD-Blue-Line/icons/ico_crypt_on.png" position="1158,945" size="40,40" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_crypt_off.png" position="1158,945" size="40,40" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/subtitle_on.png" position="1380,1030" size="63,35" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+ 
+  <widget noWrap="1" backgroundColor="background20" foregroundColor="red" font="Regular; 27" render="Label" position="420,30" size="90,30" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="white" render="Label" position="354,51" size="290,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,current</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="277,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OPD-Blue-Line/Wettericons/,png</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="646,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/OPD-Blue-Line/Wettericons/,png</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="cyan1" render="Label" position="745,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day2</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="bernstein" render="Label" position="788,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="white" render="Label" position="723,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day2</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="965,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/OPD-Blue-Line/Wettericons/,png</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1105,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day3</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="white" render="Label" position="1042,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day3</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1060,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day3</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1421,18" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day4</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1376,18" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day4</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="white" render="Label" position="1359,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day4</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1282,6" size="75,75" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/OPD-Blue-Line/Wettericons/,png</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1600,6" size="75,75" font="Meteo; 40" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/OPD-Blue-Line/Wettericons/,png</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="white" render="Label" position="1677,51" size="240,30" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
+    <convert type="MSNWeather">temperature_text,day5</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="bernstein" render="Label" position="1741,17" size="150,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">temperature_heigh_low,day5</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular; 27" foregroundColor="cyan1" render="Label" position="1696,17" size="45,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="MSNWeather">weekshortday,day5</convert>
+  </widget>
+  <eLabel text="Status:" position="40,51" size="100,30" zPosition="8" halign="left" font="Regular; 24" backgroundColor="black" transparent="1" />
+  <widget Wrap="1" backgroundColor="black" font="Regular; 24" foregroundColor="green" render="Label" position="2,15" size="285,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <convert type="MSNWeather">city</convert>
+  </widget>
+  <widget render="Label" noWrap="1" source="session.MSNWeather" position="116,51" zPosition="8" size="75,30" font="Regular; 24" transparent="1" halign="right" backgroundColor="black">
+    <convert type="MSNWeather">observationtime</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="23,945" size="600,40" font="Regular; 36" halign="center" backgroundColor="black" transparent="1" foregroundColor="cyan1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y    %H:%M</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="27,522" size="1170,50" font="Regular; 40" halign="left" backgroundColor="black" transparent="1" zPosition="2" foregroundColor="cyan1">
+    <convert type="EventName">NameNext</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1250,100" size="650,50" font="Regular;40" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="cyan1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="849,945" size="150,40" font="Regular;36" halign="left" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="688,945" size="150,40" font="Regular;36" halign="right" foregroundColor="foregroundClock" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+<ePixmap pixmap="OPD-Blue-Line/colors/00000000.png" position="1701,23" size="215,35" zPosition="-5" />
+  <eLabel name="vertikalline" position="23,519" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel name="vertikalline" position="21,151" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel name="vertikalline" position="23,573" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel name="vertikalline" position="20,937" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel text="Ch." position="1253,148" size="1,1" font="Regular;40" backgroundColor="black" foregroundColor="cyan" transparent="1" zPosition="9" />
+  <eLabel position="1253,170" size="640,360" zPosition="3" backgroundColor="backgroundPig" />
+  <widget source="session.VideoPicture" render="Pig" position="1253,170" size="640,360" zPosition="-8" backgroundColor="backgroundPig" />
+  <widget position="1403,720" size="490,30" backgroundColor="background" font="Regular;24" halign="left" valign="center" noWrap="1" render="Label" source="session.CurrentService" transparent="1" foregroundColor="cyan1">
+    <convert type="OPDExtraInfo">CryptoSpecial</convert>
+  </widget>
+  <widget size="250,30" position="1403,678" backgroundColor="background" font="Regular;24" foregroundColor="cyan1" halign="left" render="Label" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <convert type="OPDServiceName">Provider</convert>
+  </widget>
+  <widget position="1253,637" size="640,30" foregroundColor="foregroundClock" backgroundColor="background" font="Regular; 22" halign="left" valign="center" render="Label" source="session.CurrentService" transparent="1">
+    <convert type="OPDServiceName">%O  %s  %F %p %Y %f %M %b %o %r</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1404,818" size="490,30" font="Regular; 24" transparent="1" zPosition="1" halign="left" valign="center" noWrap="1" foregroundColor="cyan1">
+    <convert type="OPDServiceName">Reference</convert>
+  </widget>
+  <widget source="session.CurrentService" render="OPDRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="1407,945" size="490,30" font="Regular; 24" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" zPosition="1">
+    <convert type="OPDServiceInfo">HasHBBTV</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="OPDSYSTemp" position="1407,902" size="80,30" font="Regular;24" halign="left" valign="center" backgroundColor="background" foregroundColor="cyan1" noWrap="1" transparent="1" zPosition="3" />
+  <widget source="session.CurrentService" render="Label" position="1392,859" size="80,30" zPosition="1" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" foregroundColor="cyan1">
+    <convert type="OPDCPUInfo">$0</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" font="Regular; 24" position="1403,745" size="515,60" halign="left" zPosition="50" backgroundColor="black" transparent="1" noWrap="1" valign="center" foregroundColor="cyan1">
+    <convert type="CryptoInfo">VerboseInfo</convert>
+  </widget>
+  <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel text="Provider:" position="1253,678" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="Temperatur:" position="1253,902" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="CPU-Last:" position="1253,859" size="150,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="HBBTV Info:" position="1253,945" size="155,30" font="Regular; 24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="Crypt Info:" position="1253,720" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="Caid Info:" position="1253,817" size="150,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="foregroundClock" />
+  <eLabel text="SNR :" position="862,1030" size="105,36" halign="right" font="Regular; 30" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+  <widget source="session.FrontendStatus" render="Label" position="970,1030" size="100,36" font="Regular; 30" backgroundColor="black" transparent="1" halign="left" foregroundColor="cyan1">
+    <convert type="OPDFrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="A" position="103,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="B" position="133,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="C" position="163,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="D" position="193,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="E" position="223,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="F" position="253,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="G" position="283,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="H" position="313,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <eLabel text="I" position="343,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="103,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="133,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="163,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="193,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="E" position="223,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">16</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="F" position="253,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">32</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="G" position="283,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">64</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" text="H" position="313,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">128</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="I" position="343,1030" zPosition="3" size="26,34" font="Regular; 30" halign="center" backgroundColor="black" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="OPDValueBitTest">256</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="103,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="133,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="163,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="193,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">3,3</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="E" position="223,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">4,4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="F" position="253,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">5,5</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="G" position="283,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">6,6</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="H" position="313,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">7,7</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="I" position="343,1030" zPosition="5" size="26,34" font="Regular; 30" halign="center" foregroundColor="white" backgroundColor="blue" transparent="0" valign="top">
+    <convert type="OPDFrontendInfo">NUMBER</convert>
+    <convert type="OPDValueRange">8,8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="Tuner:" position="0,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
+  <eLabel text="Crypt:" position="401,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
+    <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="707,1029" size="59,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="768,1029" size="57,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="643,1029" size="62,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="498,1029" size="27, 36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="527,1029" size="27, 36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="556,1029" size="27, 36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="585,1029" size="27, 36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="614,1029" size="27, 36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="342,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="222,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="252,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="282,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="312,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="192,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="162,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="132,1029" size="28,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="102,1029" size="28,36" />
+<eLabel text="B" font="Regular; 30" position="499,1030" size="25,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="499,1030" size="25,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="B" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">BetaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="499,1030" size="25,34" halign="center" zPosition="4" transparent="0" valign="center" text="B" backgroundColor="blue">
+      <convert type="OPDCryptInfo">BetaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="I" font="Regular; 30" position="528,1030" size="25,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="528,1030" size="25,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="I" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">IrdCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="528,1030" size="25,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="center" text="I">
+      <convert type="OPDCryptInfo">IrdEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="S" font="Regular; 30" position="557,1030" size="25,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="557,1030" size="25,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="S" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">SecaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="557,1030" size="25,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="center" text="S">
+      <convert type="OPDCryptInfo">SecaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="V" font="Regular; 30" position="586,1030" size="25,34" halign="center" backgroundColor="black" transparent="0" valign="center" zPosition="2" foregroundColor="darkgrey" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="586,1030" size="25,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="V" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">ViaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 30" position="586,1030" size="25,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="center">
+      <convert type="OPDCryptInfo">ViaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="N" font="Regular; 30" position="615,1030" size="25,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="615,1030" size="25,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="N" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">NagraCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="615,1030" size="25,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="center" text="N">
+      <convert type="OPDCryptInfo">NagraEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="CW" font="Regular; 30" position="644,1030" size="60,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="644,1030" size="60,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CW" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">CrwCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="644,1030" size="60,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="top" text="CW">
+      <convert type="OPDCryptInfo">CrwEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="ND" font="Regular; 30" position="708,1030" size="57,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="708,1030" size="57,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="ND" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">NdsCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="708,1030" size="57,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="4" transparent="0" valign="top" text="ND">
+      <convert type="OPDCryptInfo">NdsEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="CO" font="Regular; 30" position="769,1030" size="55,34" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="769,1030" size="55,34" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CO" foregroundColor="yellow">
+      <convert type="OPDCryptInfo">ConaxCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 30" position="769,1030" size="55,34" halign="center" backgroundColor="blue" foregroundColor="white" zPosition="5" transparent="0" valign="center" text="CO">
+      <convert type="OPDCryptInfo">ConaxEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+</screen>
+ </skin>
