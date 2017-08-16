@@ -6104,6 +6104,10 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
       <convert type="MenuEntryCompare">extended_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+	   <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/menu_system_videofinetune_setup.png" position="981,699" size="256,256" zPosition="1">
+      <convert type="MenuEntryCompare">atilehd_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   </screen>
   <screen name="menu_video_menu" position="0,0" size="1920,1080" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
