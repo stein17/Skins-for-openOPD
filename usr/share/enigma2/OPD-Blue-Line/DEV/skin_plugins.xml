@@ -4697,7 +4697,7 @@ transparent="1" />
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
     <ePixmap position="973,678" size="256,256" pixmap="OPD-Blue-Line/icons/chefkoch.png" transparent="1" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="config" position="30,130" size="880,820" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
+    <widget name="config" position="30,130" size="880,820" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <eLabel text="Abbrechen" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -4936,7 +4936,7 @@ transparent="1" />
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
     <ePixmap position="971,673" size="256,256" pixmap="OPD-Blue-Line/icons/frag_mutti.png" transparent="1" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="config" position="36,137" size="860,780" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
+        <widget name="config" position="30,130" size="880,820" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <eLabel text="Cancel" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -7672,5 +7672,16 @@ transparent="1" />
   <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_extended_subtitle_setup.png" transparent="1" />
   <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <widget name="config" itemHeight="50" font="Regular; 30" position="25,113" size="880,850" transparent="1" />
+</screen>
+  <screen name="kickerMain" position="center,80" size="395,895" title="kicker">
+ <ePixmap position="12,5" size="270,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/menuHD.png" alphatest="blend" zPosition="1" /> 
+ <widget name="mainmenu" position="10,70" size="375,630" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" />
+ <widget name="secondmenu" position="10,70" size="375,765" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" />
+ <widget name="thirdmenu" position="10,70" size="375,765" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" />
+</screen>
+
+<screen name="tickerMain" position="center,80" size="400,580" title="Live-Ticker">
+<ePixmap position="0,0" size="360,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/ticker_menuHD.png" alphatest="blend" zPosition="1" />
+<widget name="menu" position="15,72" size="380,500" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" zPosition="2" />
 </screen>
 </skin>
