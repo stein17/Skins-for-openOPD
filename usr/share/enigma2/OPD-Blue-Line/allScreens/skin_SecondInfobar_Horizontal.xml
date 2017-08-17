@@ -185,7 +185,7 @@
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-<ePixmap pixmap="OPD-Blue-Line/colors/00000000.png" position="1701,23" size="215,35" zPosition="-5" />
+<ePixmap pixmap="OPD-Blue-Line/colors/00000000.png" position="1697,16" size="215,55" zPosition="-5" />
   <eLabel name="vertikalline" position="23,519" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <eLabel name="vertikalline" position="21,151" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <eLabel name="vertikalline" position="23,573" size="1178,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />

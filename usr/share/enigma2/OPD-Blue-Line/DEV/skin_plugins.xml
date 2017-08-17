@@ -2343,7 +2343,7 @@ self.instance.move(ePoint(0,0))
     <widget source="session.CurrentService" render="Label" position="377,237" size="150,48" font="Regular;36" halign="center" valign="center" backgroundColor="background" shadowColor="trbluelabel" shadowOffset="-1,-1" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Progress" pixmap="OPD-Blue-Line/00ffffff.png" position="364,154" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
+    <widget source="session.CurrentService" render="Progress" pixmap="OPD-Blue-Line/colors/00ffffff.png" position="364,154" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1404,237" size="150,48" font="Regular;36" halign="center" valign="center" backgroundColor="background" transparent="1">
@@ -3376,7 +3376,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Service" render="PositionGauge" position="367,937" size="1200,6" zPosition="3" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="Progress" pixmap="OPD-Blue-Line/00ffffff.png" position="366,934" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
+    <widget source="Service" render="Progress" pixmap="OPD-Blue-Line/colors/00ffffff.png" position="366,934" size="1202,12" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <widget source="Service" render="EMCPositionGauge" pointer="OPD-Blue-Line/menu/EMCPointerRecord.png:1470,0" position="367,937" size="1200,6" zPosition="4" transparent="1">

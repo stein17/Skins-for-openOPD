@@ -166,7 +166,7 @@
   <widget source="session.CurrentService" render="Label" position="1003,100" size="650,50" font="Regular;40" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="cyan1">
   <convert type="ServiceName">Name</convert>
 </widget>
-<ePixmap pixmap="OPD-Blue-Line/colors/00000000.png" position="1701,23" size="215,35" zPosition="-5" />
+<ePixmap pixmap="OPD-Blue-Line/colors/00000000.png" position="1697,16" size="215,55" zPosition="-5" />
 <eLabel name="vertikalline" position="1003,547" size="905,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
 <eLabel name="vertikalline" position="1003,937" size="905,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
 <eLabel name="vertikalline" position="25,616" size="935,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
