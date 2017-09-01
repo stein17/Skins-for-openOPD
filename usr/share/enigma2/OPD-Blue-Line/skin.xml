@@ -8233,4 +8233,21 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <ePixmap position="939,158" size="256,256" zPosition="10" pixmap="OPD-Blue-Line/icons/opd_icon.png" transparent="1" alphatest="blend" />
     <eLabel text="Settings / Operation and Interface / OSD - 2.Infobar Change transmission information in -2.Infobar INFO. From System Plugins we download the WeatherComponentHandler. WeatherComponentHandler / Menu, then Add Green. If you have entered the place, go down to location code. Yellow for code search, confirm with green OK important again OK. More importantly with red, otherwise you have to start again. Now exit with exit, restart user interface, possibly complete restart." position="40,624" size="1190,350" zPosition="2" font="Regular; 32" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
   </screen>
+
+    <!-- UsbFormat FHD -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="UsbFormat" position="0,0" size="1920,1080" title="UsbFormat">
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_harddisk_harddisk_setup.png" transparent="1" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="lab1" position="105,139" size="650,630" font="Regular;33" valign="center" halign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
 </skin>
