@@ -157,24 +157,24 @@
     <color name="yellow" value="#00ffcc00" />
   </colors>
   <subtitles>
-    <sub name="Subtitle_TTX" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Regular" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Bold" font="Replacement;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Italic" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_TTX" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Regular" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Bold" font="Replacement;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Italic" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
   </subtitles>
   <!-- Main screen colors (id=0 Framebuffer) FHD -->
   <windowstyle type="skinned" id="0">
     <title offset="15,15" font="Regular;36" />
-    <color name="Background" color="background" />
+    <color name="Background" color="background20" />
     <color name="LabelForeground" color="white" />
-    <color name="ListboxBackground" color="background" />
+    <color name="ListboxBackground" color="background20" />
     <color name="ListboxForeground" color="white" />
-    <color name="ListboxSelectedBackground" color="backgroundBlue" />
-    <color name="ListboxSelectedForeground" color="white" />
-    <color name="ListboxMarkedBackground" color="background" />
-    <color name="ListboxMarkedForeground" color="cyan1" />
-    <color name="ListboxMarkedAndSelectedBackground" color="backgroundBlue" />
-    <color name="ListboxMarkedAndSelectedForeground" color="cyan1" />
+    <color name="ListboxSelectedBackground" color="white" />
+    <color name="ListboxSelectedForeground" color="black" />
+    <color name="ListboxMarkedBackground" color="white" />
+    <color name="ListboxMarkedForeground" color="black" />
+    <color name="ListboxMarkedAndSelectedBackground" color="white" />
+    <color name="ListboxMarkedAndSelectedForeground" color="black" />
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="background" />
     <!-- screen border png's -->
