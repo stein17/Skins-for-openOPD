@@ -157,24 +157,24 @@
     <color name="yellow" value="#00ffcc00" />
   </colors>
   <subtitles>
-    <sub name="Subtitle_TTX" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Regular" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Bold" font="Replacement;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
-    <sub name="Subtitle_Italic" font="Regular;32" foregroundColor="white" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_TTX" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Regular" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Bold" font="Replacement;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
+    <sub name="Subtitle_Italic" font="Regular;32" foregroundColor="bluetitle" shadowColor="black" shadowOffset="3,3" />
   </subtitles>
   <!-- Main screen colors (id=0 Framebuffer) FHD -->
   <windowstyle type="skinned" id="0">
     <title offset="15,15" font="Regular;36" />
-    <color name="Background" color="background20" />
+    <color name="Background" color="background" />
     <color name="LabelForeground" color="white" />
-    <color name="ListboxBackground" color="background20" />
+    <color name="ListboxBackground" color="background" />
     <color name="ListboxForeground" color="white" />
-    <color name="ListboxSelectedBackground" color="white" />
-    <color name="ListboxSelectedForeground" color="black" />
-    <color name="ListboxMarkedBackground" color="white" />
-    <color name="ListboxMarkedForeground" color="black" />
-    <color name="ListboxMarkedAndSelectedBackground" color="white" />
-    <color name="ListboxMarkedAndSelectedForeground" color="black" />
+    <color name="ListboxSelectedBackground" color="backgroundBlue" />
+    <color name="ListboxSelectedForeground" color="white" />
+    <color name="ListboxMarkedBackground" color="background" />
+    <color name="ListboxMarkedForeground" color="cyan1" />
+    <color name="ListboxMarkedAndSelectedBackground" color="backgroundBlue" />
+    <color name="ListboxMarkedAndSelectedForeground" color="cyan1" />
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="background" />
     <!-- screen border png's -->
@@ -8249,5 +8249,41 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- SatBlindscanState -->
+  <screen name="SatBlindscanState" position="0,0" size="1920,1080" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="text" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="constellation" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel name="progress" position="31,620" size="980,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="list" render="Listbox" position="30,653" size="980,270" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (8, 0), size = (1020, 45), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 30)],
+				"itemHeight": 45
+				}
+			</convert>
+    </widget>
+    <widget name="post_action" position="30,653" size="980,270" itemHeight="45" zPosition="14" font="Regular;30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="HelpWindow" position="220,203" size="603,192" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1152,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/icons/sat.png" position="30,130" size="70,70" zPosition="2" transparent="1" alphatest="blend" />
+    </screen>
+      <!-- Blindscan -->
+  <screen name="Blindscan" position="0,0" size="1920,1080" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget name="config" position="30,130" size="855,825" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="introduction" position="950,130" size="300,510" font="Regular;33" halign="center" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1053,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+     <ePixmap pixmap="OPD-Blue-Line/icons/menu_scan_blindscan.png" position="981,699" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+<ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
   </screen>
 </skin>
