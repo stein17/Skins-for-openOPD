@@ -7651,28 +7651,7 @@ transparent="1" />
     <widget name="foregroundImage" position="224,616" size="500,300" zPosition="1" alphatest="blend" transparent="1" backgroundColor="transparent" />
     <eLabel text="coded by svox, idea by arn354" position="971,145" size="256,256" zPosition="1" font="Regular; 27" halign="center" valign="center" transparent="1" />
   </screen>
-  <!-- JobProgressView FHD -->
-  <screen name="JobProgressView" position="50,800" size="750,220" zPosition="1" title="Job Progress">
-    <widget source="titleText" position="20,20" size="710,60" render="Label" font="Regular; 32" halign="center" transparent="1" />
-    <widget name="downloadProgress" position="20,100" size="710,30" borderWidth="2" borderColor="bluelabel" />
-    <widget source="downloadProgressText" position="20,152" size="710,45" render="Label" font="Regular; 30" halign="center" transparent="1" />
-  </screen>
-
-  <!-- Subtitle settings FHD -->
-  <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" position="398,225" size="1000,300">
-    <widget name="config" itemHeight="45" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" position="9,15" size="980,270" transparent="1" />
-  </screen>
-  <!-- QuickSubtitlesClearRests FHD -->
-  <screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-  <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-    <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-  </widget>
-  <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-  <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-  <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_extended_subtitle_setup.png" transparent="1" />
-  <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  <widget name="config" itemHeight="50" font="Regular; 30" position="25,113" size="880,850" transparent="1" />
-</screen>
+ 
   <screen name="kickerMain" position="center,80" size="395,895" title="kicker">
  <ePixmap position="12,5" size="270,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/menuHD.png" alphatest="blend" zPosition="1" /> 
  <widget name="mainmenu" position="10,70" size="375,630" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" />
