@@ -225,9 +225,7 @@
     <eLabel position="396,750" size="1115,2" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
     <eLabel position="398,317" size="1115,2" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
   </screen>
-  <!-- Subtitle area FHD -->
-  <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
-  </screen>
+
   <!-- Scart -->
   <screen name="Scart" position="0,0" size="1920,1080" backgroundColor="transparent">
   </screen>
