@@ -2597,66 +2597,62 @@ self.instance.move(ePoint(0,0))
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
   </screen>
-  <!-- SHOUTcastWidget FHD-->
-  <screen name="SHOUTcastWidget" position="0,0" size="1920,1080" title="SHOUTcast Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="global.CurrentTime" render="Label" position="1088,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+    <!-- SHOUTcastWidget FHD-->
+<screen name="SHOUTcastWidget" position="0,0" size="1920,1080" title="SHOUTcast Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
-    <widget name="headertext" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget name="statustext" position="105,180" size="1710,567" zPosition="1" font="Regular;33" halign="center" valign="center" backgroundColor="background" transparent="0" />
-    <widget name="list" position="105,180" size="1710,567" font="Regular;30" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="background" transparent="0" />
-    <eLabel position="105,765" size="1710,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="cover" position="105,772" size="165,165" backgroundColor="background" alphatest="blend" />
-    <widget name="titel" position="315,780" size="1320,37" font="Regular;30" backgroundColor="background" transparent="1" />
-    <widget name="station" position="315,817" size="1320,75" font="Regular;30" backgroundColor="background" transparent="1" />
-    <widget name="console" position="315,855" size="1320,75" font="Regular;30" backgroundColor="background" transparent="1" />
-    <ePixmap position="1664,828" size="180,52" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="24,1018" size="35,35" alphatest="blend" />
+    <eLabel position="30,151" size="1170,1" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_menu.png" position="1773,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="headertext" position="30,101" size="1170,48" font="Regular;36" halign="left" valign="center" foregroundColor="bluetitle" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget name="statustext" position="30,160" size="1170,810" zPosition="1" font="Regular;34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="list" position="30,160" size="1170,810" font="Regular;34" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="background" transparent="0" />
+    <eLabel position="1258,718" size="630,3" backgroundColor="backgroundBlue" />
+    <eLabel name="vertikalline" position="1231,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="cover" position="1262,130" size="620,580" backgroundColor="background" alphatest="blend" halign="center" />
+    <widget name="titel" position="1258,722" size="630,75" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="greenlight" />
+    <widget name="station" position="1258,799" size="630,75" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="cyan1" />
+    <widget name="console" position="1258,876" size="630,75" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="bernstein" />
+    <ePixmap position="1545,1013" size="180,52" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="940,1018" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
   </screen>
   <!-- SHOUTcastSetup FHD-->
-  <screen name="SHOUTcastSetup" position="0,0" size="1920,1080" title="SHOUTcast Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
-    </widget>
+<screen name="SHOUTcastSetup" position="0,0" size="1920,1080" title="SHOUTcast Setup" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
-    <eLabel position="1250,130" size="645,366" zPosition="2" backgroundColor="white" />
-    <eLabel position="1254,132" size="639,360" zPosition="3" backgroundColor="background" />
-    <widget name="config" position="30,130" size="1160,820" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget name="config" position="30,130" size="1220,820" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <ePixmap position="1406,571" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/shout.png" transparent="1" alphatest="blend" />
-    <eLabel name="vertikalline" position="1220,121" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  </screen>
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+   </screen>
   <!-- SHOUTcastStreamripperRecordingPath FHD-->
-  <screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1920,1080" title="Select record path for streamripper" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
-    </widget>
+<screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1920,1080" title="Select record path for streamripper" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
-    <eLabel position="1250,130" size="645,366" zPosition="2" backgroundColor="white" />
-    <eLabel position="1254,132" size="639,360" zPosition="3" backgroundColor="background" />
-    <widget name="target" position="105,150" size="1050,48" font="Regular;36" backgroundColor="background" transparent="1" />
-    <eLabel position="103,214" size="1050,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="filelist" position="30,229" size="1160,720" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget name="target" position="30,130" size="1220,48" font="Regular;36" backgroundColor="background" transparent="1" />
+    <eLabel position="30,201" size="1220,3" backgroundColor="backgroundBlue" />
+    <widget name="filelist" position="30,229" size="1220,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <ePixmap position="1406,571" size="384,384" zPosition="2" pixmap="OPD-Blue-Line/setup/shout.png" transparent="1" alphatest="blend" />
-    <eLabel name="vertikalline" position="1220,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  </screen>
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+   </screen>
   <!-- RSSSetup FHD-->
   <screen name="RSSSetup" position="0,0" size="1920,1080" title="Simple RSS Reader Setup" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
@@ -5202,13 +5198,14 @@ transparent="1" />
     <widget source="speed" render="Label" position="492,356" size="300,40" halign="right" font="Regular; 26" backgroundColor="background" transparent="1" />
   </screen>
   <!-- MediaInfo -->
-  <screen name="MediaInfo Config" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <!-- MediaInfoConfig -->
+  <screen name="MediaInfoConfigScreen" title="" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="global.CurrentTime" render="Label" position="515,28" size="600,40" font="Regular; 30" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+	<ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1920,1080" />
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
-    <widget name="config" position="37,234" size="1200,400" transparent="1" itemHeight="40" scrollbarMode="showOnDemand" font="Regular; 28" backgroundColor="background" />
+	<widget name="config" position="30,130" size="1220,830" transparent="1" itemHeight="45" scrollbarMode="showOnDemand" font="Regular; 34" backgroundColor="background" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
@@ -5217,20 +5214,16 @@ transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <eLabel name="button red" position="20,1062" size="1,1" backgroundColor="red" zPosition="5" />
-    <eLabel name="button green" position="495,1062" size="1,1" backgroundColor="green" zPosition="5" />
-    <eLabel name="button yellow" position="970,1062" size="1,1" backgroundColor="yellow" zPosition="5" />
-    <eLabel name="button blue" position="1445,1062" size="1,1" backgroundColor="blue" zPosition="5" />
   </screen>
-  <!-- mediaInfo -->
-  <screen name="MediaInfo Folder" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+    <!-- MediaInfo -->
+  <screen name="MediaInfo" title="" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="global.CurrentTime" render="Label" position="515,28" size="600,40" font="Regular; 30" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+	<ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1920,1080" />
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
-    <widget name="head" position="37,191" size="1200,60" backgroundColor="background" transparent="1" zPosition="5" font="Regular; 28" halign="left" valign="center" />
-    <widget name="downloadList" position="37,288" size="1200,640" backgroundColor="background" itemHeight="70" scrollbarMode="showOnDemand" transparent="1" font="Regular;28" />
+	<widget name="head" position="30,110" size="1220,64" transparent="0" zPosition="5" font="Regular;32" foregroundColor="bernstein" halign="center" valign="center" />
+	<widget name="downloadList" position="30,200" size="1220,750" itemHeight="70" font="Regular; 32" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
@@ -5239,20 +5232,16 @@ transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <eLabel name="button red" position="20,1062" size="1,1" backgroundColor="red" zPosition="5" />
-    <eLabel name="button green" position="495,1062" size="1,1" backgroundColor="green" zPosition="5" />
-    <eLabel name="button yellow" position="970,1062" size="1,1" backgroundColor="yellow" zPosition="5" />
-    <eLabel name="button blue" position="1445,1062" size="1,1" backgroundColor="blue" zPosition="5" />
   </screen>
-  <!-- mediaInfoFolderScreen -->
-  <screen name="MediaInfo" position="0,0" size="1920,1080" title="MediaInfo Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <!-- MediaInfoFolder -->
+  <screen name="MediaInfoFolderScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="global.CurrentTime" render="Label" position="515,28" size="600,40" font="Regular; 30" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
     </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+	<ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1920,1080" />
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
-    <widget name="media" position="40,240" size="1200,60" valign="center" font="Regular; 28" transparent="1" backgroundColor="background" />
-    <widget name="folderlist" position="40,330" zPosition="1" size="1200,600" backgroundColor="background" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
+	<widget name="media" position="30,110" size="1220,64" transparent="0" zPosition="5" font="Regular;32" foregroundColor="bernstein" halign="left" valign="center" />
+	<widget name="folderlist" position="30,200" size="1220,750" transparent="1" itemHeight="70" font="Regular; 32" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
@@ -5261,10 +5250,6 @@ transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <eLabel name="button red" position="20,1062" size="1,1" backgroundColor="red" zPosition="5" />
-    <eLabel name="button green" position="495,1062" size="1,1" backgroundColor="green" zPosition="5" />
-    <eLabel name="button yellow" position="970,1062" size="1,1" backgroundColor="yellow" zPosition="5" />
-    <eLabel name="button blue" position="1445,1062" size="1,1" backgroundColor="blue" zPosition="5" />
   </screen>
   <!-- MediaInfo End -->
   <!-- MerlinMusicPlayer -->
@@ -7663,4 +7648,18 @@ transparent="1" />
 <ePixmap position="0,0" size="360,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/ticker_menuHD.png" alphatest="blend" zPosition="1" />
 <widget name="menu" position="15,72" size="380,500" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" zPosition="2" />
 </screen>
+    <!-- EtPortal FHD -->
+   <screen name="EtPortalSetupScreen" position="0,0" size="1920,1080" title="EtPortal Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1920,1080" />
+ <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="foregroundClock" backgroundColor="black" transparent="1">
+  <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+  </widget>
+  <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="bluetitle" backgroundColor="black" transparent="1" zPosition="1" />
+  <widget name="config" font="Regular;30" position="30,130" size="875,820" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" zPosition="1" transparent="1" />
+  <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="24,1018" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+  <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+  <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+  <ePixmap position="971,676" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/blue_plugin.png" transparent="1" />
+ </screen>
 </skin>
