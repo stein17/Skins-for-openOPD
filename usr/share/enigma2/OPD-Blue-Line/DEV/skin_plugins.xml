@@ -3692,7 +3692,7 @@ transparent="1" />
     <convert type="EMCServiceTime">Duration</convert>
     <convert type="EMCClockToText">InMinutes</convert>
   </widget>
-  <widget source="Service" render="BLRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="1262,370" size="627,530" font="Regular;32" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="left" valign="top">
+  <widget source="Service" render="OPDRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="1262,370" size="627,530" font="Regular;32" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="left" valign="top">
     <convert type="EMCEventName">FullDescription</convert>
   </widget>
   <widget name="Cover" position="1721,90" size="192,260" alphatest="blend" zPosition="2" halign="left" />
