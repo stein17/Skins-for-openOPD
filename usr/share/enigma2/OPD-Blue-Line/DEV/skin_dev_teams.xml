@@ -31,7 +31,7 @@
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-<ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
     <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/info.png" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_info.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
@@ -698,6 +698,59 @@
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="983,995" size="240,80" zPosition="1" valign="center" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" />
   </screen>
+  <!-- PasswdScreen FHD  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="PasswdScreen" position="0,0" size="1920,1080" title="Change root password">
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/net.png" transparent="1" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget name="passwd" position="30,130" size="875,820" itemHeight="50" font="Regular; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+    <!-- OPD DownloadOnLineImage OPD -->
+  <screen name="DownloadOnLineImage" position="0,0" size="1920,1080" title="Download Image" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/multiboot.png" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/plugin.png" alphatest="blend" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <widget name="imageList" position="30,130" zPosition="1" size="875,820" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1001" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- OPDChooseOnLineImage FHD -->
+  <screen name="OPDChooseOnLineImage" position="0,0" size="1920,1080" title="OPDBoot - Download OnLine Images" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="515,28" size="600,40" font="Regular; 30" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <eLabel text="Download OnLine Images" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget source="list" render="Listbox" position="32,132" size="1160,815" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+	MultiContentEntryText(pos = (0, 10), size = (1100, 40), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+	MultiContentEntryPixmapAlphaBlend(pos = (10, 0), size = (480, 60), png = 1),
+	MultiContentEntryText(pos = (0, 40), size = (1100, 40), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
+	],
+	"fonts": [gFont("Regular", 34),gFont("Regular", 30)],
+	"itemHeight": 80
+	}</convert>
+    </widget>
+  </screen>
   <!-- CutListEditor FHD -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
@@ -727,4 +780,238 @@
     <widget name="Timeline" position="30,903" size="850,50" backgroundColor="white" pointer="skin_default/position_arrow.png:3,5" foregroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/mmp/mp_buttons.png" alphatest="blend" position="399,1013" size="450,56" transparent="1" zPosition="4" />
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1920,1080" title="">
+    <widget source="global.CurrentTime" render="Label" position="1080,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+  <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="-2,0" zPosition="-20" size="1920,1080" />
+    <eLabel text="About..." position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" transparent="1" zPosition="1" />
+<eLabel text="Image und Receiverinformationen, für deine Box" position="25,125" size="1000,50" font="Console; 36" halign="left" valign="center" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="25,260" size="1180,700" transparent="0" zPosition="1" font="Regular;34" />
+    <eLabel name="vertikalline" position="26,253" size="1180,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <eLabel name="vertikalline" position="1230,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap position="1249,123" size="648,440" zPosition="10" pixmap="OPD-Blue-Line/DEV/Octagon-Info.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,995" size="240,80" zPosition="1" valign="center" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_info.png" position="1252,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <eLabel name="" position="1265,593" size="613,330" backgroundColor="blue" foregroundColor="blue" transparent="0" zPosition="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="1249,564" size="648,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap position="1265,580" size="613,344" zPosition="10" pixmap="OPD-Blue-Line/DEV/Blue_Line_logo.png" transparent="1" alphatest="blend" />
+    <eLabel name="" position="1265,580" size="613,344" backgroundColor="blue" foregroundColor="blue" transparent="0" zPosition="1" alphatest="blend" />
+    <widget backgroundColor="dark" font="Regular; 32" halign="left" position="543,200" size="280,50" name="Commits" transparent="1" zPosition="1" />
+    <widget name="boxpic" position="284,454" size="650,380" zPosition="10" alphatest="blend" transparent="1" />
+    <widget name="model" font="Regular; 32" halign="center" position="25,200" size="550,50" transparent="1" zPosition="1" valign="top" />
+</screen>
+<screen name="ModelPic" title="ModelPic" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <eLabel backgroundColor="#2c000000" foregroundColor="#2c000000" name="" position="30,center" size="880,940" zPosition="-15" />
+    <eLabel name="" foregroundColor="white" backgroundColor="#0044a2ff" position="170,130" size="720,2" zPosition="-9" />
+    <eLabel text="My Box" font="Regular; 34" backgroundColor="#2c000000" foregroundColor="white" position="170,73" size="200,50" transparent="1" valign="center" zPosition="3" />
+    <widget name="boxpic" alphatest="blend" position="170,center" size="650,380" transparent="1" halign="center" valign="center" />
+    <widget name="model" font="Regular; 34" backgroundColor="#2c000000" foregroundColor="white" halign="left" position="390,73" size="500,50" transparent="1" valign="center" />
+    <eLabel backgroundColor="#00383b43" foregroundColor="white" name="" position="60,center" size="100,1080" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="170,945" size="720,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_blue.png" position="170,960" size="40,40" />
+    <widget name="key_blue" font="Regular; 28" backgroundColor="#2c000000" position="220,960" size="300,40" halign="left" valign="center" transparent="1" zPosition="1" />
+</screen>
+ <!-- 
+ OPD PartitionManager FHD  -->
+  <screen name="PartitionManager" position="center,center" size="1300,700" title="PartitionManager">
+  <widget name="list" position="5,5" size="1250,730" itemHeight="50" font="Regular; 34" scrollbarMode="showNever" transparent="1" />
+  </screen>
+  <screen name="AddPart" position="center,center" size="1400,700" title="add Partition">
+	<ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="11,23" zPosition="0" size="35,35" transparent="1" alphatest="on" />
+	<ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="313,23" zPosition="0" size="35,35" transparent="1" alphatest="on" />
+	<widget render="Label" source="key_red" position="50,5" size="240,70" zPosition="2" valign="center" halign="center" backgroundColor="red" font="Regular;27" transparent="1" foregroundColor="white" shadowColor="black" />
+	<widget render="Label" source="key_green" position="353,5" size="240,70" zPosition="2" valign="center" halign="center" backgroundColor="red" font="Regular;27" transparent="1" foregroundColor="white" shadowColor="black" />
+	<widget name="config" position="10,70" size="1200,600" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+  </screen>
+  <screen name="Cpart" position="center,center" size="1100,700" title="eParted">
+	<widget source="list" render="Listbox" position="10,5" size="1080,700" scrollbarMode="showOnDemand" enableWrapAround="on">
+		<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (0,5), size = (80, 40), font=0, flags = RT_HALIGN_LEFT, text=0),
+				MultiContentEntryText(pos = (80,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=1),
+				MultiContentEntryText(pos = (320,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=2),
+				MultiContentEntryText(pos = (560,5), size = (240, 40), font=0, flags = RT_HALIGN_LEFT, text=3),
+				MultiContentEntryText(pos = (810,5), size = (250, 40), font=0, flags = RT_HALIGN_LEFT, text=4)
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 55
+				}
+		</convert>
+	</widget>
+	<widget name="PixmapRed" position="15,340" size="35,35" pixmaps="OPD-Blue-Line/buttons/key_grey.png,OPD-Blue-Line/buttons/key_red.png" transparent="1" alphatest="on" />
+	<widget name="LabelRed" position="62,323" size="240,70" font="Regular;27" valign="center" />
+	<widget name="PixmapGreen" position="318,340" size="35,35" pixmaps="OPD-Blue-Line/buttons/key_grey.png,OPD-Blue-Line/buttons/key_green.png" transparent="1" alphatest="on" />
+	<widget name="LabelGreen" position="368,323" size="240,70" font="Regular;27" valign="center" />
+	<widget name="PixmapBlue" position="624,340" size="35,35" pixmaps="OPD-Blue-Line/buttons/key_grey.png,OPD-Blue-Line/buttons/key_blue.png" transparent="1" alphatest="on" />
+	<widget name="LabelBlue" position="670,323" size="240,70" font="Regular;27" valign="center" />
+ </screen>
+ <screen name="Cpartexe" position="center,center" size="1100,700" title=" ">
+	<widget source="list" render="Listbox" position="10,5" size="1100,700" scrollbarMode="showOnDemand" enableWrapAround="on">
+		<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (40,5), size = (830, 50), font=0, flags = RT_HALIGN_LEFT, text=0),
+				MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50,50), png=1),
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 70
+				}
+		</convert>
+	</widget>
+	<widget name="PixmapButton" position="26,545" size="35,35" pixmaps="OPD-Blue-Line/buttons/key_green.png,OPD-Blue-Line/buttons/key_grey.png" transparent="1" alphatest="on" />
+	<widget name="LabelButton" position="72,532" size="820,60" font="Regular; 32" valign="center" />
+ </screen>
+ <!-- OPD HddSetup FHD  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddSetup" position="0,0" size="1920,1080" title="Hard Drive Setup">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/hdd.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="menu" render="Listbox" position="30,130" size="875,820" backgroundColor="background" itemHeight="50" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (70, 3), size = (530, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (515, 3), size = (285, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 32)],
+					"itemHeight": 52
+		}</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- OPD HddPartitions FHD  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddPartitions" position="0,0" size="1920,1080" title="Hard Drive Partitions">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/hdd.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="menu" render="Listbox" position="30,130" size="875,820" backgroundColor="backgroundColor" itemHeight="50" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (70, 3), size = (430, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (515, 3), size = (135, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 32)],
+					"itemHeight": 52
+		}</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- OPD HddMountDevice FHD  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddMountDevice" position="0,0" size="1920,1080" title="Hard Drive Mount">
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/hdd.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget name="menu" position="30,130" size="875,820" zPosition="3" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- OPD HddInfo FHD  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1920,1080" title="Hard Drive Info">
+    <widget name="config" position="30,130" size="875,50" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="model" position="30,265" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="serial" position="30,327" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="firmware" position="30,387" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="cylinders" position="30,450" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="heads" position="30,513" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="sectors" position="30,576" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="readDisk" position="29,635" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="readCache" position="30,697" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget font="Regular;30" halign="left" name="temp" position="30,760" size="875,40" valign="center" backgroundColor="background" transparent="1" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/hdd.png" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    </screen>
+    	<!--BootLogoSelector -->
+    <screen backgroundColor="transparent" flags="wfNoBorder" name="opdBootLogoSelector" position="0,0" size="1920,1080" title="OPD BootLogo Selector">
+    <ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+		<ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" /> 
+		<ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+		 <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" /> 
+		<widget name="config" position="70,180" size="820,630" font="Regular;32" scrollbarMode="showOnDemand" itemHeight="45" backgroundColor="header" transparent="1"/> 
+		<eLabel text="Preview" position="1260,600" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="#0073c6ff" transparent="1" zPosition="2" /> 
+		<eLabel position="1260,600" size="610,70" backgroundColor="#0020fc" zPosition="1"/> 
+		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
+		<widget name="Preview" position="1260,680" size="610,267" alphatest="on" zPosition="10"/> 
+		<ePixmap pixmap="OPD-Blue-Line/icons/opd_icon.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+	</screen>
+     <!-- OPD HddFastRemove FHD  -->
+    <screen backgroundColor="transparent" flags="wfNoBorder" name="HddFastRemove" position="0,0" size="1920,1080" title="Hard Drive Fast Umount">
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/hdd.png" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="menu" render="Listbox" position="30,130" size="875,820" backgroundColor="backgroundColor" itemHeight="50" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (70, 3), size = (430, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (515, 3), size = (135, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 32)],
+					"itemHeight": 52
+		}</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+</screen>			
 </skin>
