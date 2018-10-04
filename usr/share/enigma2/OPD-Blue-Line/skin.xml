@@ -6944,7 +6944,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel name="vertikalline" position="985,131" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <eLabel name="vertikalline" position="1289,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap position="1034,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-    <eLabel text="Softcam Selection" position="300,90" size="700,50" font="Regular; 34" halign="left" valign="center" foregroundColor="greenlight" backgroundColor="black" transparent="1" zPosition="1" />
+    <eLabel text="Softcam Selection" position="300,110" size="700,50" font="Regular; 34" halign="left" valign="center" foregroundColor="greenlight" backgroundColor="black" transparent="1" zPosition="1" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -6953,17 +6953,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+    <ePixmap position="1243,1011" size="60,50" zPosition="10" pixmap="OPD-Blue-Line/buttons/key_menu.png" transparent="1" alphatest="blend" />
+    <eLabel text="Setup Softcam" position="1280,1019" size="240,70" font="Regular; 27" halign="center" backgroundColor="dark" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/icons/Softcam_Cardserver.png" position="20,106" size="256,256" zPosition="2" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/icons/menu_information_device.png" position="21,387" size="256,256" zPosition="2" alphatest="blend" />
     <ePixmap position="1009,695" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/opd_icon.png" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/icons/softcam.png" position="20,671" size="256,256" zPosition="2" alphatest="blend" />
-    <widget name="lab2" position="300,325" size="255,45" font="Regular;30" itemHeight="35" transparent="1" zPosition="1" />
-    <widget name="activecam" position="397,325" size="360,225" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
-    <widget name="lab1" position="300,140" size="255,40" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
-    <widget name="list" position="470,140" size="480,160" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" transparent="1" zPosition="2" />
-    <applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(50)
-		</applet>
+    <widget name="config" position="300,162" size="570,100" font="Regular;30" itemHeight="35" transparent="1" zPosition="1" />
+    <widget name="actifcam" position="300,276" size="670,30" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
+    <widget name="actifcam2" position="300,319" size="670,30" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
     <widget font="Regular; 36" name="camcount" position="922,25" size="160,50" />
     <!-- is crypted ? -->
     <widget name="lb_channel" position="300,387" size="730,40" font="Regular;35" zPosition="2" foregroundColor="green" transparent="1" />
@@ -6971,6 +6969,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="lb_aspectratio" position="300,494" size="730,40" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
     <widget name="lb_videosize" position="300,545" size="400,40" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
     <widget name="ecminfo" position="300,630" size="730,350" font="Regular; 28" zPosition="2" foregroundColor="cyan1" transparent="1" />
+    <widget name="list" position="73,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" transparent="1" zPosition="2" />
     <widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="cyan1" transparent="1" zPosition="1" />
     <eLabel text="\nS\nE\nR\nV\nI\nC\nE\n" position="1318,108" size="34,250" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="red" foregroundColor="white" borderWidth="2" borderColor="black" />
     <eLabel text="VPID" position="1352,108" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="green" noWrap="1" borderWidth="2" />
@@ -7093,20 +7092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/softcam.png" transparent="1" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
-  <screen name="StartCam" position="0,0" size="1920,1080" title="Starting Softcam" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <eLabel name="vertikalline" position="43,818" size="850,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/softcam.png" transparent="1" />
-    <widget name="connect" position="59,117" size="820,680" zPosition="2" pixmaps="/usr/share/enigma2/OPD-Blue-Line/opendroid/sc1.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc2.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc3.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc4.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc5.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc6.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc7.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc8.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc9.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc10.png,/usr/share/enigma2/OPD-Blue-Line/opendroid/sc11.png" transparent="1" alphatest="blend" />
-    <widget name="lab1" position="59,842" halign="center" size="820,80" font="Regular;30" valign="top" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="StopCam" position="0,0" size="1920,1080" title="Starting Softcam" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="CamStart" position="0,0" size="1920,1080" title="Starting Softcam" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -7121,20 +7107,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   </screen>
   <!--   SoftCam CCCam Info FHD -->
   <screen name="CCcamInfoMain" position="0,0" size="1920,1080" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-    <widget name="menu" position="30,130" size="875,825" enableWrapAround="1" itemHeight="53" font="Regular;32" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/softcam.png" transparent="1" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  </screen>
-  <!--   SoftCamInfo -->
-  <screen name="SoftCamInfo" position="0,0" size="1920,1080" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
