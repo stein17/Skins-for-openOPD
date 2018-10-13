@@ -117,7 +117,7 @@
     <parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
     <parameter name="PlayListName" value="65,2,1000,50" />
     <parameter name="PlayListIcon" value="10,0,50,50" />
-	<parameter name="SelectionListLockOff" value="10, 7, 50, 50" />
+    <parameter name="SelectionListLockOff" value="10, 7, 50, 50" />
   </parameters>
   <!-- Colors FHD -->
   <colors>
@@ -3464,6 +3464,20 @@
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget source="TranslatorName" render="Label" font="Regular;40" position="60,158" size="1100,260" foregroundColor="lightblue" halign="center" backgroundColor="dark" transparent="1" />
     <widget source="TranslationInfo" render="Label" font="Regular;32" position="60,459" size="1100,460" halign="center" backgroundColor="dark" transparent="1" />
+    <widget name="AboutScrollLabel" position="70,200" size="820,720" itemHeight="45" font="Regular;30" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1137,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+    <!-- Info ContactInfo FHD -->
+  <screen name="ContactInfo" position="0,0" size="1920,1080" title="Contact Info" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="global.CurrentTime" render="Label" position="595,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <widget source="TranslatorName" render="Label" font="Regular;40" position="60,158" size="1100,260" foregroundColor="lightblue" halign="center" backgroundColor="dark" transparent="1" />
+    <widget source="manufacturerinfo" render="Label" font="Regular;32" position="60,459" size="1100,460" halign="center" backgroundColor="dark" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1137,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -6793,7 +6807,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-  <screen name="AboutOE" position="0,0" size="1920,1080" title="Image Information" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="About" position="0,0" size="1920,1080" title="Image Information" flags="wfNoBorder" backgroundColor="transparent">
   <widget source="global.CurrentTime" render="Label" position="588,24" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
