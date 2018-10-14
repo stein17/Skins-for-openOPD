@@ -6808,7 +6808,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-  <screen name="About" position="0,0" size="1920,1080" title="Image Information" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="AboutOE" position="0,0" size="1920,1080" title="Image Information" flags="wfNoBorder" backgroundColor="transparent">
   <widget source="global.CurrentTime" render="Label" position="588,24" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
