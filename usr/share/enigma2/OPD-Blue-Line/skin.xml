@@ -57,6 +57,7 @@
 		<alias name="VirtualKeyboard"           font="Regular" size="34" height="45" />
   </fonts>
 <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
     <parameter name="ConfigListSeperator" value="580" />
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
     <parameter name="AllowUserDatesAndTimes" value="x,y" />
