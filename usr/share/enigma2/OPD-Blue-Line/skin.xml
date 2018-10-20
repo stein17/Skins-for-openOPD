@@ -6810,7 +6810,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <widget source="global.CurrentTime" render="Label" position="588,24" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
-  <ePixmap pixmap="OPD-Blue-Line/DEV/logo_opendroid.png" position="30,90" size="750,125" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="OPD-Blue-Line/DEV/logo_opendroid.png" position="30,90" size="780,125" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap position="1059,373" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
   <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="2,0" zPosition="-20" size="1280,1080" />
   <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
   <widget name="AboutScrollLabel" position="24,279" size="1030,700" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" font="Regular;34" />
@@ -6872,7 +6873,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
   </widget>
   <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-  <ePixmap pixmap="OPD-Blue-Line/DEV/logo_opendroid.png" position="30,90" size="750,125" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="OPD-Blue-Line/DEV/logo_opendroid.png" position="30,90" size="780,125" zPosition="10" transparent="1" alphatest="blend" />
   <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
   <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
   <widget name="imageList" position="29,360" zPosition="1" size="880,580" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
