@@ -6839,7 +6839,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 <eLabel name="vertikalline" position="1481,904" size="243,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
 <eLabel name="vertikalline" position="1481,739" size="2,165" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
  <eLabel name="vertikalline" position="1724,739" size="2,167" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" /> 
-  <eLabel text="By OPD Image Team" position="30,225" size="900,60" zPosition="1" font="Adam; 60" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="center" />
   <eLabel name="" position="1296,640" borderWidth="2" size="608,342" />
 </screen>
   <!-- ATV FlashOnline FHD -->
