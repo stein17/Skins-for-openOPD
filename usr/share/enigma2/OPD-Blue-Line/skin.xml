@@ -6,21 +6,21 @@
   <!-- orginal author="stein17" license="You can change the skin as long as the license/author is not deleted -->
   <!-- You are NOT allowed to modify and redistribute OPD-Blue-Line Skin and all graphics -->
   <!--
-           ########################################################################
-	   #  Credits and Thanks! to for the Preliminary Work goes in             #                                            
-	   #  i.Maxxx, Maggy, SkinMania, mmark, NFR-DEV-Team, Team-Kraven         #
-	   #  ATV-Team, OPD Team and all I have forgotten                         #
-	   ########################################################################
+	########################################################################
+	#  Credits and Thanks! to for the Preliminary Work goes in             #                                            
+	#  i.Maxxx, Maggy, SkinMania, mmark, NFR-DEV-Team, Team-Kraven         #
+	#  ATV-Team, OPD Team and all I have forgotten                         #
+	########################################################################
  -->
-    <output id="0">
-        <resolution xres="1920" yres="1080" bpp="32" />
-    </output>
+	<output id="0">
+	<resolution xres="1920" yres="1080" bpp="32" />
+	</output>
   <!-- External Files FHD -->
-        <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_dev_teams.xml" />
-        <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_plugins.xml" />
+	<include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_dev_teams.xml" />
+	<include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_plugins.xml" />
   <!-- Fonts FHD -->
-    <fonts>
-        <font name="LCD" filename="lcd.ttf" scale="100" />
+	<fonts>
+	<font name="LCD" filename="lcd.ttf" scale="100" />
         <font name="Console" filename="tuxtxt.ttf" scale="100" />
         <font name="Arial" filename="nmsbd.ttf" scale="100" />
         <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1" />
@@ -54,7 +54,7 @@
 	<alias name="Dreamexplorer"             font="Regular" size="28" height="38"/>
 	<alias name="PlayList"                  font="Regular" size="30" height="50"/>	
 	<alias name="MenuList"                  font="Regular" size="30" height="50"/>
-        <alias name="VirtualKeyboard"           font="Regular" size="34" height="45" />
+	<alias name="VirtualKeyboard"           font="Regular" size="34" height="45" />
   </fonts>
 <parameters>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
