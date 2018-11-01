@@ -6,55 +6,55 @@
   <!-- orginal author="stein17" license="You can change the skin as long as the license/author is not deleted -->
   <!-- You are NOT allowed to modify and redistribute OPD-Blue-Line Skin and all graphics -->
   <!--
-       ########################################################################
-	   #  Credits and Thanks! to for the Preliminary Work goes in             #                                                       
+           ########################################################################
+	   #  Credits and Thanks! to for the Preliminary Work goes in             #                                            
 	   #  i.Maxxx, Maggy, SkinMania, mmark, NFR-DEV-Team, Team-Kraven         #
-	   #  ATV-Team, OPD Teamand all I have forgotten                          #          
+	   #  ATV-Team, OPD Team and all I have forgotten                         #
 	   ########################################################################
  -->
-  <output id="0">
-    <resolution xres="1920" yres="1080" bpp="32" />
-  </output>
+    <output id="0">
+        <resolution xres="1920" yres="1080" bpp="32" />
+    </output>
   <!-- External Files FHD -->
-  <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_dev_teams.xml" />
-  <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_plugins.xml" />
-<!-- Fonts FHD -->
-   <fonts>
-    <font name="LCD" filename="lcd.ttf" scale="100" />
-    <font name="Console" filename="tuxtxt.ttf" scale="100" />
-    <font name="Arial" filename="nmsbd.ttf" scale="100" />
-    <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1" />
-    <font name="Regular" filename="/usr/share/enigma2/OPD-Blue-Line/fonts/verdana.ttf" scale="93" />
-	<font filename="/usr/share/enigma2/OPD-Blue-Line/fonts/digi.ttf" name="DIGI" scale="100" />
-	<font filename="/usr/share/enigma2/OPD-Blue-Line/fonts/AdamFont.TTF" name="Adam" scale="100" />
-	  	<alias name="Body"                      font="Regular" size="32" height="50" />
-		<alias name="TextNormal"                font="Regular" size="30" height="50" />
-		<alias name="ChoiceList"                font="Regular" size="32" height="50" />
-		<alias name="FileList"                  font="Regular" size="30" height="50"/>
-		<alias name="FileListMulti"             font="Regular" size="30" height="50"/>
-		<alias name="PluginBrowser0"            font="Regular" size="32" height="76"/>
-		<alias name="PluginBrowser1"            font="Regular" size="22"/>
-		<alias name="ServiceInfo"               font="Regular" size="30" height="45"/>
-		<alias name="SelectionList"             font="Regular" size="30" height="50" />
-		<alias name="PartnerBoxEntryList0"      font="Regular" size="28" height="38"/>
-		<alias name="PartnerBoxEntryList1"      font="Regular" size="28"/>
-		<alias name="PartnerBoxE2TimerMenu0"    font="Regular" size="32" height="114"/>
-		<alias name="PartnerBoxE2TimerMenu1"    font="Regular" size="28"/>
-		<alias name="PartnerBoxBouquetList0"    font="Regular" size="32" height="45"/>
-		<alias name="PartnerBoxBouquetList1"    font="Regular" size="28"/>
-		<alias name="PartnerBoxChannelList0"    font="Regular" size="32" height="114"/>
-		<alias name="PartnerBoxChannelList1"    font="Regular" size="28"/>
-		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
-		<alias name="PiconManagerList"          font="Regular" size="30" height="50"/>
-		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
-		<alias name="VirtualKeyboard"           font="Regular" size="34" height="50"/>
-		<alias name="HelpMenuList"              font="Regular" size="30" height="45"/>
-		<alias name="HelpMenuListExt0"          font="Regular" size="32" height="75"/>
-		<alias name="HelpMenuListExt1"          font="Regular" size="28"/>
-		<alias name="Dreamexplorer"             font="Regular" size="28" height="38"/>
-		<alias name="PlayList"                  font="Regular" size="30" height="50"/>	
-		<alias name="MenuList"                  font="Regular" size="30" height="50"/>
-		<alias name="VirtualKeyboard"           font="Regular" size="34" height="45" />
+        <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_dev_teams.xml" />
+        <include filename="/usr/share/enigma2/OPD-Blue-Line/DEV/skin_plugins.xml" />
+  <!-- Fonts FHD -->
+    <fonts>
+        <font name="LCD" filename="lcd.ttf" scale="100" />
+        <font name="Console" filename="tuxtxt.ttf" scale="100" />
+        <font name="Arial" filename="nmsbd.ttf" scale="100" />
+        <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1" />
+        <font name="Regular" filename="/usr/share/enigma2/OPD-Blue-Line/fonts/verdana.ttf" scale="93" />
+        <font filename="/usr/share/enigma2/OPD-Blue-Line/fonts/digi.ttf" name="DIGI" scale="100" />
+        <font filename="/usr/share/enigma2/OPD-Blue-Line/fonts/AdamFont.TTF" name="Adam" scale="100" />
+	<alias name="Body"                      font="Regular" size="32" height="50" />
+	<alias name="TextNormal"                font="Regular" size="30" height="50" />
+	<alias name="ChoiceList"                font="Regular" size="32" height="50" />
+	<alias name="FileList"                  font="Regular" size="30" height="50"/>
+	<alias name="FileListMulti"             font="Regular" size="30" height="50"/>
+	<alias name="PluginBrowser0"            font="Regular" size="32" height="76"/>
+	<alias name="PluginBrowser1"            font="Regular" size="22"/>
+	<alias name="ServiceInfo"               font="Regular" size="30" height="45"/>
+	<alias name="SelectionList"             font="Regular" size="30" height="50" />
+	<alias name="PartnerBoxEntryList0"      font="Regular" size="28" height="38"/>
+	<alias name="PartnerBoxEntryList1"      font="Regular" size="28"/>
+	<alias name="PartnerBoxE2TimerMenu0"    font="Regular" size="32" height="114"/>
+	<alias name="PartnerBoxE2TimerMenu1"    font="Regular" size="28"/>
+	<alias name="PartnerBoxBouquetList0"    font="Regular" size="32" height="45"/>
+	<alias name="PartnerBoxBouquetList1"    font="Regular" size="28"/>
+	<alias name="PartnerBoxChannelList0"    font="Regular" size="32" height="114"/>
+	<alias name="PartnerBoxChannelList1"    font="Regular" size="28"/>
+	<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
+	<alias name="PiconManagerList"          font="Regular" size="30" height="50"/>
+	<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
+	<alias name="VirtualKeyboard"           font="Regular" size="34" height="50"/>
+	<alias name="HelpMenuList"              font="Regular" size="30" height="45"/>
+	<alias name="HelpMenuListExt0"          font="Regular" size="32" height="75"/>
+	<alias name="HelpMenuListExt1"          font="Regular" size="28"/>
+	<alias name="Dreamexplorer"             font="Regular" size="28" height="38"/>
+	<alias name="PlayList"                  font="Regular" size="30" height="50"/>	
+	<alias name="MenuList"                  font="Regular" size="30" height="50"/>
+        <alias name="VirtualKeyboard"           font="Regular" size="34" height="45" />
   </fonts>
 <parameters>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
@@ -4761,8 +4761,10 @@
 <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_info.png" position="965,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1050,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1135,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
@@ -4881,7 +4883,7 @@
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
 <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
-    <widget source="Frontend" render="Label" position="30,150" size="875,45" zPosition="2" font="Regular;32" backgroundColor="background" foregroundColor="white" halign="center" transparent="1">
+    <widget source="Frontend" render="Label" position="30,130" size="875,45" zPosition="2" font="Regular;32" backgroundColor="background" foregroundColor="white" halign="center" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
     <eLabel name="snr" text="SNR:" position="30,225" size="120,38" font="Regular;32" halign="right" backgroundColor="background" foregroundColor="white" transparent="1" />
@@ -4891,6 +4893,13 @@
     <widget source="Frontend" render="Label" position="660,225" size="120,38" font="Regular;32" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
+	<eLabel name="agc" text="AGC:" position="30,170" size="120,38" font="Regular;32" halign="right" backgroundColor="background" foregroundColor="white" transparent="1" />
+	<widget source="Frontend" render="Progress" position="165,172" size="480,30" borderColor="grey" foregroundColor="trbluelabel" borderWidth="2" transparent="1">
+			<convert type="FrontendInfo">AGC</convert>
+	</widget>
+	<widget source="Frontend" render="Label" position="660,170" size="120,38" font="Regular;32" backgroundColor="background" foregroundColor="white" transparent="1">
+			<convert type="FrontendInfo">AGC</convert>
+</widget>
     <eLabel name="ber" text="BER:" position="30,278" size="120,38" font="Regular;32" halign="right" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget source="Frontend" render="Progress" position="165,285" size="480,30" borderColor="grey" foregroundColor="trbluelabel" borderWidth="2" transparent="1">
       <convert type="FrontendInfo">BER</convert>
