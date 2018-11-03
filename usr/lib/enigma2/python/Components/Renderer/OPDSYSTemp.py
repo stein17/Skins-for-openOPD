@@ -1,4 +1,3 @@
-# Embedded file name: /usr/lib/enigma2/python/Components/Renderer/AXBlueSYSTemp.py
 from Components.VariableText import VariableText
 from enigma import eLabel
 from Renderer import Renderer

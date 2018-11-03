@@ -3740,6 +3740,10 @@
     <widget pixmap="OPD-Blue-Line/icons/ico_rec_on.png" alphatest="blend" position="967,821" render="Pixmap" size="80,26" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="OPD-Blue-Line/icons/iptv.png" position="1380,55" size="20,20" zPosition="3" alphatest="on">
+      <convert type="ClientsStreaming"/>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/icons/ico_rec_off.png" position="967,821" size="80,26" zPosition="2" />
     <widget source="session.CurrentService" render="PositionGauge" position="366,935" size="1202,10" zPosition="6" transparent="1">
       <convert type="ServicePosition">Gauge</convert>
@@ -6045,8 +6049,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
       <convert type="MenuEntryCompare">youtubetv</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/NFR4XBoot1.png" position="981,699" size="256,256">
-      <convert type="MenuEntryCompare">nfr4x_boot</convert>
+    <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/OPDboot.png" position="981,699" size="256,256">
+      <convert type="MenuEntryCompare">opd_boot</convert>
       <convert type="ConditionalShowHide" />
     </widget>
 	    <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/Softcam_Cardserver.png" position="981,699" size="256,256">
