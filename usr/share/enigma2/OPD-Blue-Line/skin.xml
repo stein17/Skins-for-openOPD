@@ -5953,10 +5953,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
       <convert type="MenuEntryCompare">vmc_init_startvmc</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/infopanel.png" position="981,699" size="256,256">
-      <convert type="MenuEntryCompare">Infopanel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget source="menu" render="Pixmap" pixmap="OPD-Blue-Line/icons/menu_mainmenu_openstore.png" position="981,699" size="256,256">
       <convert type="MenuEntryCompare">OpenStore</convert>
       <convert type="ConditionalShowHide" />
@@ -8347,6 +8343,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1053,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
      <ePixmap pixmap="OPD-Blue-Line/icons/menu_scan_blindscan.png" position="981,699" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
+    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+   <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
+  </screen>
+     <!-- StreamingClientsInfo -->
+  <screen name="StreamingClientsInfo" title="Streaming clients info" position="0,0" size="1920,1080" backgroundColor="background" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel text="Streaming clients info" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget name="ScrollLabel" position="30,130" size="855,825" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1053,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+     <ePixmap pixmap="OPD-Blue-Line/icons/menu_scan_blindscan.png" position="981,699" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
+    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
 <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" zPosition="-1" />
   </screen>
