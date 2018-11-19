@@ -3082,11 +3082,11 @@ self.instance.move(ePoint(0,0))
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_menu.png" position="93,1011" size="60,50" alphatest="blend" />
     <widget render="Label" source="caption" position="133,130" size="900,45" font="Regular;35" backgroundColor="Background" foregroundColor="white" halign="left" transparent="1" />
-    <widget render="Label" source="observationpoint" position="1300,130" size="680,130" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" halign="center" />
-    <widget render="Label" source="observationtime" position="1300,216" size="680,130" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" halign="center" />
+    <widget render="Label" source="observationpoint" position="1300,130" size="680,230" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" halign="center" />
+    <widget render="Label" source="observationtime" position="1300,216" size="680,230" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" halign="center" />
     <eLabel font="Regular;30" halign="left" position="133,206" size="900,45" text="Today" backgroundColor="Background" foregroundColor="white" render="Label" transparent="1" />
-    <widget name="currenticon" position="1439,339" zPosition="1" size="230,230" alphatest="blend" />
-    <widget render="Label" source="condition" position="1330,644" size="293,83" font="Regular;40" backgroundColor="Background" foregroundColor="white" transparent="1" zPosition="2" halign="center" />
+    <widget name="currenticon" position="1474,324" zPosition="1" size="230,230" alphatest="blend" />
+    <widget render="Label" source="condition" position="1260,565" size="680,230" font="Regular;40" backgroundColor="Background" foregroundColor="white" transparent="1" zPosition="2" halign="center" />
     <eLabel render="Label" text="Attuale:" position="133,285" size="150,45" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" />
     <widget render="Label" source="currentTemp" position="350,285" size="150,45" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" />
     <widget render="Label" source="feelsliketemp" position="514,285" size="685,45" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" />
@@ -3095,18 +3095,18 @@ self.instance.move(ePoint(0,0))
     <eLabel render="Label" text="Vento:" position="133,435" size="150,45" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" />
     <widget render="Label" source="wind_condition" position="349,435" size="850,45" font="Regular;33" foregroundColor="white" backgroundColor="Background" transparent="1" />
     <widget render="Label" source="humidity" position="133,512" size="450,45" font="Regular;33" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget render="Label" source="weekday2" position="233,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget name="weekday2_icon" position="270,668" zPosition="1" size="83,83" alphatest="blend" />
-    <widget render="Label" source="weekday2_temp" position="233,750" zPosition="1" size="158,105" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget render="Label" source="weekday3" position="413,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget name="weekday3_icon" position="450,668" zPosition="1" size="83,83" alphatest="blend" />
-    <widget render="Label" source="weekday3_temp" position="413,750" zPosition="1" size="158,105" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget render="Label" source="weekday4" position="593,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget name="weekday4_icon" position="630,668" zPosition="1" size="83,83" alphatest="blend" />
-    <widget render="Label" source="weekday4_temp" position="593,750" zPosition="1" size="158,105" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget render="Label" source="weekday5" position="773,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
-    <widget name="weekday5_icon" position="810,668" zPosition="1" size="83,83" alphatest="blend" />
-    <widget render="Label" source="weekday5_temp" position="773,750" zPosition="1" size="158,105" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget render="Label" source="weekday2" position="238,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget name="weekday2_icon" position="270,668" zPosition="1" size="100,100" alphatest="blend" />
+    <widget render="Label" source="weekday2_temp" position="238,765" zPosition="1" size="158,120" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget render="Label" source="weekday3" position="423,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget name="weekday3_icon" position="450,668" zPosition="1" size="100,100" alphatest="blend" />
+    <widget render="Label" source="weekday3_temp" position="413,765" zPosition="1" size="158,120" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget render="Label" source="weekday4" position="603,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget name="weekday4_icon" position="630,668" zPosition="1" size="100,100" alphatest="blend" />
+    <widget render="Label" source="weekday4_temp" position="593,765" zPosition="1" size="158,120" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget render="Label" source="weekday5" position="783,600" zPosition="1" size="158,60" halign="center" valign="center" font="Regular;27" backgroundColor="Background" foregroundColor="white" transparent="1" />
+    <widget name="weekday5_icon" position="810,668" zPosition="1" size="100,100" alphatest="blend" />
+    <widget render="Label" source="weekday5_temp" position="773,765" zPosition="1" size="158,120" halign="center" valign="bottom" font="Regular;24" backgroundColor="Background" foregroundColor="white" transparent="1" />
     <widget render="Label" source="statustext" position="181,1016" zPosition="1" size="1200,36" font="Regular;30" backgroundColor="Background" foregroundColor="white" valign="center" transparent="1" />
   </screen>
   <!-- MSNWeatherPlugin List of Entries FHD-->
