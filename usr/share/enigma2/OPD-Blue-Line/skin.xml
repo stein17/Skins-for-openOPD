@@ -133,11 +133,14 @@
     <color name="blue2" value="#000051c0" />
     <color name="trbluette" value="#3f4cff" />
     <color name="blue3" value="#000069fb" />
+    <color name="lightbluelabel" value="#000040c0" />
+    <color name="darkbluelabel" value="#00002672" />
     <color name="bluelabel" value="#00003399" />
     <color name="bluetitle" value="#0050bbff" />
     <color name="cyan" value="#0000ffff" />
     <color name="cyan1" value="#0000deff" />
     <color name="dark" value="#00303340" />
+    <color name="darkgrey2" value="#00808080" />
     <color name="darkbluelabel" value="#00002672" />
     <color name="darkgrey" value="#00999999" />
     <color name="OE_Background" value="#2c000000" />
@@ -186,7 +189,7 @@
     <color name="ListboxMarkedAndSelectedBackground" color="white" />
     <color name="ListboxMarkedAndSelectedForeground" color="black" />
     <color name="WindowTitleForeground" color="white" />
-    <color name="WindowTitleBackground" color="background" />
+    <color name="WindowTitleBackground" color="background20" />
     <!-- screen border png's -->
     <borderset name="bsWindow">
       <pixmap pos="bpTopLeft" filename="OPD-Blue-Line/window/bs_tl.png" />
@@ -198,7 +201,10 @@
       <pixmap pos="bpBottom" filename="OPD-Blue-Line/window/bs_b.png" />
       <pixmap pos="bpBottomRight" filename="OPD-Blue-Line/window/bs_br.png" />
     </borderset>
-    
+    <borderset name="bsListboxEntry">
+      <pixmap filename="OPD-Blue-Line/line.png" pos="bpTop" />
+      <pixmap filename="OPD-Blue-Line/line.png" pos="bpBottom" />
+    </borderset>
   </windowstyle>
   <!-- Main screen colors (id=1 LCD) FHD -->
   <windowstyle type="skinned" id="1">
@@ -235,7 +241,9 @@
     <eLabel position="396,750" size="1115,2" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
     <eLabel position="398,317" size="1115,2" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
   </screen>
-
+  <!-- Subtitle area FHD -->
+  <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
+  </screen>
   <!-- Scart -->
   <screen name="Scart" position="0,0" size="1920,1080" backgroundColor="transparent">
   </screen>
@@ -244,10 +252,10 @@
     <ePixmap position="0,0" size="100,100" pixmap="OPD-Blue-Line/icons/Mute.png" zPosition="22" />
   </screen>
   <!-- Volumebar FHD -->
-  <screen name="Volume" position="650,60" size="551,140" title="Volume" flags="wfNoBorder" backgroundColor="background30" zPosition="99">
+  <screen name="Volume" position="650,60" size="551,140" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
     <widget name="Volume" position="127,62" size="261,17" zPosition="1" pixmap="OPD-Blue-Line/icons/Volume_bar.png" transparent="1" />
-    <ePixmap position="0,0" size="551,140" zPosition="0" pixmap="OPD-Blue-Line/icons/Volume.png" borderColor="bluelabel" borderWidth="3" alphatest="blend" />
-    <widget font="LCD;90" render="OPDVolume" valign="center" halign="center" foregroundColor="bluelabel" backgroundColor="background" transparent="1" borderColor="white" borderWidth="3" source="global.CurrentTime" position="390,24" size="120,90" zPosition="20" />
+    <ePixmap position="0,0" size="551,140" zPosition="0" pixmap="OPD-Blue-Line/icons/Volume.png" transparent="0" alphatest="blend" />
+    <widget font="LCD;90" render="OPDVolume" valign="center" halign="center" foregroundColor="bluetitle" backgroundColor="background" transparent="1" borderColor="backgroundBlue" borderWidth="3" source="global.CurrentTime" position="390,24" size="120,90" zPosition="20" />
   </screen>
   <!-- Unhandled key FHD -->
   <screen name="UnhandledKey" position="102,102" size="100,100" title="UnhandledKey" zPosition="101" flags="wfNoBorder" backgroundColor="transparent">
@@ -1252,7 +1260,27 @@
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="list" position="10,110" size="1220,880" scrollbarMode="showOnDemand" transparent="1" zPosition="1" serviceItemHeight="60" serviceNumberFont="Regular;38" serviceNameFont="Regular;43" serviceInfoFont="Regular;37" foregroundColor="white" foregroundColorSelected="cyan1" backgroundColor="black" backgroundColorSelected="backgroundBlue" foregroundColorMarkedSelected="yellow" colorServiceDescription="cyan1" colorServiceDescriptionSelected="white" colorServiceRecording="red" foregroundColorServiceNotAvail="dark" colorEventProgressbar="bluelabel" colorEventProgressbarBorder="foregroundClock" colorEventProgressbarBorderSelected="blue" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="80" progressPercentWidth="90" progressbarHeight="12" />
+   <widget name="list" position="10,110" size="1220,880" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
+  serviceItemHeight="40" 
+  serviceNumberFont="Regular;38" 
+  serviceNameFont="Regular;43" 
+  serviceInfoFont="Regular;37" 
+  fieldMargins="8" 
+  itemsDistances="8" 
+  progressBarWidth="100" 
+  progressbarHeight="12" 
+  foregroundColor="white" 
+  foregroundColorSelected="cyan1" 
+  backgroundColor="black" 
+  backgroundColorSelected="backgroundBlue" 
+  foregroundColorMarkedSelected="yellow" 
+  colorServiceDescription="cyan1" 
+  colorServiceDescriptionSelected="white" 
+  colorServiceRecording="red" 
+  foregroundColorServiceNotAvail="dark" 
+  colorEventProgressbar="bluelabel" 
+  colorEventProgressbarBorder="foregroundClock" 
+  colorEventProgressbarBorderSelected="blue" /> 
     <widget source="ServiceEvent" render="Picon" position="1663,143" size="220,132" zPosition="1" alphatest="blend" transparent="1">
       <convert type="OPDRefString">ServicelistRef</convert>
     </widget>
@@ -3438,8 +3466,6 @@
      <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-    
-
  <widget source="menu" render="Listbox" position="30,130" size="1860,840" scrollbarMode="showOnDemand" foregroundColor="bluetitle" foregroundColorSelected="white" backgroundColor="background" backgroundColorSelected="bluelabel" transparent="0" zPosition="0">
     <convert type="TemplatedMultiContent">{"template": [
 						MultiContentEntryText(pos = (150, 5), size = (650, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, ),
@@ -4075,6 +4101,7 @@
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <eLabel text="Its recommend to create a Fullbackup before update!" position="70,821" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
     <ePixmap position="976,697" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" alphatest="blend" />
+    <ePixmap position="976,697" size="256,256" pixmap="OPD-Blue-Line/icons/update_menu.png" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
   <!-- Software Manager Setup FHD -->
@@ -4280,10 +4307,10 @@
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
-    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1212,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
   </screen>
   <!-- Image Backup FHD -->
@@ -4664,24 +4691,36 @@
   </screen>
   <!-- Skin Selector FHD -->
 <screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
-  <eLabel text="Skin Selector" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
-  <widget name="SkinList" position="19,99" size="900,430" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
-  <widget name="Preview" position="15,623" size="630,354" alphatest="blend" zPosition="2" />
-  <widget source="introduction" render="Label" position="380,1000" size="900,70" font="Regular; 27" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
-  <widget source="global.CurrentTime" render="Label" position="562,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-    <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
-  </widget>
-  <ePixmap position="657,621" size="613,356" zPosition="2" pixmap="OPD-Blue-Line/DEV/Blue Line Logo7.png" transparent="1" alphatest="blend" />
-  <eLabel text="Preview" position="18,547" size="480,70" font="Regular;40" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="cyan1" />
-  <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-  <eLabel position="19,538" size="1250,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  
-  <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="312,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1150,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-  <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-  <ePixmap position="961,203" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
-</screen>
+    <eLabel text="Skin Selector" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <widget name="SkinList" position="30,100" size="900,430" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="Preview" position="1275,232" size="620,350" alphatest="blend" zPosition="2" />
+    <widget source="introduction" render="Label" position="380,1000" size="900,70" font="Regular; 27" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
+    </widget>
+<eLabel text="Skin adjustments" position="30,573" size="600,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="cyan1" />
+    <ePixmap position="1275,600" size="300,169" zPosition="2" pixmap="OPD-Blue-Line/DEV/Channel-Selection-2-Felder.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1275,800" size="300,169" zPosition="2" pixmap="OPD-Blue-Line/DEV/Infobar-FlipClock.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1593,600" size="300,169" zPosition="2" pixmap="OPD-Blue-Line/DEV/Channel-Selection-3-Felder.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1591,800" size="300,169" zPosition="2" pixmap="OPD-Blue-Line/DEV/SecondInfoBar-Horizontal.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/DEV/Blue_Line_logo_mini.png" position="1262,130" size="124,74" zPosition="10" transparent="1" alphatest="blend" />
+    <eLabel position="1275,232" size="620,350" backgroundColor="background" zPosition="1" />
+    <eLabel text="For less transparency in the user interface, in /usr/share/enigma2/OPD-Blue-Line/DEV/ diePixmaps: bg1280.png and bg1920.png copy and in /usr/share/enigma2/OPD-Blue-Line/menu insert. -  User interface reboot." position="30,807" size="1190,160" zPosition="2" font="Regular; 30" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
+    <eLabel text="Preview" position="1413,130" size="480,70" font="Regular;40" halign="left" valign="center" backgroundColor="bluelabel" transparent="1" zPosition="2" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,1" zPosition="-20" size="1920,1080" />
+ <eLabel name="vertikalline" position="30,619" size="400,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />   
+<eLabel name="vertikalline" position="31,532" size="1200,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <eLabel name="vertikalline" position="30,800" size="400,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <eLabel name="vertikalline" position="1251,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <eLabel name="vertikalline" position="1262,220" size="649,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="312,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1323,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+    <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap position="961,203" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
+    <eLabel text="Change the transparency " position="30,754" size="600,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="cyan1" />
+<eLabel text="This skin can in   Menü -&gt; settings -&gt; Operation and interface, to be customized. There you will also find information about setting the weather in the second Infobar." position="30,635" size="1220,100" zPosition="2" font="Regular; 30" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" />
+  </screen>
   <!-- User Positioner Interface FHD -->
   <!-- ServiceInfo FHD -->
   <screen name="ServiceInfoSimple" position="0,0" size="1920,1080" title="Service Info" flags="wfNoBorder" backgroundColor="transparent">
