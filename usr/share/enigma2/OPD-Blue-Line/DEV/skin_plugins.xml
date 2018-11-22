@@ -8042,12 +8042,12 @@ transparent="1" />
  <screen name="YahooWeatherList" title="Yahoo Weather list" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <eLabel backgroundColor="black" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15" />
     <eLabel backgroundColor="black" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
-    <eLabel name="" foregroundColor="white" backgroundColor="lightblue" position="170,130" size="1300,2" zPosition="-9" />
+    <eLabel name="" foregroundColor="white" backgroundColor="#0020fc" position="170,130" size="1300,2" zPosition="-9" />
     <!-- Widget -->
     <widget name="titleheader" font="Regular; 34" backgroundColor="black" foregroundColor="white" position="170,73" size="1300,50" transparent="1" />
     <widget name="myMenu" itemHeight="50" font="Regular; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1" />
     <!-- Buttons-->
-    <eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9" />
+    <eLabel backgroundColor="#0000CC" name="" position="170,945" size="1300,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_red.png" position="170,960" size="40,40" />
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_green.png" position="500,960" size="40,40" />
     <widget name="Key_Red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1" />
@@ -8058,14 +8058,14 @@ transparent="1" />
 
 
   <screen name="YahooWeather" title="" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15" />
+    <eLabel backgroundColor="black" name="" position="30,center" size="1830,940" zPosition="-15" />
     <eLabel backgroundColor="white" name="" position="790,945" size="1040,2" zPosition="-9" />
     <eLabel backgroundColor="black" foregroundColor="white" name="" position="65,center" size="680,1080" zPosition="-11" valign="center" />
-    <eLabel backgroundColor="lightblue" name="" position="790,142" size="550,2" zPosition="-9" foregroundColor="un5678a4" />
-    <eLabel backgroundColor="lightblue" name="" position="80,142" size="650,2" zPosition="-9" foregroundColor="un5678a4" />
+    <eLabel backgroundColor="white" name="" position="790,142" size="550,2" zPosition="-9" foregroundColor="un5678a4" />
+    <eLabel backgroundColor="white" name="" position="80,142" size="650,2" zPosition="-9" foregroundColor="un5678a4" />
     <!-- Widget -->
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/Wettericons/yh.png" position="676,86" size="55,55" transparent="1" zPosition="10" />
-    <widget name="lab1b" font="Regular; 34" backgroundColor="OE_NewBg2" position="80,85" size="455,50" transparent="1" foregroundColor="white" />
+    <widget name="lab1b" font="Regular; 34" backgroundColor="white" position="80,85" size="455,50" transparent="1" foregroundColor="white" />
     <!-- UpDate Meteo -->
     <widget name="lab3" font="Regular; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="1130,958" size="700,45" zPosition="3" transparent="1" halign="right" />
     <!-- BigIcon Weather -->
@@ -8082,20 +8082,20 @@ transparent="1" />
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/Wettericons/wind.png" position="80,400" size="56,75" transparent="1" zPosition="10" />
     <widget name="lab12b" font="Regular; 28" foregroundColor="OE_Foreground" backgroundColor="OE_Background" position="160,415" halign="left" size="570,45" zPosition="1" transparent="1" />
     <!-- Humidity -->
-    <widget name="lab7" position="80,515" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab7b" position="330,515" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_NewBg2" valign="top" transparent="1" />
+    <widget name="lab7" position="80,515" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab7b" position="330,515" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="white" valign="top" transparent="1" />
     <!-- Pressure -->
-    <widget name="lab8" position="80,565" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab8b" position="330,565" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab8" position="80,565" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab8b" position="330,565" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="white" transparent="1" />
     <!-- Visibility -->
-    <widget name="lab9" position="80,615" halign="left" size="250,45" zPosition="1" font="Regular; 30" valign="top" backgroundColor="OE_NewBg2" transparent="1" foregroundColor="white" />
-    <widget name="lab9b" position="330,615" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab9" position="80,615" halign="left" size="250,45" zPosition="1" font="Regular; 30" valign="top" backgroundColor="white" transparent="1" foregroundColor="white" />
+    <widget name="lab9b" position="330,615" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="white" transparent="1" />
     <!-- Sunrise -->
-    <widget name="lab10" position="80,665" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab10b" position="330,665" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab10" position="80,665" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab10b" position="330,665" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="white" transparent="1" />
     <!-- Sunset -->
-    <widget name="lab11" position="80,715" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab11b" position="330,715" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab11" position="80,715" halign="left" size="250,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab11b" position="330,715" halign="left" size="360,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="white" transparent="1" />
     <!-- Data Forecast-->
     <widget name="5day" position="790,85" size="650,50" font="Regular; 34" backgroundColor="dark" transparent="1" />
     <!-- ForeCast 1Day Pic -->
@@ -8105,13 +8105,13 @@ transparent="1" />
     <!-- ForeCast 1Day Description -->
     <widget name="lab16" position="890,225" halign="left" size="630,45" zPosition="1" font="Regular; 30" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 1Day Temp Heigh -->
-    <widget name="lab14" position="890,270" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
-    <widget name="lab14b" position="983,270" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab14" position="890,270" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab14b" position="983,270" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 1Day Temp Low -->
-    <widget name="lab15" position="1093,270" halign="right" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab15" position="1093,270" halign="right" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <widget name="lab15b" position="1198,270" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 1Day Date -->
-    <widget name="daydate0" position="1300,185" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="daydate0" position="1300,185" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="790,321" size="730,2" zPosition="-9" />
     <!-- ForeCast 2Day Pic -->
     <widget name="lab22" position="790,388" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
@@ -8120,13 +8120,13 @@ transparent="1" />
     <!-- ForeCast 2Day Description -->
     <widget name="lab21" position="890,378" halign="left" size="630,45" zPosition="1" font="Regular; 30" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 2Day Temp Heigh -->
-    <widget name="lab19" position="890,423" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
-    <widget name="lab19b" position="983,423" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab19" position="890,423" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab19b" position="983,423" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 2Day Temp Low -->
-    <widget name="lab20" position="1093,423" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab20" position="1093,423" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <widget name="lab20b" position="1198,423" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 2Day Date -->
-    <widget name="daydate1" position="1300,338" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="daydate1" position="1300,338" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="790,474" size="730,2" zPosition="-9" />
     <!-- ForeCast 3Day Pic -->
     <widget name="3lab22" position="790,541" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
@@ -8136,12 +8136,12 @@ transparent="1" />
     <widget name="3lab21" position="890,531" halign="left" size="630,45" zPosition="1" font="Regular; 30" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 3Day Temp Heigh -->
     <widget name="3lab19" position="890,576" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="OE_Background" backgroundColor="OE_Background" transparent="1" />
-    <widget name="3lab19b" position="983,576" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_Background" transparent="1" />
+    <widget name="3lab19b" position="983,576" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 3Day Temp Low -->
-    <widget name="3lab20" position="1093,576" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="3lab20" position="1093,576" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <widget name="3lab20b" position="1198,576" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 3Day Date -->
-    <widget name="daydate2" position="1300,491" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="daydate2" position="1300,491" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="790,627" size="730,2" zPosition="-9" />
     <!-- ForeCast 4Day Pic -->
     <widget name="4lab22" position="790,694" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
@@ -8150,13 +8150,13 @@ transparent="1" />
     <!-- ForeCast 4Day Description -->
     <widget name="4lab21" position="890,684" halign="left" size="630,45" zPosition="1" font="Regular; 30" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 4Day Temp Heigh -->
-    <widget name="4lab19" position="890,729" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
-    <widget name="4lab19b" position="983,729" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_Background" transparent="1" />
+    <widget name="4lab19" position="890,729" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
+    <widget name="4lab19b" position="983,729" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 4Day Temp Low -->
-    <widget name="4lab20" position="1093,729" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="4lab20" position="1093,729" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <widget name="4lab20b" position="1198,729" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 4Day Date -->
-    <widget name="daydate3" position="1300,644" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="daydate3" position="1300,644" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="790,780" size="730,2" zPosition="-9" />
     <!-- ForeCast 5Day Pic -->
     <widget name="5lab22" position="790,847" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
@@ -8166,22 +8166,22 @@ transparent="1" />
     <widget name="5lab21" position="891,837" halign="left" size="630,45" zPosition="1" font="Regular; 30" foregroundColor="yellow" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 5Day Temp Heigh -->
     <widget name="5lab19" position="890,882" halign="left" size="93,45" zPosition="1" font="Regular; 30" foregroundColor="OE_Background" backgroundColor="OE_Background" transparent="1" />
-    <widget name="5lab19b" position="983,882" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="greenlight" backgroundColor="OE_Background" transparent="1" />
+    <widget name="5lab19b" position="983,882" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 5Day Temp Low -->
-    <widget name="5lab20" position="1093,882" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="5lab20" position="1093,882" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <widget name="5lab20b" position="1198,882" halign="left" size="100,45" zPosition="1" font="Regular; 30" foregroundColor="lightblue" backgroundColor="OE_Background" transparent="1" />
     <!-- ForeCast 5Day Date -->
-    <widget name="daydate4" position="1301,797" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="darkgrey" backgroundColor="OE_Background" transparent="1" />
+    <widget name="daydate4" position="1301,797" valign="center" halign="right" size="220,40" zPosition="1" font="Regular; 27" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <!-- Region -->
-    <widget name="lab26" position="80,900" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab26b" position="260,900" halign="left" size="470,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab26" position="80,900" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab26b" position="260,900" halign="left" size="470,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
     <!-- Country -->
-    <widget name="lab27" position="80,950" halign="left" size="650,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab27" position="80,950" halign="left" size="650,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
     <!-- Latitude -->
-    <widget name="lab24" position="80,800" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
-    <widget name="lab24b" position="260,800" halign="left" size="300,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab24" position="80,800" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
+    <widget name="lab24b" position="260,800" halign="left" size="300,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
     <!-- Longitude -->
-    <widget name="lab25" position="80,850" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_NewBg2" transparent="1" />
+    <widget name="lab25" position="80,850" halign="left" size="180,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="white" transparent="1" />
     <widget name="lab25b" position="260,850" halign="left" size="300,45" zPosition="1" font="Regular; 30" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
     <!-- Button - Bar -->
     <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_red.png" position="790,960" size="40,40" />
