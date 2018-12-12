@@ -131,6 +131,7 @@
     <color name="black" value="#00000000" />
     <color name="blue" value="#000066cc" />
     <color name="blue2" value="#000051c0" />
+    <color name="ltbluette"   value="#49bbff" />
     <color name="Yahoo" value="#0000CC" />
     <color name="trbluette" value="#3f4cff" />
     <color name="blue3" value="#000069fb" />
@@ -982,8 +983,8 @@
     <convert type="ServiceInfo">SubservicesAvailable</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <eLabel text="SNR :" position="862,1030" size="105,36" halign="right" font="Regular; 30" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
-  <widget source="session.FrontendStatus" render="Label" position="970,1030" size="100,36" font="Regular; 30" backgroundColor="black" transparent="1" halign="left" foregroundColor="cyan1">
+  <eLabel text="SNR:" position="902,1030" size="105,36" halign="right" font="Regular; 30" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+  <widget source="session.FrontendStatus" render="Label" position="1010,1030" size="100,36" font="Regular; 30" backgroundColor="black" transparent="1" halign="left" foregroundColor="cyan1">
     <convert type="OPDFrontendInfo">SNR</convert>
   </widget>
   <eLabel text="A" position="103,1030" zPosition="2" size="26,34" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
@@ -1085,6 +1086,22 @@
     <convert type="OPDValueRange">8,8</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+     <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/emu.png" position="832,1035" size="70,30" zPosition="3" alphatest="blend" transparent="1">
+    <convert type="OPDcaid">Emu</convert>
+      <convert type="ConditionalShowHide" />
+      </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
+      <convert type="OPDcaid">Net</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/crd.png" position="832,1035" size="70,30" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="OPDcaid">Crd</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/fta.png" position="832,1035" size="70,30" zPosition="2" alphatest="blend" transparent="1">
+      <convert type="OPDcaid">Fta</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   <eLabel text="Tuner:" position="0,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
   <eLabel text="Crypt:" position="401,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
   <widget noWrap="1" backgroundColor="background20" foregroundColor="red" font="Regular; 27" render="Label" position="420,18" size="90,30" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
@@ -1190,12 +1207,14 @@
   <widget source="session.CurrentService" render="OPDRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="1407,945" size="490,30" font="Regular; 24" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" zPosition="1">
     <convert type="OPDServiceInfo">HasHBBTV</convert>
   </widget>
-  <widget source="global.CurrentTime" render="OPDSYSTemp" position="1407,902" size="80,30" font="Regular;24" halign="left" valign="center" backgroundColor="background" foregroundColor="cyan1" noWrap="1" transparent="1" zPosition="3" />
-  <widget source="session.CurrentService" render="Label" position="1392,859" size="80,30" zPosition="1" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" foregroundColor="cyan1">
-    <convert type="OPDCPUInfo">$0</convert>
+    <widget source="session.CurrentService" render="Label" position="1407,902" size="200,30" font="Regular;24" zPosition="6" backgroundColor="background20" transparent="0" foregroundColor="cyan1" text="Temperature" noWrap="1">
+      <convert type="OPDTemp">Temperature</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1392,859" size="600,30" zPosition="1" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" foregroundColor="cyan1">
+   <convert type="OPDCPUInfo">$0 (Core #1: $1, Core #2: $2)</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" font="Regular; 24" position="1403,745" size="515,60" halign="left" zPosition="50" backgroundColor="black" transparent="1" noWrap="1" valign="center" foregroundColor="cyan1">
-    <convert type="CryptoInfo">VerboseInfo</convert>
+  <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <eLabel text="Provider:" position="1253,678" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
@@ -3335,23 +3354,34 @@
       <convert type="MenuEntryCompare">service_info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="global.CurrentTime" render="OPDSYSTemp" position="192,674" size="90,45" font="Regular;32" halign="left" valign="bottom" noWrap="1" transparent="1" zPosition="3" />
-    <widget source="session.CurrentService" render="Label" position="30,908" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0">
+     <ePixmap pixmap="OPD-Blue-Line/icons/fanspeed.png" position="30,626" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,628" size="835,45" font="Regular;32" zPosition="6" backgroundColor="background20" transparent="0" foregroundColor="white" text="Temperature" noWrap="1">
+      <convert type="OPDTemp">FanInfo</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/icons/cputemp.png" position="44,677" zPosition="3" size="14,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,674" size="835,45" font="Regular;32" zPosition="6" backgroundColor="background20" transparent="0" foregroundColor="white" text="Temperature" noWrap="1">
+      <convert type="OPDTemp">Temperature</convert>
+    </widget>
+    <ePixmap pixmap="OPD-Blue-Line/icons/cpuload.png" position="30,911" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,908" size="835,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0">
       <convert type="OPDCPUInfo">CPU Utilization:$0 Core 1:$1  Core 2:$2</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,767" size="880,45" zPosition="1" font="Regular; 30" halign="left" valign="center" transparant="1">
+    <ePixmap pixmap="OPD-Blue-Line/icons/flashspace.png" position="30,770" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,767" size="835,45" zPosition="1" font="Regular; 30" halign="left" valign="center" transparant="1">
       <convert type="OPDReceiverInfo">FLASHINFO</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,814" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparant="1">
+    <ePixmap pixmap="OPD-Blue-Line/icons/ramspace.png" position="30,817" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,814" size="835,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparant="1">
       <convert type="OPDReceiverInfo">MemTotal</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,861" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0">
+    <ePixmap pixmap="OPD-Blue-Line/icons/hddspace.png" position="30,864" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,861" size="835,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0">
       <convert type="OPDReceiverInfo">HddInfo,Long</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,720" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="white">
+    <ePixmap pixmap="OPD-Blue-Line/icons/usbspace.png" position="30,723" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="75,720" size="835,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0" foregroundColor="white">
       <convert type="OPDReceiverInfo">UsbInfo,Long</convert>
     </widget>
-    <eLabel text="SysTemp:" position="30,674" size="160,45" font="Regular; 32" halign="left" valign="bottom" noWrap="1" transparent="1" zPosition="2" />
   </screen>
   <!-- Info Devices FHD -->
 <screen name="Devices" position="0,0" size="1920,1080" title="Device Information" flags="wfNoBorder" backgroundColor="transparent">
@@ -6857,8 +6887,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <ePixmap pixmap="OPD-Blue-Line/DEV/logo_opendroid.png" position="0,99" size="1275,160" zPosition="10" transparent="1" alphatest="blend" />
   <ePixmap position="1059,373" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
   <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="2,0" zPosition="-20" size="1280,1080" />
-    <widget source="lab2" render="Label" position="25,227" size="900,40" font="Replacement; 36" backgroundColor="black" foregroundColor="blue" transparent="1" zPosition="1" />
-    <widget source="lab3" render="Label" position="25,271" size="900,40" font="Replacement; 36" backgroundColor="black" foregroundColor="blue" transparent="1" zPosition="1" />
   <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
   <widget name="AboutScrollLabel" position="24,279" size="1030,700" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" font="Regular;34" />
   <eLabel name="vertikalline" position="26,273" size="1230,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="5" />
@@ -7000,7 +7028,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel name="vertikalline" position="985,131" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <eLabel name="vertikalline" position="1289,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap position="1034,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-    <eLabel text="Softcam Selection" position="300,110" size="700,50" font="Regular; 34" halign="left" valign="center" foregroundColor="greenlight" backgroundColor="black" transparent="1" zPosition="1" />
+    <eLabel text="Softcam Selection" position="300,110" size="700,50" font="Regular; 34" halign="left" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="1" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -7010,7 +7038,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
     <ePixmap position="1243,1011" size="60,50" zPosition="10" pixmap="OPD-Blue-Line/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <eLabel text="Setup Softcam" position="1280,1019" size="240,70" font="Regular; 27" halign="center" backgroundColor="dark" transparent="1" />
+    <eLabel text="Setup Softcam" position="1280,1019" size="240,70" font="Regular; 27" halign="center" backgroundColor="yellow" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/icons/Softcam_Cardserver.png" position="20,106" size="256,256" zPosition="2" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/icons/menu_information_device.png" position="21,387" size="256,256" zPosition="2" alphatest="blend" />
     <ePixmap position="1009,695" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/opd_icon.png" transparent="1" />
@@ -7020,105 +7048,72 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="actifcam2" position="300,319" size="670,30" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
     <widget font="Regular; 36" name="camcount" position="922,25" size="160,50" />
     <!-- is crypted ? -->
-    <widget name="lb_channel" position="300,387" size="730,40" font="Regular;35" zPosition="2" foregroundColor="green" transparent="1" />
-    <widget name="lb_provider" position="300,439" size="730,40" font="Regular;35" zPosition="2" transparent="1" foregroundColor="green" />
-    <widget name="lb_aspectratio" position="300,494" size="730,40" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
-    <widget name="lb_videosize" position="300,545" size="400,40" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
+    <widget name="lb_channel" position="300,387" size="730,100" font="Regular;35" zPosition="2" foregroundColor="green" transparent="1" />
+    <widget name="lb_provider" position="300,439" size="730,100" font="Regular;35" zPosition="2" transparent="1" foregroundColor="green" />
+    <widget name="lb_videosize" position="300,494" size="730,100" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
+    <widget name="lb_aspectratio" position="300,545" size="730,100" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
     <widget name="ecminfo" position="300,630" size="730,350" font="Regular; 28" zPosition="2" foregroundColor="cyan1" transparent="1" />
     <widget name="list" position="73,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" transparent="1" zPosition="2" />
-    <widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="cyan1" transparent="1" zPosition="1" />
-    <eLabel text="\nS\nE\nR\nV\nI\nC\nE\n" position="1318,108" size="34,250" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="red" foregroundColor="white" borderWidth="2" borderColor="black" />
-    <eLabel text="VPID" position="1352,108" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="green" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1421,108" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="green" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %vpid</convert>
+    <widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="ltbluette" transparent="1" zPosition="1" />
+   <eLabel position="1295,215" size="800,750" backgroundColor="background" zPosition="-10" />
+   <ePixmap position="1295,305" size="70,70" zPosition="1" pixmap="OPD-Blue-Line/icons/itimer.png" alphatest="blend" />
+   <widget font="Regular; 21" backgroundColor="black" halign="left" position="1370,340" render="Label" size="600,25" source="session.CurrentService" transparent="1" foregroundColor="yellow" zPosition="6">
+			<convert type="BoxInfo">Uptime</convert>
+   </widget>
+    <ePixmap pixmap="OPD-Blue-Line/icons/fan1.png" position="1295,225" zPosition="3" size="70,70" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1370,257" size="600,25" font="Regular; 26" zPosition="6" foregroundColor="yellow" transparent="0" text="HDDTemp" noWrap="1">
+      <convert type="OPDTemp">FanInfo</convert>
     </widget>
-    <eLabel text="APID" position="1352,140" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="blue" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1422,140" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="blue" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %apid</convert>
+   <ePixmap position="1295,385" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/cpu_1.png" alphatest="blend" />
+   <widget font="Regular; 21" backgroundColor="black" halign="left" position="1370,410" render="Label" size="600,25" source="session.CurrentService" transparent="1" foregroundColor="yellow" zPosition="6">
+			<convert type="OPDTemp">Temperature</convert>
+   </widget>
+
+   <ePixmap position="1295,469" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/cpu_1.png" alphatest="blend" />
+   <widget source="session.Event_Now" render="Progress" position="1370,479" size="527,12" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="CpuUsage">$0</convert>
+   </widget>
+   <widget source="session.CurrentService" render="Label" position="1370,499" size="600,40" font="Regular; 21" halign="left" valign="center" transparent="0" zPosition="6" foregroundColor="yellow" backgroundColor="black">
+			<convert type="CpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+   </widget>
+   <ePixmap position="1295,549" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/ram_1.png" alphatest="blend" />
+   <widget source="session.Event_Now" render="Progress" position="1370,559" size="527,12" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">MemTotal</convert>
+   </widget>
+   <widget source="session.CurrentService" render="Label" zPosition="6" position="1370,579" size="600,40" halign="left" valign="center" font="Regular; 21" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">MemTotal</convert>
     </widget>
-    <eLabel text="PCR" position="1352,171" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1423,171" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="red" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %pcrpid</convert>
+    <ePixmap position="1295,629" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/swap_1.png" alphatest="blend" />
+    <widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="black" position="1370,639" size="527,12" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">SwapTotal</convert>
     </widget>
-    <eLabel text="ONID" position="1352,200" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="orange" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1423,200" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="orange" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %onid</convert>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1370,659" size="600,30" halign="left" valign="center" font="Regular; 21" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">SwapTotal</convert>
     </widget>
-    <eLabel text="TSID" position="1352,231" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" noWrap="1" borderWidth="2" foregroundColor="greenlight" />
-    <widget font="Regular; 28" position="1422,231" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" borderWidth="2" foregroundColor="greenlight">
-      <convert type="MyServiceInfoEX">: %tsid</convert>
+    <ePixmap position="1295,709" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/flash1.png" alphatest="blend" />
+    <widget source="session.Event_Now" render="Progress" position="1370,719" size="527,12" foregroundColor="ltbluette" backgroundColor="black" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">FleshInfo</convert>
     </widget>
-    <eLabel text="SID" position="1352,264" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="yellow" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1422,264" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="yellow" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %sid</convert>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1370,739" size="600,40" halign="left" valign="center" font="Regular; 21" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">Flesh</convert>
     </widget>
-    <eLabel text="PMT" position="1352,296" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="grey" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1422,296" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="grey" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %pmtpid</convert>
+    <ePixmap position="1295,790" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/hdd_1.png" alphatest="blend" />
+    <widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="black" position="1370,800" size="527,12" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">HddInfo</convert>
     </widget>
-    <eLabel text="TXT" position="1352,328" size="70,30" font="Regular; 28" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
-    <widget font="Regular; 28" position="1422,328" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" transparent="1" foregroundColor="red" borderWidth="2">
-      <convert type="MyServiceInfoEX">: %txtpid</convert>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1370,820" size="600,40" halign="left" valign="center" font="Regular; 21" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">HddInfo</convert>
     </widget>
-    <eLabel position="1320,370" size="370,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="1" />
-    <eLabel text="\nC\nR\nY\nP\nT\nO\n" position="1318,385" size="34,250" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="green" foregroundColor="white" borderWidth="2" borderColor="black" />
-    <widget font="Regular; 28" foregroundColor="green" halign="left" position="1356,386" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Emu</convert>
+    <ePixmap position="1295,882" zPosition="1" size="70,70" pixmap="OPD-Blue-Line/icons/usb_1.png" alphatest="blend" />
+    <widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="black" position="1370,892" size="527,12" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">UsbInfo</convert>
     </widget>
-    <widget font="Regular; 28" foregroundColor="blue" halign="left" position="1356,416" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Address</convert>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1370,909" size="600,40" halign="left" valign="center" font="Regular; 21" transparent="0" foregroundColor="yellow" backgroundColor="black">
+		  <convert type="pliLayoutInfo">UsbInfo</convert>
     </widget>
-    <widget font="Regular; 28" foregroundColor="red" halign="left" position="1356,447" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Hops</convert>
-    </widget>
-    <widget font="Regular; 28" foregroundColor="orange" halign="left" position="1355,479" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">System</convert>
-    </widget>
-    <widget font="Regular; 28" halign="left" position="1356,511" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2" noWrap="1" foregroundColor="greenlight">
-      <convert type="OPDEmuInfo">Caid</convert>
-    </widget>
-    <widget font="Regular; 28" foregroundColor="yellow" halign="left" position="1356,544" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Provid</convert>
-    </widget>
-    <widget font="Regular; 28" foregroundColor="grey" halign="left" position="1356,575" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Ecmpid</convert>
-    </widget>
-    <widget font="Regular; 28" foregroundColor="red" halign="left" position="1356,605" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
-      <convert type="OPDEmuInfo">Ecmtime</convert>
-    </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="FTA\nService" position="1359,391" size="320,239" zPosition="3" transparent="0" foregroundColor="orange" font="Regular; 60" borderWidth="3" borderColor="black" halign="center" valign="center">
-      <convert type="MyServiceInfoEX">IsFta</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="\nS\nY\nS\nT\nE\nM\n" position="1318,670" size="34,270" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="blue" foregroundColor="white" borderWidth="2" borderColor="black" />
-    <eLabel position="1324,655" size="410,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="1355,673" size="380,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="green" borderWidth="2">
-      <convert type="CpuUsage">Global CPU Use: $0</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1356,707" size="430,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="blue" borderWidth="2">
-      <convert type="CpuUsage">Core #1: $1  -  Core #2: $2</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1356,741" size="380,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="red" borderWidth="2">
-      <convert type="OPDEmuInfo">Temp</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1355,774" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" noWrap="0" foregroundColor="orange" borderWidth="2">
-      <convert type="pliLayoutInfo">FlashInfo,Short</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1356,808" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" borderWidth="2" foregroundColor="greenlight">
-      <convert type="pliLayoutInfo">MemTotal,Short</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1356,844" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" noWrap="0" foregroundColor="yellow" borderWidth="2">
-      <convert type="pliLayoutInfo">HddInfo,Short</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1356,878" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" noWrap="0" foregroundColor="grey" borderWidth="2">
-      <convert type="pliLayoutInfo">UsbInfo,Short</convert>
-    </widget>
-    <widget font="Regular; 28" halign="left" position="1358,913" render="Label" size="555,30" source="session.CurrentService" transparent="1" foregroundColor="green">
-      <convert type="BoxInfo">Uptime</convert>
-    </widget>
-  </screen>
-  <!-- SoftCam Panel Install -->
-  <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="Install Softcams" flags="wfNoBorder" backgroundColor="transparent">
+    </screen>
+    <!-- SoftCam Panel Install -->
+    <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="Install Softcams" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>

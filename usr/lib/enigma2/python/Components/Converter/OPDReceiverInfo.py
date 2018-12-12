@@ -2,13 +2,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Poll import Poll
 from os import popen, statvfs
-SIZE_UNITS = ['B',
- 'KB',
- 'MB',
- 'GB',
- 'TB',
- 'PB',
- 'EB']
+SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
 
 class OPDReceiverInfo(Poll, Converter):
     HDDTEMP = 0
@@ -148,12 +142,12 @@ class OPDReceiverInfo(Poll, Converter):
          0]
         try:
             check = 0
-            fd = open('/proc/meminfo')
+            fd = open("/proc/meminfo")
             for line in fd:
-                if value + 'Total' in line:
+                if value + "Total" in line:
                     check += 1
                     result[0] = int(line.split()[1]) * 1024
-                elif value + 'Free' in line:
+                elif value + "Free" in line:
                     check += 1
                     result[2] = int(line.split()[1]) * 1024
                 if check > 1:
@@ -172,7 +166,7 @@ class OPDReceiverInfo(Poll, Converter):
 
         def isMountPoint():
             try:
-                fd = open('/proc/mounts', 'r')
+                fd = open("/proc/mounts", "r")
                 for line in fd:
                     l = line.split()
                     if len(l) > 1 and l[1] == path:
@@ -204,17 +198,17 @@ class OPDReceiverInfo(Poll, Converter):
     def getSizeStr(self, value, u = 0):
         fractal = 0
         if value >= 1024:
-            fmt = '%(size)u.%(frac)d %(unit)s'
+            fmt = "%(size)u.%(frac)d %(unit)s"
             while value >= 1024 and u < len(SIZE_UNITS):
                 value, mod = divmod(value, 1024)
                 fractal = mod * 10 / 1024
                 u += 1
 
         else:
-            fmt = '%(size)u %(unit)s'
-        return fmt % {'size': value,
-         'frac': fractal,
-         'unit': SIZE_UNITS[u]}
+            fmt = "%(size)u %(unit)s"
+        return fmt % {"size": value,
+         "frac": fractal,
+         "unit": SIZE_UNITS[u]}
 
     def doSuspend(self, suspended):
         if suspended:
