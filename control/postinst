@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -f /tmp/OPD-Blue-Line/skin.xml ]; then
+  rm -rf /usr/share/enigma2/OPD-Blue-Line/
+  mv /tmp/OPD-Blue-Line /usr/share/enigma2/
+fi
+echo "                                                                                "
+echo "OPD-Blue-Line is now successfully installed in your receiver"
+echo "                             Enjoy!!!                                           "

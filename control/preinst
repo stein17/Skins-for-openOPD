@@ -1,0 +1,30 @@
+#!/bin/sh
+echo "                                   *******                                  "
+echo "                         ******               *****                         "
+echo "                    ****                            ****                    "
+echo "                 ***                                     ***                "
+echo "               **               Skin Full HD                **              "
+echo "                        for openDroid Images by stein17                     "
+echo "                                                                            "
+echo "                                                                            "
+echo "                         ***** DISCLAIMER ****                              "
+echo "OPD-Blue-Line skin requires a minimal dual core CPU @ 1000Mhz.              "
+echo "OPD-Blue-Line is NOT guaranteed to work on slower or older receivers.       "
+echo "                                                                            "
+echo "                                                                            "
+echo "                                                                            "
+echo "                                                                            "
+echo "Checking if a previous version of OPD-Blue-Line skin is installed"
+if [ -f /usr/share/enigma2/OPD-Blue-Line/skin.xml ]; then
+    cp -R /usr/share/enigma2/OPD-Blue-Line/ /tmp
+    rm -rf /usr/share/enigma2/OPD-Blue-Line
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPD*
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPD*
+    echo "                                                   "
+    echo "Previous OPD-Blue-Line skin installation           "
+    echo "    was found and removed successfully!            "
+    echo "                                                   "
+fi
+echo "                                                       "
+echo "OPD-Blue-Line skin is now being installed...           "
+echo "                                                       "
