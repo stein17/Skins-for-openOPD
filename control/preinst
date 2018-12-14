@@ -14,17 +14,17 @@ echo "                                                                          
 echo "                                                                            "
 echo "                                                                            "
 echo "                                                                            "
-echo "Checking if a previous version of OPD-Blue-Line skin is installed"
+echo "Checking if a previous version of OPD-Blue-Line skin is installed           "
 if [ -f /usr/share/enigma2/OPD-Blue-Line/skin.xml ]; then
     cp -R /usr/share/enigma2/OPD-Blue-Line/ /tmp
     rm -rf /usr/share/enigma2/OPD-Blue-Line
     rm -rf /usr/lib/enigma2/python/Components/Converter/OPD*
     rm -rf /usr/lib/enigma2/python/Components/Renderer/OPD*
-    echo "                                                   "
-    echo "Previous OPD-Blue-Line skin installation           "
-    echo "    was found and removed successfully!            "
-    echo "                                                   "
+    echo "                                                                        "
+    echo "Previous OPD-Blue-Line skin installation                                "
+    echo "    was found and removed successfully!                                 "
+    echo "                                                                        "
 fi
-echo "                                                       "
-echo "OPD-Blue-Line skin is now being installed...           "
-echo "                                                       "
+echo "                                                                            "
+echo "OPD-Blue-Line skin is now being installed...                                "
+echo "                                                                            "
