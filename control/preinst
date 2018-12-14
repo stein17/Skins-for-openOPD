@@ -18,8 +18,32 @@ echo "Checking if a previous version of OPD-Blue-Line skin is installed         
 if [ -f /usr/share/enigma2/OPD-Blue-Line/skin.xml ]; then
     cp -R /usr/share/enigma2/OPD-Blue-Line/ /tmp
     rm -rf /usr/share/enigma2/OPD-Blue-Line
-    rm -rf /usr/lib/enigma2/python/Components/Converter/OPD*
-    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPD*
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDAnalogClock
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDBlinkingClock
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDcaid
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDCPUInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDCryptInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDEmuInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDExtraInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDFrontendInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDPrimeTime
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDReceiverInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDRefString
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDServiceEndTime
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDServiceInfo
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDServiceName
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDServiceNameEventNobile
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDTemp
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDValueBitTest
+    rm -rf /usr/lib/enigma2/python/Components/Converter/OPDValueRange
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDEmptyEpg
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDNextEvents
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDRunningText
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDSingleEpgListFull
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDSYSTemp
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDVolume
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDWatches
+    rm -rf /usr/lib/enigma2/python/Components/Renderer/OPDXPicon
     echo "                                                                        "
     echo "Previous OPD-Blue-Line skin installation                                "
     echo "    was found and removed successfully!                                 "
