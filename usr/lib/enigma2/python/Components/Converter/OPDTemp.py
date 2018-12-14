@@ -144,7 +144,7 @@ class OPDTemp(Poll, Converter):
                 if systemp == "" and cputemp == "":
                     return "Temperature: N/A"
                 if systemp == "":
-                    return ("CPU Temp: ") + cputemp
+                    return ("CPU Temperature: ") + cputemp
                 if cputemp == "":
                     return systemp
                 return systemp + "  " + ("CPU: ") + cputemp

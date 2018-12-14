@@ -314,7 +314,7 @@
     <convert type="OPDcaid">Emu</convert>
       <convert type="ConditionalShowHide" />
       </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net2.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="OPDcaid">Net</convert>
       <convert type="ConditionalShowHide" />
     </widget>

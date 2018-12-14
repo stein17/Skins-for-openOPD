@@ -331,7 +331,7 @@
     <convert type="OPDcaid">Emu</convert>
       <convert type="ConditionalShowHide" />
       </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net2.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="OPDcaid">Net</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -345,7 +345,7 @@
     </widget>
   <eLabel text="Tuner:" position="0,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
   <eLabel text="Crypt:" position="401,1029" size="110,36" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" zPosition="5" />
-    <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="707,1029" size="59,36" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="707,1029" size="59,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="768,1029" size="57,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="643,1029" size="62,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="498,1029" size="27, 36" />
