@@ -1086,19 +1086,19 @@
     <convert type="OPDValueRange">8,8</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-     <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/emu.png" position="832,1035" size="70,30" zPosition="3" alphatest="blend" transparent="1">
+     <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/emu.png" position="832,1035" size="80,30" zPosition="3" alphatest="blend" transparent="1">
     <convert type="OPDcaid">Emu</convert>
       <convert type="ConditionalShowHide" />
       </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net2.png" position="832,1035" size="70,30" zPosition="5" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/net2.png" position="832,1035" size="80,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="OPDcaid">Net</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-        <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/crd.png" position="832,1035" size="70,30" zPosition="4" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/crd.png" position="832,1035" size="80,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="OPDcaid">Crd</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/fta.png" position="832,1035" size="70,30" zPosition="2" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/fta.png" position="832,1035" size="80,30" zPosition="5" alphatest="blend" transparent="1">
       <convert type="OPDcaid">Fta</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1195,19 +1195,19 @@
   <widget position="1403,720" size="490,30" backgroundColor="background" font="Regular;24" halign="left" valign="center" noWrap="1" render="Label" source="session.CurrentService" transparent="1" foregroundColor="cyan1">
     <convert type="OPDExtraInfo">CryptoSpecial</convert>
   </widget>
-  <widget size="250,30" position="1403,678" backgroundColor="background" font="Regular;24" foregroundColor="cyan1" halign="left" render="Label" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+  <widget size="600,30" position="1403,678" backgroundColor="background" font="Regular;24" foregroundColor="cyan1" halign="left" render="Label" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
     <convert type="OPDServiceName">Provider</convert>
   </widget>
-  <widget position="1253,637" size="640,30" backgroundColor="background" font="Regular; 22" halign="left" valign="center" render="Label" source="session.CurrentService" transparent="1">
+  <widget position="1253,637" size="640,30" backgroundColor="background" font="Regular; 24" halign="left" valign="center" render="Label" source="session.CurrentService" transparent="1">
     <convert type="OPDServiceName">%O  %s  %F %p %Y %f %M %b %o %r</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1404,818" size="490,30" font="Regular; 24" transparent="1" zPosition="1" halign="left" valign="center" noWrap="1" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="1404,818" size="600,30" font="Regular;24" transparent="1" zPosition="1" halign="left" valign="center" noWrap="1" foregroundColor="cyan1">
     <convert type="OPDServiceName">Reference</convert>
   </widget>
   <widget source="session.CurrentService" render="OPDRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="1407,945" size="490,30" font="Regular; 24" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" zPosition="1">
     <convert type="OPDServiceInfo">HasHBBTV</convert>
   </widget>
-    <widget source="session.CurrentService" render="Label" position="1407,902" size="200,30" font="Regular;24" zPosition="6" backgroundColor="background20" transparent="0" foregroundColor="cyan1" text="Temperature" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="1407,902" size="800,30" font="Regular;24" zPosition="6" backgroundColor="background20" transparent="0" foregroundColor="cyan1" text="Temperature" noWrap="1">
       <convert type="OPDTemp">Temperature</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1392,859" size="600,30" zPosition="1" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" foregroundColor="cyan1">
@@ -1217,12 +1217,13 @@
   <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <eLabel name="vertikalline" position="1223,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  <eLabel text="Provider:" position="1253,678" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
-  <eLabel text="Temperatur:" position="1253,902" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
-  <eLabel text="CPU-Last:" position="1253,859" size="150,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
-  <eLabel text="HBBTV Info:" position="1253,945" size="155,30" font="Regular; 24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
-  <eLabel text="Crypt Info:" position="1253,720" size="155,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
-  <eLabel text="Caid Info:" position="1253,817" size="150,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="Provider:" position="1253,678" size="600,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="Temperatur:" position="1253,902" size="600,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="CPU-Last:" position="1253,859" size="600,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="HBBTV Info:" position="1253,945" size="600,30" font="Regular; 24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="Crypt Info:" position="1253,720" size="600,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel text="Caid Info:" position="1253,817" size="600,30" font="Regular;24" halign="left" valign="center" noWrap="1" backgroundColor="background" transparent="1" />
+  <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="830,1029" size="82,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="707,1029" size="59,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="768,1029" size="57,36" />
   <eLabel name="Rahmem_crypt" backgroundColor="blue" zPosition="1" position="643,1029" size="62,36" />
