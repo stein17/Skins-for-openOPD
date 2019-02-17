@@ -702,7 +702,7 @@
     <convert type="ServiceInfo">HasTelext</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_iptv_on.png" alphatest="blend" position="947,1030" zPosition="3" size="63,35" transparent="1">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_iptv_on.png" alphatest="blend" position="937,1030" zPosition="3" size="63,35" transparent="1">
     <convert type="ServiceInfo">IsStream</convert>
     <convert type="ConditionalShowHide">
     </convert>
@@ -711,6 +711,14 @@
     <convert type="ServiceInfo">HasHBBTV</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+  <widget source="session.CurrentService" render="Pixmap" position="1005,1021" size="100,100" zPosition="2" pixmap="OPD-Blue-Line/icons/lan.png" alphatest="blend">
+      <convert type="RouteInfo">Lan</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+   <widget source="session.CurrentService" render="Pixmap" position="1005,1021" size="100,100" zPosition="2" pixmap="OPD-Blue-Line/icons/wifi1.png" alphatest="blend">
+      <convert type="RouteInfo">Wifi</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   <ePixmap pixmap="OPD-Blue-Line/icons/ico_crypt_on.png" position="907,798" size="40,40" zPosition="1" alphatest="blend" />
   <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_crypt_off.png" position="907,798" size="40,40" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsCrypted</convert>
@@ -965,7 +973,7 @@
     <convert type="ServiceInfo">HasTelext</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_iptv_on.png" alphatest="blend" position="1347,1030" zPosition="3" size="63,35" transparent="1">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_iptv_on.png" alphatest="blend" position="1322,1030" zPosition="3" size="63,35" transparent="1">
     <convert type="ServiceInfo">IsStream</convert>
     <convert type="ConditionalShowHide">
     </convert>
@@ -974,6 +982,14 @@
     <convert type="ServiceInfo">HasHBBTV</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1390,1020" size="100,100" zPosition="2" pixmap="OPD-Blue-Line/icons/lan.png" alphatest="blend">
+      <convert type="RouteInfo">Lan</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+   <widget source="session.CurrentService" render="Pixmap" position="1390,1020" size="100,100" zPosition="2" pixmap="OPD-Blue-Line/icons/wifi1.png" alphatest="blend">
+      <convert type="RouteInfo">Wifi</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   <ePixmap pixmap="OPD-Blue-Line/icons/ico_crypt_on.png" position="1158,945" size="40,40" zPosition="1" alphatest="blend" />
   <widget source="session.CurrentService" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_crypt_off.png" position="1158,945" size="40,40" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsCrypted</convert>
@@ -1638,7 +1654,7 @@
     <widget source="session.CurrentService" render="Pixmap" position="1524,1032" size="63,35" zPosition="2" pixmap="OPD-Blue-Line/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
-    </widget>
+     </widget>
     <eLabel name="vertikalline" position="34,909" size="1198,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <eLabel name="vertikalline" position="1252,592" size="645,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <eLabel name="vertikalline" position="1240,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
