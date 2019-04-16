@@ -8074,7 +8074,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1079,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
   <widget source="Title" render="Label" position="48,108" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-  <widget name="packagetext" position="1248,142" size="375,53" zPosition="1" font="Regular;36" halign="right" backgroundColor="background" transparent="1" />
+  <widget name="packagetext" position="1248,142" size="400,250" zPosition="1" font="Regular;36" halign="right" backgroundColor="background" transparent="1" />
   <widget name="packagenr" position="1660,142" size="75,53" zPosition="1" font="Regular;36" halign="right" backgroundColor="background" transparent="1" />
   <widget source="list" render="Listbox" position="50,170" size="1130,790" scrollbarMode="showOnDemand" transparent="1">
     <convert type="TemplatedMultiContent">
