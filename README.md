@@ -1,5 +1,3 @@
-# OPD-Blue-Line
-FHD Skin for openDroid Images
-Update:Skinpart for Full EPG
-Shoutcast,MediaInfo,ET Portal
-EPG revised
+Add new Skin for OpenDroid
+
+Multibox-FHD-Skin-4OPD
