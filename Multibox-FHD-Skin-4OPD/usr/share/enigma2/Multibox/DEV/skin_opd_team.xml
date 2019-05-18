@@ -1542,10 +1542,10 @@
 <screen backgroundColor="background" flags="wfNoBorder" name="AtileHD_Config" position="0,0" size="1920,1080" title="AtileHD Setup">
   <eLabel text="Preview" position="1266,550" size="610,70" font="Regular;40" halign="center" valign="center" transparent="0" zPosition="2" />
   <eLabel text="*Multibox* FHD Skin for OPD Images by stein17" position="600,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-  <widget name="config" position="50,100" size="1120,695" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
+  <widget name="config" position="50,130" size="1120,550" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
   <ePixmap pixmap="Multibox/buttons/key_blue.png" position="47,933" size="35,35" alphatest="blend" />
-  <ePixmap pixmap="Multibox/buttons/button_menu.png" position="47,813" size="35,35" zPosition="10" transparent="1" />
-  <eLabel text="Weather Setup" position="92,810" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
+  <ePixmap pixmap="Multibox/buttons/key_menu.png" position="50,798" size="103,35" zPosition="10" transparent="1" />
+  <eLabel text="Weather Setup .... Press Menu Button to get to the weather plugin" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
   <eLabel text="Help, Skin settings(Weather, Own user logo )" position="92,930" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <eLabel text="/Save" position="360,1000" size="160,70" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" valign="center" />
   <eLabel text="Yellow key press around Skinparts to select" position="92,870" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
