@@ -1098,7 +1098,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="template_cool_4all">
+  <screen name="template_cool_all">
     <ePixmap pixmap="Multibox/buttons/key_blue.png" position="918,1022" size="35,35" />
     <widget name="key_blue" render="Label" position="964,1005" size="400,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
     <widget name="date" position="820,20" size="375,50" font="Regular;40" valign="bottom" halign="left" backgroundColor="background" foregroundColor="default" transparent="1" />
@@ -1413,10 +1413,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 colorServiceStreamed="darkorange"
 	 
 	 foregroundColor="white" 
-	 foregroundColorSelected="white"
+	 foregroundColorSelected="cyan"
 
 	 colorServiceDescription="cyan" 
-	 colorServiceDescriptionSelected="white" 
+	 colorServiceDescriptionSelected="white"
 	 
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
@@ -1481,10 +1481,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 foregroundColorMarkedSelected="darkyellow" 
 	 foregroundColorServiceNotAvail="dark"
 	 
-	 foregroundColor="grey1" 
+	 foregroundColor="white" 
 	 foregroundColorSelected="white"
 	 
-	 colorServiceDescription="grey1" 
+	 colorServiceDescription="greyblue" 
 	 colorServiceDescriptionSelected="white" 
 
 	 backgroundColor="background" 
@@ -1733,10 +1733,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 colorServiceStreamed="darkorange"
 	 
 	 foregroundColor="white" 
-	 foregroundColorSelected="white"
+	 foregroundColorSelected="cyan"
 
 	 colorServiceDescription="cyan" 
-	 colorServiceDescriptionSelected="white" 
+	 colorServiceDescriptionSelected="white"
 	 
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
@@ -1798,10 +1798,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 foregroundColorMarkedSelected="darkyellow" 
 	 foregroundColorServiceNotAvail="dark"
 	 
-	 foregroundColor="grey1" 
+	 foregroundColor="white" 
 	 foregroundColorSelected="white"
 	 
-	 colorServiceDescription="grey1" 
+	 colorServiceDescription="greyblue" 
 	 colorServiceDescriptionSelected="white" 
 
 	 backgroundColor="background" 
@@ -2027,10 +2027,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 colorServiceStreamed="darkorange"
 	 
 	 foregroundColor="white" 
-	 foregroundColorSelected="white"
+	 foregroundColorSelected="cyan"
 
 	 colorServiceDescription="cyan" 
-	 colorServiceDescriptionSelected="white" 
+	 colorServiceDescriptionSelected="white"
 	 
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
@@ -2088,10 +2088,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 foregroundColorMarkedSelected="darkyellow" 
 	 foregroundColorServiceNotAvail="dark"
 	 
-	 foregroundColor="grey1" 
+	 foregroundColor="white" 
 	 foregroundColorSelected="white"
 	 
-	 colorServiceDescription="grey1" 
+	 colorServiceDescription="greyblue" 
 	 colorServiceDescriptionSelected="white" 
 
 	 backgroundColor="background" 
