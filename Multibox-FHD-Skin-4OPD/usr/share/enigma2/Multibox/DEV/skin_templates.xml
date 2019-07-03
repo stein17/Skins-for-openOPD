@@ -3,25 +3,24 @@
   <!-- templates  -->
   <!--######################################### -->
   <!-- template -->
-   <screen name="template_fullscreen_title" zPosition="1">
+  <screen name="template_fullscreen_title" zPosition="1">
   <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-  <widget source="global.CurrentTime" render="Label" position="1477,22" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
+  <widget source="global.CurrentTime" render="Label" position="1477,22" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
     <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
   </widget>
     <panel name="template_analogclock_widget" />
     <panel name="template_vertikalline" />
-	<panel name="template_pixmap_Clock" />
-	<panel name="template_pixmap_Userlogo" />
-	 
- </screen>
+    <panel name="template_pixmap_Clock" />
+    <panel name="template_pixmap_Userlogo" />
+  </screen>
   <screen name="template_fullscreen">
-    <widget source="global.CurrentTime" render="Label" position="1477,22" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1477,22" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
     <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
   </widget>
     <panel name="template_analogclock_widget" />
     <panel name="template_vertikalline" />
-	<panel name="template_pixmap_Clock" />
-	<panel name="template_pixmap_Userlogo" />
+    <panel name="template_pixmap_Clock" />
+    <panel name="template_pixmap_Userlogo" />
  </screen>
    <!-- TEMPLATES Clocks-->
   <screen name="template_pixmap_Clock">
