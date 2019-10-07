@@ -24,7 +24,8 @@
 	<color name="darkblue" value="#0016244b" />
     <color name="darkblue2" value="#00031b5e" />
     <color name="darkbluelabel" value="#00002672" />
-	<color name="Multiboxlabel" value="#00065c9e" />
+	+
++<color name="Multiboxlabel" value="#00065c9e" />
 	<color name="metrixblue" value="#000050ef" />
     <color name="lightblue" value="#0066ccff" />
     <color name="lightbluelabel" value="#000040c0" />
@@ -52,7 +53,9 @@
     <color name="grey" value="#00bbbbbb" />
     <color name="grey1" value="#00a6a6a6" />
     <color name="grey2" value="#00cccccc" />
-    <color name="greyblue" value="#00aab2ba" />
+	<color name="greyblue" value="#0092a8bf" />
+ <!--   <color name="greyblue" value="#00aab2ba" /> -->
+ <!-- 	<color name="greyblue" value="#009eb2c6" /> -->
 	<color name="verydarkgrey" value="#003a3a3a" />
     <color name="verygrey" value="#00666666" />
     <color name="darkgrey" value="#00999999" />
@@ -140,7 +143,7 @@
     <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38" />
     <alias name="PiconManagerList" font="Regular" size="30" height="50" />
     <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24" />
-    <alias name="VirtualKeyboard" font="Regular" size="36" height="66" weight="68" />
+    <alias name="VirtualKeyboard" font="Regular" size="36" height="68" weight="68" />
     <alias name="HelpMenuList" font="Regular" size="36" height="50" />
     <alias name="HelpMenuListExt0" font="Regular" size="32" height="75" />
     <alias name="HelpMenuListExt1" font="Regular" size="28" />
@@ -178,7 +181,10 @@
     <parameter name="ServicelistHorNumber" value="43, 21, 150, 45" />
     <parameter name="SelectionListDescr" value="55, 3, 1000, 50" />
     <parameter name="SelectionListLock" value="10, 7, 50, 50" />
-    <parameter name="VirtualKeyboard" value="68,68" />
+    <parameter name="VirtualKeyBoard" value="68,68"/>
+    <parameter name="VirtualKeyBoardAlignment" value="0,0"/>
+    <parameter name="VirtualKeyBoardPadding" value="6,6"/>
+    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
     <parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38" />
     <parameter name="PartnerBoxEntryListIP" value="180, 2, 225, 38" />
     <parameter name="PartnerBoxEntryListPort" value="405, 2, 150, 38" />
@@ -257,11 +263,6 @@
     <color name="WindowTitleForeground" color="cyan" />
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
-  <screen name="Volume" position="650,60" size="551,140" title="Volume" flags="wfNoBorder" backgroundColor="background30" zPosition="99">
-    <widget name="Volume" position="127,62" size="261,17" zPosition="1" pixmap="Multibox/icons/Volume_bar.png" transparent="1" />
-    <ePixmap position="0,0" size="551,140" zPosition="0" pixmap="Multibox/icons/Volume.png" borderColor="Line" borderWidth="3" alphatest="blend" />
-    <widget font="LCD;90" render="AMBVolume" valign="center" halign="center" foregroundColor="Line" backgroundColor="background" transparent="1" borderColor="defaultselBG" borderWidth="3" source="global.CurrentTime" position="390,24" size="120,90" zPosition="20" />
-  </screen>
   <!-- Menu FHD -->
   <screen name="Menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="background">
     <widget source="menu" render="Listbox" position="10,100" size="560,860" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
@@ -676,7 +677,7 @@
       <convert type="AMBReceiverInfo">MemFree</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1223,885" size="674,30" zPosition="1" font="Regular; 30" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
-      <convert type="AMBCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
+      <convert type="AMBCPUInfo">CPU workload:$0 Core 1:$1  Core 2:$2</convert>
     </widget>
     <!-- <widget source="session.CurrentService" render="Label" font="Regular; 16" position="788,539" size="380,40" halign="left" zPosition="50" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="default">
   <convert type="CryptoInfo">VerboseInfo</convert>
@@ -935,8 +936,8 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="MovieInfoTMDb" position="0,0" size="1920,1080" title="Movie Information TMDb" flags="wfNoBorder" backgroundColor="background">
     <widget name="movie_name" position="30,130" size="1166,90" zPosition="0" font="Regular;31" valign="center" halign="center" transparent="1" foregroundColor="grey" backgroundColor="background" />
     <widget name="previewlist" position="30,600" size="1166,350" font="Regular;36" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="starsbg" position="840,240" size="315,31" pixmap="Multibox/mmp/starsbar_empty.png" zPosition="2" alphatest="blend" />
-    <widget name="stars" position="840,240" size="315,31" pixmap="Multibox/mmp/starsbar_filled.png" zPosition="3" transparent="1" />
+    <widget name="starsbg" position="843,240" size="315,31" pixmap="Multibox/skin_default/icons/starsbar_empty.png" zPosition="2" alphatest="blend" />
+    <widget name="stars" position="840,240" size="315,31" pixmap="Multibox/skin_default/icons/starsbar_filled.png" zPosition="3" transparent="1" />
     <widget name="rating" position="840,277" size="315,45" font="Regular;30" halign="left" foregroundColor="bernstein" backgroundColor="background" transparent="1" />
     <widget name="ratingtxt" position="840,277" size="315,45" font="Regular;30" halign="right" foregroundColor="bernstein" backgroundColor="background" transparent="1" />
     <widget name="previewcover" position="105,240" size="240,336" alphatest="blend" />
@@ -986,7 +987,7 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="EMCSelection" position="0,0" size="1920,1080" title="Enhanced Movie Center" flags="wfNoBorder">
     <widget source="Title" render="Label" position="10,85" size="1200,50" font="Regular; 36" halign="left" valign="center" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="1" />
     <eLabel text="Enhanced Movie Center" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="wait" position="180,20" size="800,45" zPosition="1" font="Regular;36" backgroundColor="background" foregroundColor="darkyellow" halign="center" valign="center" transparent="1" />
+    <widget name="wait" position="180,20" size="800,45" zPosition="1" font="Regular;36" backgroundColor="background" foregroundColor="yellow" halign="center" valign="center" transparent="1" />
     <panel name="Enhanced_Movie_Center" />
   </screen>
   <screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
@@ -1054,10 +1055,10 @@ self['config'].l.setSeperation(int(300*f))
     <widget alphatest="blend" pixmap="Multibox/icons/ico_rec_on.png" position="427,943" render="Pixmap" size="80,26" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="550,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
+    <widget source="session.CurrentService" render="Label" position="540,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
       <convert type="AMBServiceTime">StartTime</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1300,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="1290,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
       <convert type="AMBServiceTime">EndTime</convert>
     </widget>
     <widget name="Cover" position="10,690" size="270,380" zPosition="4" alphatest="blend" />
@@ -1071,11 +1072,11 @@ self['config'].l.setSeperation(int(300*f))
     </widget>
     <ePixmap pixmap="Multibox/skin_default/system/clock_player.png" position="419,1038" size="24,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Multibox/skin_default/system/time_end.png" position="1175,1040" size="20,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Label" position="920,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="Label" position="900,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <eLabel font="Regular; 36" halign="left" valign="center" position="1040,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
-    <eLabel font="Regular; 36" halign="right" valign="center" position="700,1030" size="220,40" text="running time:" transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="left" valign="center" position="1021,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Laufzeit:" transparent="1" foregroundColor="default" />
     <ePixmap position="0,854" zPosition="-20" size="1920,226" pixmap="Multibox/menu/Player.png" />
     <widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" pixmaps="Multibox/skin_default/system/play.png,Multibox/skin_default/system/pause.png,Multibox/skin_default/system/stop.png,Multibox/skin_default/system/forward.png,Multibox/skin_default/system/backward.png,Multibox/skin_default/system/slow.png,Multibox/skin_default/system/blank.png" />
     <widget name="speed" position="30,48" size="80,15" font="Regular;17" halign="left" transparent="1" zPosition="4" />
@@ -1091,8 +1092,8 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="global.CurrentTime" render="Label" position="1500,874" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
-    <eLabel text="begin:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="130,40" transparent="1" foregroundColor="default" zPosition="1" />
-    <eLabel text="ends:" font="Regular; 36" halign="right" valign="center" position="1180,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="Start:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="End:" font="Regular; 36" halign="right" valign="center" position="1170,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
     <widget source="Service" render="Progress" pixmap="Multibox/Player_Progress.png" position="415,991" size="1008,24" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
@@ -1179,10 +1180,10 @@ self['config'].l.setSeperation(int(300*f))
     <widget alphatest="blend" pixmap="Multibox/icons/ico_rec_on.png" position="427,943" render="Pixmap" size="80,26" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="550,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
+    <widget source="session.CurrentService" render="Label" position="540,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
       <convert type="AMBServiceTime">StartTime</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1300,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="1290,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
       <convert type="AMBServiceTime">EndTime</convert>
     </widget>
     <widget source="session.CurrentService" render="Cover" position="10,690" size="270,380" zPosition="4" transparent="1" alphatest="blend" />
@@ -1196,11 +1197,11 @@ self['config'].l.setSeperation(int(300*f))
     </widget>
     <ePixmap pixmap="Multibox/skin_default/system/clock_player.png" position="419,1038" size="24,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Multibox/skin_default/system/time_end.png" position="1175,1040" size="20,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Label" position="920,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="Label" position="900,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <eLabel font="Regular; 36" halign="left" valign="center" position="1041,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
-    <eLabel font="Regular; 36" halign="right" valign="center" position="700,1030" size="220,40" text="running time:" transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="left" valign="center" position="1021,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Laufzeit:" transparent="1" foregroundColor="default" />
     <ePixmap position="0,854" zPosition="-20" size="1920,226" pixmap="Multibox/menu/Player.png" />
     <!--     <widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" 
 	pixmaps="Multibox/skin_default/system/play.png,Multibox/skin_default/system/pause.png,
@@ -1222,8 +1223,8 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="global.CurrentTime" render="Label" position="1500,874" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
-    <eLabel text="begin:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="130,40" transparent="1" foregroundColor="default" zPosition="1" />
-    <eLabel text="ends:" font="Regular; 36" halign="right" valign="center" position="1180,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="Start:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="End:" font="Regular; 36" halign="right" valign="center" position="1170,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
     <widget source="session.CurrentService" render="Progress" pixmap="Multibox/Player_Progress.png" position="415,991" size="1008,24" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
@@ -1306,17 +1307,17 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="session.CurrentService" render="Label" position="1427,989" size="110,28" font="Regular; 27" halign="center" backgroundColor="background" foregroundColor="default" transparent="1">
       <convert type="ServicePosition">Remaining,Negate</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="920,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="Label" position="900,1030" size="120,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="Multibox/icons/ico_rec_off.png" position="427,943" size="80,26" zPosition="1" />
     <widget alphatest="blend" pixmap="Multibox/icons/ico_rec_on.png" position="427,943" render="Pixmap" size="80,26" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="550,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
+    <widget source="session.CurrentService" render="Label" position="540,1030" size="120,40" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center">
       <convert type="AMBServiceTime">StartTime</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1300,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="1290,1030" size="120,40" font="Regular; 36" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="4">
       <convert type="AMBServiceTime">EndTime</convert>
     </widget>
     <widget source="session.CurrentService" render="Cover" position="10,690" size="270,380" zPosition="4" transparent="1" alphatest="blend" />
@@ -1330,8 +1331,8 @@ self['config'].l.setSeperation(int(300*f))
     </widget>
     <ePixmap pixmap="Multibox/skin_default/system/clock_player.png" position="419,1038" size="24,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Multibox/skin_default/system/time_end.png" position="1175,1040" size="20,20" zPosition="1" alphatest="blend" />
-    <eLabel font="Regular; 36" halign="left" valign="center" position="1041,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
-    <eLabel font="Regular; 36" halign="right" valign="center" position="700,1030" size="220,40" text="running time:" transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="left" valign="center" position="1021,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Laufzeit:" transparent="1" foregroundColor="default" />
     <ePixmap position="0,854" zPosition="-20" size="1920,226" pixmap="Multibox/menu/Player.png" />
     <widget source="global.CurrentTime" render="AMBWatches" position="1822,866" size="69,69" zPosition="4" foregroundColor="bluetitle" alphatest="blend">
       <convert type="AMBAnalogClock">secHand</convert>
@@ -1345,8 +1346,8 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="global.CurrentTime" render="Label" position="1500,874" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
-    <eLabel text="begin:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="130,40" transparent="1" foregroundColor="default" zPosition="1" />
-    <eLabel text="ends:" font="Regular; 36" halign="right" valign="center" position="1180,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="Start:" font="Regular; 36" halign="right" valign="center" position="419,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
+    <eLabel text="End:" font="Regular; 36" halign="right" valign="center" position="1170,1030" size="120,40" transparent="1" foregroundColor="default" zPosition="1" />
     <widget source="session.CurrentService" render="Progress" pixmap="Multibox/Player_Progress.png" position="415,991" size="1008,24" zPosition="7" borderWidth="1" borderColor="black" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
@@ -1359,7 +1360,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="audioLabel" position="1550,20" size="320,30" font="Regular; 24" halign="right" transparent="1" />
     <eLabel name="" position="310,20" size="1560,30" zPosition="-5" />
   </screen>
-  <screen name="ChapterZap" position="center,center" size="400,120" title="">
+  <screen name="ChapterZap" position="center,center" size="400,120" title="Chapter">
   <eLabel name="a" position="10,14" size="220,100" zPosition="-10" />
   <eLabel name="b" position="232,18" size="160,90" zPosition="-10" />
   <widget name="chapter" position="14,19" size="210,90" font="Regular;40" halign="center" valign="center" />
@@ -2276,7 +2277,7 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="FrontendInfo">SNR</convert>
     </widget>
   </screen>
-  <screen name="Dishpip" position="86,100" size="130,220" title="" zPosition="1" backgroundColor="blue">
+  <screen name="Dishpip" position="86,100" size="130,220" title="DishPiP" zPosition="1" backgroundColor="blue">
   <widget source="Dishpixmap" render="Pixmap" pixmap="Multibox/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
@@ -2304,7 +2305,7 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_exit" />
     <panel name="template_pig_setup" />
   </screen>
-  <screen name="InputBox" position="center,center" size="1200,160" title="" zPosition="1">
+  <screen name="InputBox" position="center,center" size="1200,160" title="Input" zPosition="1">
   <eLabel name="b" position="0,0" size="1200,160" zPosition="-10" />
   <eLabel name="a" position="1,1" size="1198,158" zPosition="-9" />
   <eLabel name="c" position="24,72" size="1160,1" zPosition="-8" />
@@ -2600,38 +2601,16 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="SoftcamPanel" position="0,0" size="1920,1080" title="Softcam Panel" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel position="10,454" size="1180,2" backgroundColor="Line" />
-    <eLabel position="10,260" size="1180,2" backgroundColor="Line" />
-    <widget name="config" itemHeight="50" font="Regular;36" position="10,100" size="800,150" enableWrapAround="1" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget font="Regular; 36" name="enigma2" position="840,100" size="350,150" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget font="Regular; 36" name="actifcam" position="10,280" size="600,150" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget font="Regular; 36" name="actifcam2" position="639,280" size="550,150" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget font="Regular; 36" name="ecminfo" position="10,462" size="1180,510" foregroundColor="white" backgroundColor="background" />
+    <eLabel position="10,345" size="1180,2" backgroundColor="Line" />
+    <widget name="config" itemHeight="50" font="Regular;36" position="10,189" size="800,150" enableWrapAround="1" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget font="Regular; 36" name="enigma2" position="840,246" size="350,50" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget font="Regular;30" name="actifcam" position="10,353" size="550,96" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget font="Regular;30" name="actifcam2" position="639,353" size="550,96" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget font="Regular;30" name="ecminfo" position="10,462" size="1180,510" foregroundColor="white" backgroundColor="background" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="Install Softcams" flags="wfNoBorder" backgroundColor="background">
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="10,100" size="1180,870" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (72, 72), png = 4), # index 4 is the status pixmap
-						MultiContentEntryText(pos = (155, 2), size = (1000, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (185, 56), size = (1000, 40), font=1, flags = RT_HALIGN_LEFT, text = 2, color=0x8A8787, color_sel=0x8A8787), # index 2 is the description
-						MultiContentEntryPixmapAlphaBlend(pos = (0, 98), size = (0, 0), png = 5), # index 4 is the div pixmap
-					],
-				"fonts": [gFont("Regular",36),gFont("Regular",30)],
-				"itemHeight": 105
-				}
-			</convert>
-    </widget>
-    <widget source="key_ok" render="Label" position="668,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
-    <panel name="template_name_red_green" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
   </screen>
   <screen name="AutoResSetupMenu" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="background">
@@ -2802,8 +2781,8 @@ self['config'].l.setSeperation(int(300*f))
     <ePixmap pixmap="Multibox/buttons/key_left.png" position="801,29" size="30,29" alphatest="blend" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_right.png" position="870,29" size="30,29" alphatest="blend" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_0.png" position="833,25" size="35,35" alphatest="blend" transparent="1" />
-    <eLabel text="begin:" position="360,185" size="110,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" />
-    <eLabel text="ends:" position="864,187" size="110,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" />
+    <eLabel text="Start:" position="372,185" size="100,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" />
+    <eLabel text="End:" position="864,187" size="100,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" />
     <widget source="Event" render="Progress" foregroundColor="Line" backgroundColor="Line" position="586,195" size="270,16" zPosition="1" transparent="1" borderWidth="1" borderColor="white">
       <convert type="EventTime">Progress</convert>
     </widget>
@@ -2812,7 +2791,7 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="Event" render="Label" position="972,187" size="110,40" font="Regular; 34" transparent="1" zPosition="1" halign="center">
+    <widget source="Event" render="Label" position="962,187" size="110,40" font="Regular; 34" transparent="1" zPosition="1" halign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">
       </convert>
@@ -2840,6 +2819,8 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget name="bouquetlist" position="728,20" size="470,50" zPosition="2" itemHeight="45" font="Regular;40" borderColor="darkgrey" borderWidth="1" transparent="1" />
+    <eLabel text="Start:" position="1223,615" size="100,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" foregroundColor="default" />
+    <eLabel text="End:" position="1690,615" size="100,40" font="Regular; 34" halign="center" transparent="1" zPosition="1" foregroundColor="default" />
     <widget source="Event" render="Progress" foregroundColor="Line" backgroundColor="Line" position="1437,625" size="250,16" zPosition="1" transparent="1" borderWidth="1" borderColor="white">
       <convert type="EventTime">Progress</convert>
     </widget>
@@ -2848,7 +2829,7 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="Event" render="Label" position="1692,615" size="110,40" font="Regular; 34" transparent="1" zPosition="1" halign="center">
+    <widget source="Event" render="Label" position="1792,615" size="110,40" font="Regular; 34" transparent="1" zPosition="1" halign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">
       </convert>
@@ -2932,7 +2913,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="change_bouquet" position="733,395" size="1,1" backgroundColor="background" foregroundColor="bernstein" font="Regular; 27" transparent="1" />
     <widget name="jump" position="1536,1018" size="0,0" backgroundColor="background" font="Regular;27" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_0.png" position="1628,960" size="35,35" alphatest="blend" zPosition="1" />
-    <eLabel text="Channel:" position="1210,1022" size="120,34" font="Regular; 30" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="10" foregroundColor="default" />
+    <eLabel text="Channel:" position="1220,1022" size="120,34" font="Regular; 30" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="10" foregroundColor="default" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
   </screen>
@@ -3073,6 +3054,10 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="-" position="1422,582" size="25,40" font="Regular; 34" halign="left" transparent="1" valign="center" />
+    <eLabel text="Start:" position="10,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="Start:" position="1223,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="End:" position="1681,582" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
+    <eLabel text="END:" position="926,909" size="110,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
     <eLabel text="Next:" position="1223,533" size="100,40" font="Regular; 34" halign="left" transparent="1" valign="center" foregroundColor="default" />
     <widget source="session.Event_Next" render="AMBRunningText" position="1314,533" size="583,40" font="Regular;34" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventName">Name</convert>
@@ -3343,7 +3328,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_green_blue" />
+    <panel name="template_name_red_o_blue" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
   </screen>
@@ -3359,9 +3344,13 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <!-- ********** NumberZap ********** -->
   <!-- NumberZap -->
-  <screen backgroundColor="background" name="NumberZap" position="center,center" size="380,100" title="">
-    <widget backgroundColor="background" font="Regular;48" name="channel" position="94,46" size="280,48" />
-    <widget backgroundColor="background" font="Regular;36" halign="right" name="number" position="5,5" size="150,36" />
+<screen name="NumberZap" position="50,820" size="490,110" backgroundColor="transparent" flags="wfNoBorder">
+    <eLabel name="BG" position="203,3" size="284,104" zPosition="-20" backgroundColor="Line" />
+    <eLabel name="BG" position="3,30" size="184,64" zPosition="-20" backgroundColor="Line" />
+    <widget name="channel" position="5,32" size="180,60" halign="center" valign="center" font="Regular; 48" backgroundColor="black" foregroundColor="Line" noWrap="1" transparent="1" zPosition="2" />
+    <widget name="number" position="205,5" size="280,100" halign="center" valign="center" font="Regular; 100" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2" />
+    <eLabel name="" position="5,32" size="180,60" />
+    <eLabel name="" position="205,5" size="280,100" />
   </screen>
   <!-- NumberZapWithName -->
   <screen name="NumberZapWithName" position="50,770" size="550,270" backgroundColor="background" flags="wfNoBorder">
@@ -3470,7 +3459,7 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="PinInput" position="center,center" size="600,300" title="PIN code needed" zPosition="1">
     <eLabel name="b" position="0,0" size="600,300" zPosition="-10" />
     <eLabel name="a" position="1,1" size="598,298" zPosition="-9" />
-    <widget source="Title" render="Label" position="21,13" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel name="line1" position="20,69" size="560,1" backgroundColor="Line" zPosition="1" />
     <widget name="text" position="10,75" size="580,70" font="Regular;22" valign="bottom" halign="center" />
     <widget name="service" position="10,152" size="580,40" font="Regular;30" halign="center" />
@@ -3480,14 +3469,14 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="PinInputExt" position="center,center" size="600,300" title="PIN code needed" zPosition="1">
     <eLabel name="b" position="0,0" size="600,300" zPosition="-10" />
     <eLabel name="a" position="1,1" size="598,298" zPosition="-9" />
-    <widget source="Title" render="Label" position="17,9" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel name="line1" position="20,69" size="560,1" backgroundColor="Line" zPosition="1" />
     <widget name="text" position="10,75" size="580,70" font="Regular;22" valign="bottom" halign="center" />
     <widget name="service" position="10,152" size="580,40" font="Regular;30" halign="center" />
     <widget name="tries" position="20,195" size="560,40" font="Regular;22" valign="center" halign="center" />
     <widget name="input" position="20,245" size="560,40" font="Regular;30" valign="center" halign="center" />
   </screen>
-  <screen name="PinInputPopup" position="340,210" size="600,300" title="" zPosition="1">
+  <screen name="PinInputPopup" position="340,210" size="600,300" title="PIN code needed" zPosition="1">
   <eLabel name="b" position="0,0" size="600,300" zPosition="-10" />
   <eLabel name="a" position="1,1" size="598,298" zPosition="-9" />
   <widget source="Title" render="Label" position="10,12" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
@@ -3497,7 +3486,7 @@ self['config'].l.setSeperation(int(300*f))
   <widget name="tries" position="20,195" size="560,40" font="Regular;22" valign="center" halign="center" />
   <widget name="input" position="20,245" size="560,40" font="Regular;30" valign="center" halign="center" />
 </screen>
-  <screen name="PiPSetup" position="center,center" size="602,252" title="">
+  <screen name="PiPSetup" position="center,center" size="602,252" title="PiPSetup">
   <eLabel position="1,1" size="600,250" transparent="0" />
   <eLabel text="PiPSetup" position="1,5" size="600,50" valign="bottom" font="Regular;34" halign="center" zPosition="1" transparent="1" />
   <eLabel position="1,60" size="600,1" backgroundColor="Line" zPosition="1" />
@@ -3640,8 +3629,8 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pig_setup" />
   </screen>
   <!-- Positioner setup -->
-  <screen name=" positionerSetup" position="0,0" size="1920,1080" title=" positioner setup..." flags="wfNoBorder" backgroundColor="background">
-    <eLabel text=" positioner setup..." position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+   <screen name="PositionerSetup" position="0,0" size="1920,1080" title="Positioner setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Positioner setup..." position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="list" position="105,100" size="1050,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <eLabel position="105,580" size="1050,2" backgroundColor="Line" foregroundColor="Line" transparent="0" />
     <widget name="snr_db" position="240,608" size="300,38" halign="center" valign="center" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
@@ -3664,6 +3653,22 @@ self['config'].l.setSeperation(int(300*f))
     <eLabel text="Polarisation:" position="715,818" size="225,38" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="polarisation" position="955,818" size="225,38" font="Regular; 34" backgroundColor="background" foregroundColor="white" transparent="1" />
     <panel name="template_fullscreen" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_exit" />
+    <panel name="template_pig_setup" />
+  </screen>
+  <screen name="PositionerSetupLog" position="0,0" size="1920,1080" title="Positioner Setup Log" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_exit" />
+    <panel name="template_pig_setup" />
+  </screen>
+  <screen name="TunerScreen" position="0,0" size="1920,1080" title="Tune" flags="wfNoBorder" backgroundColor="background">
+    <widget name="config" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_menu_ok_exit" />
@@ -3780,9 +3785,9 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="RemoveTimerQuestion" position="center,center" size="1200,500" zPosition="10" title="Message">
     <panel name="MessageBox-template" />
   </screen>
-  <screen name="SubservicesQuickzap" position="380,600" size="560,100" title="">
+  <screen name="SubservicesQuickzap" position="380,600" size="560,100" title="Subservices">
   <widget source="session.RecordState" render="Pixmap" pixmap="Multibox/skin_default/icons/record.png" position="511,7" zPosition="2" size="48,48" alphatest="on">
-    <convert type="ConditionalShowHide">Blink</convert>
+   <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <widget source="Title" render="Label" position="5,6" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
   <widget name="CurrentSubserviceNumber" position="9,62" size="50,34" font="Regular;22" shadowColor="black" shadowOffset="-1,-1" />
@@ -3793,7 +3798,7 @@ self['config'].l.setSeperation(int(300*f))
   <!-- Subtitle -->
   <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
   </screen>
-  <screen name="QuickSubtitlesConfigMenu" position="center,center" size="1200,500" title="">
+  <screen name="QuickSubtitlesConfigMenu" position="center,center" size="1200,500" title="Subtitle settings">
   <eLabel position="3,3" size="1194,494" zPosition="-10" />
   <eLabel position="1,1" size="1200,500" zPosition="-12" backgroundColor="Line" />
   <widget name="config" position="10,10" size="1180,420" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
@@ -3888,18 +3893,25 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_source_red_green" />
     <panel name="template_pig_setup" />
   </screen>
-  <screen name="PVRState" position="20,25" zPosition="2" size="880,30" backgroundColor="background20">
-    <eLabel text="Speed" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="50,0" size="100,30" transparent="1" />
-    <widget name="state" position="230,0" size="150,30" backgroundColor="background" foregroundColor="default" font="Regular; 30" halign="center" transparent="1" valign="center" />
-    <eLabel text="Playback Time:" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="409,0" size="220,30" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="613,0" size="100,30" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="right" transparent="1" valign="center">
+  <screen name="PVRState" position="20,25" zPosition="2" size="1880,30" backgroundColor="background20">
+    <eLabel text="Speed" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="850,0" size="100,30" transparent="1" />
+    <widget name="state" position="1030,0" size="150,30" backgroundColor="background" foregroundColor="default" font="Regular; 30" halign="center" transparent="1" valign="center" />
+    <eLabel text="Playback Time:" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="1209,0" size="220,30" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1413,0" size="100,30" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="right" transparent="1" valign="center">
       <convert type="AMBServiceTime">StartTime</convert>
     </widget>
-    <eLabel text="-" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="center" valign="center" position="714,0" size="25,30" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="739,0" size="110,30" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" transparent="1" valign="center">
+    <eLabel text="-" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="center" valign="center" position="1514,0" size="25,30" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1539,0" size="110,30" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" transparent="1" valign="center">
       <convert type="AMBServiceTime">EndTime</convert>
     </widget>
-    <ePixmap pixmap="Multibox/buttons/key_left_ok_right.png" position="150,0" size="75,30" alphatest="blend" />
+    <eLabel text="Current Time:" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="135,0" size="225,30" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="329,0" size="100,30" font="Regular; 30" halign="left" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="432,0" size="400,30" font="Regular; 30" halign="left" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Format:, %A , %d.%m.%Y</convert>
+    </widget>
+    <ePixmap pixmap="Multibox/buttons/key_left_ok_right.png" position="950,0" size="75,30" alphatest="blend" />
   </screen>
   <screen name="PVRState_Top" position="20,10" zPosition="2" size="1880,102" backgroundColor="background20">
     <widget name="state" position="10,60" size="1860,40" backgroundColor="background20" foregroundColor="transpWhite" font="Regular; 36" halign="center" transparent="1" valign="center" />
@@ -3924,35 +3936,41 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="Mute" position="90,90" size="100,100" title="Mute" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" size="100,100" pixmap="Multibox/icons/Mute.png" zPosition="22" />
   </screen>
+  <screen name="Volume" position="650,60" size="551,140" title="Volume" flags="wfNoBorder" backgroundColor="background30" zPosition="99">
+    <widget name="Volume" position="127,62" size="261,17" zPosition="1" pixmap="Multibox/icons/Volume_bar.png" transparent="1" />
+    <ePixmap position="0,0" size="551,140" zPosition="0" pixmap="Multibox/icons/Volume.png" borderColor="Multiboxlabel" borderWidth="3" alphatest="blend" />
+    <widget font="LCD;90" render="AMBVolume" valign="center" halign="center" foregroundColor="Multiboxlabel" backgroundColor="background" transparent="1" borderColor="white" borderWidth="3" source="global.CurrentTime" position="390,24" size="120,90" zPosition="20" />
+  </screen>
   <!-- VideoMode -->
-  <screen name="VideoMode" position="center,center" size="250,60" title="">
+  <screen name="VideoMode" position="center,center" size="250,60" title="VideoMode">
   <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
 </screen>
   <!-- VirtualKeyBoard -->
-  <screen name="VirtualKeyBoard" position="center,center" size="1000,600" zPosition="99" title="" backgroundColor="background20">
-    <eLabel text="Virtual KeyBoard" position="150,57" size="788,45" noWrap="1" valign="center" font="Regular; 36" backgroundColor="background" halign="left" transparent="1" zPosition="1" />
-    <widget name="header" position="4,5" size="990,45" font="Regular; 36" backgroundColor="background" foregroundColor="darkyellow" halign="center" transparent="1" noWrap="1" />
-    <eLabel position="5,105" size="990,69" zPosition="1" backgroundColor="Line" foregroundColor="default" />
-    <eLabel position="0,51" size="1000,2" backgroundColor="Line" zPosition="1" />
-    <widget name="text" position="8,108" size="984,63" backgroundColor="background" foregroundColor="white" zPosition="3" font="Regular;45" noWrap="1" valign="center" halign="right" />
-    <widget name="list" position="10,199" size="800,320" selectionDisabled="1" transparent="1" />
-    <widget source="country" render="Label" position="371,556" size="150,35" noWrap="1" zPosition="1" valign="center" font="Regular;27" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget source="country" render="Pixmap" position="862,211" size="90,60" alphatest="blend" borderWidth="0">
-      <convert type="ValueToPixmap">LanguageCode</convert>
-    </widget>
-    <eLabel position="0,539" size="1000,2" backgroundColor="Line" zPosition="-1" />
-    <eLabel position="0,0" size="1000,600" backgroundColor="background20" zPosition="-2" />
-    <ePixmap pixmap="Multibox/buttons/key_red.png" position="17,553" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_green.png" position="204,553" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_blue.png" position="526,553" size="35,35" alphatest="blend" />
-    <eLabel text="Delete" position="61,556" size="140,35" font="Regular; 27" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="OK" position="245,556" size="80,35" font="Regular; 27" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="switch to" position="568,556" size="160,35" font="Regular;27" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="330,553" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_ok.png" position="881,553" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_exit.png" position="750,553" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap position="26,63" size="103,35" zPosition="2" pixmap="Multibox/buttons/key_board.png" transparent="1" alphatest="blend" />
-  </screen>
+ <screen name="VirtualKeyBoard" position="0,0" size="1920,1080" zPosition="99" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Virtual KeyBoard" position="214,280" size="788,60" foregroundColor="cyan1" noWrap="1" valign="center" font="Regular; 48" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="header" conditional="header" position="215,340" size="1150,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
+    <widget name="prompt" conditional="prompt" position="215,340" size="1150,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
+    <eLabel position="211,392" size="1150,69" zPosition="1" backgroundColor="grey" foregroundColor="cyan" />
+    <widget name="text" position="214,395" size="1144,63" backgroundColor="background" foregroundColor="white" zPosition="3" font="Regular;33" noWrap="1" valign="center" halign="right" />
+    <widget name="list" position="222,499" size="960,440" itemHeight="70" selectionDisabled="1" transparent="1" zPosition="1" />
+    <widget name="language" conditional="language" position="0,0" size="0,0" font="Regular;33" backgroundColor="background" foregroundColor="white" transparent="1" noWrap="1" />
+    <widget name="mode" conditional="mode" position="221,460" size="225,42" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="left" transparent="1" noWrap="1" />
+    <widget name="locale" conditional="locale" position="1192,500" size="270,250" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" valign="center" transparent="1" />
+    <eLabel position="215,342" size="1150,45" backgroundColor="background" zPosition="-1" />
+    <eLabel position="208,277" size="1266,710" backgroundColor="background" zPosition="-2" />
+    <ePixmap pixmap="Multibox/buttons/key_text.png" position="1401,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_exit.png" position="1330,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_info.png" position="1260,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1191,711" size="270,220" zPosition="2" pixmap="Multibox/icons/keyboard.png" transparent="1" alphatest="blend" />
+    <widget source="key_red" render="Label" position="267,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="520,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="775,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="1033,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="Multibox/buttons/key_red.png" position="223,950" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_green.png" position="475,950" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="729,950" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_blue.png" position="986,950" size="35,35" backgroundColor="Background" alphatest="blend" />
+ </screen>
   <!-- Wizzard's -->
   <screen name="NetworkWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
     <eLabel text="NetworkWizard" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
@@ -5223,7 +5241,7 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pig_setup" />
   </screen>
   <screen name="BluetoothSetupConfig" position="0,0" size="1920,1080" title="Bluetooth Setup Options" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="Bluetooth Setup Options" position="180,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <eLabel text="Bluetooth Setup Options" position="420,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <panel name="template_setup_config" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -5250,7 +5268,7 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <!-- RemoteControlCode -->
   <screen name="RemoteControlCode" position="0,0" size="1920,1080" title=" position Setup" flags="wfNoBorder" backgroundColor="background">
-    <widget source="Title" render="Label" position="180,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="Title" render="Label" position="440,20" size="860,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <panel name="template_setup_config" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
