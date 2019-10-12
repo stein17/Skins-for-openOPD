@@ -1,6 +1,6 @@
 <skin>
   <!-- Multibox -->
-  <!-- Multibox Skin  for ATV image, by stein17 -->
+  <!-- Multibox Skin  for OPD image, by stein17 -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- orginal author="stein17" license="You can change the skin as long as the license/author is not deleted -->
   <output id="0">
@@ -1201,7 +1201,7 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="ServicePosition">Length</convert>
     </widget>
     <eLabel font="Regular; 36" halign="left" valign="center" position="1021,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
-    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Laufzeit:" transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Running time:" transparent="1" foregroundColor="default" />
     <ePixmap position="0,854" zPosition="-20" size="1920,226" pixmap="Multibox/menu/Player.png" />
     <!--     <widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" 
 	pixmaps="Multibox/skin_default/system/play.png,Multibox/skin_default/system/pause.png,
@@ -1332,7 +1332,7 @@ self['config'].l.setSeperation(int(300*f))
     <ePixmap pixmap="Multibox/skin_default/system/clock_player.png" position="419,1038" size="24,24" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Multibox/skin_default/system/time_end.png" position="1175,1040" size="20,20" zPosition="1" alphatest="blend" />
     <eLabel font="Regular; 36" halign="left" valign="center" position="1021,1030" size="90,40" text="Min." transparent="1" foregroundColor="default" />
-    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Laufzeit:" transparent="1" foregroundColor="default" />
+    <eLabel font="Regular; 36" halign="right" valign="center" position="719,1030" size="180,40" text="Running time:" transparent="1" foregroundColor="default" />
     <ePixmap position="0,854" zPosition="-20" size="1920,226" pixmap="Multibox/menu/Player.png" />
     <widget source="global.CurrentTime" render="AMBWatches" position="1822,866" size="69,69" zPosition="4" foregroundColor="bluetitle" alphatest="blend">
       <convert type="AMBAnalogClock">secHand</convert>
@@ -2195,8 +2195,8 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <screen name="BouquetSelector" position="0,0" size="1920,1080" title="Choose bouquet" flags="wfNoBorder" backgroundColor="background">
     <!-- <screen name="BouquetSelector" position="center,center" size="1920,1080" title="Sender in Bouquet einfĂ¼gen" flags="wfNoBorder" > -->
-    <eLabel text="Sender in Bouquet einfĂ¼gen" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <eLabel text="Bouquet wĂ¤hlen - Fertig mit OK - Abbruch mit Exit" position="10,100" size="1000,40" font="Regular; 36" transparent="1" />
+    <eLabel text="Sender in Bouquet Insert" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <eLabel text="Bouquet select - Done with OK - Cancel with Exit" position="10,100" size="1000,40" font="Regular; 36" transparent="1" />
     <!--  <eLabel text="Choose Bouquet" position="30,80" size="700,32" font="Regular;24" transparent="1" /> -->
     <eLabel position="10,155" size="1180,2" backgroundColor="Line" />
     <widget name="menu" position="10,170" size="1180,800" zPosition="3" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
@@ -2489,7 +2489,7 @@ self['config'].l.setSeperation(int(300*f))
 			</convert>
     </widget>
     <eLabel text="Its recommend to create a Fullbackup before update!" position="1223,800" size="600,80" zPosition="1" font="Regular; 36" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
-    <eLabel text="Empfohlen wird ein Fullbackup vor dem Update!" position="1223,680" size="600,80" zPosition="1" font="Regular; 36" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
+    <eLabel text="We recommend a full backup before the update!" position="1223,680" size="600,80" zPosition="1" font="Regular; 36" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
     <panel name="template_exit" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />

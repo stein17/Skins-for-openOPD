@@ -1789,7 +1789,7 @@
     <!-- DO NOT CHANGE THIS LINE !!!!!!!!!!!!!!! -->
     <widget enableWrapAround="0" itemHeight="30" font="Regular;0" name="list" position="0,0" size="0,90" zPosition="-10" />
     <widget source="session.CurrentService" render="Picon" position="1225,180" size="75,45" zPosition="2" alphatest="blend">
-      <convert type="MetrixHDServiceName2">Reference</convert>
+      <convert type="ServiceName2">Reference</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" position="1313,743" size="435,12" foregroundColor="Line" borderWidth="1" transparent="1" zPosition="2" borderColor="foregroundClock">
       <convert type="EventTime">Progress</convert>
