@@ -373,6 +373,15 @@
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
   </screen>
+  <!-- NetworkPassword FHD  -->
+  <screen name="NetworkPassword" position="0,0" size="1920,1080" title="Password setup" backgroundColor="background" flags="wfNoBorder">
+    <widget name="passwd" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="lab1" position="10,300" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pig_setup" />
+    <panel name="template_pixmap_BG" />
+  </screen>
   <!-- OPD DownloadOnLineImage OPD -->
   <screen name="DownloadOnLineImage" position="0,0" size="1920,1080" title="Download Image" backgroundColor="background" flags="wfNoBorder">
     <widget name="imageList" position="10,100" zPosition="1" size="1180,880" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
