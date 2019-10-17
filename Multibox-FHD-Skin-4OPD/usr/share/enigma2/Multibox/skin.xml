@@ -660,7 +660,7 @@
     </widget>
     <!--  SNR -->
     <widget source="session.CurrentService" render="Label" position="1223,687" size="674,30" zPosition="1" font="Regular; 30" backgroundColor="background20" transparent="0" foregroundColor="white" text="Temperature" noWrap="1">
-      <convert type="OPDTemp">Temperature</convert>
+      <convert type="AMBTemp">Temperature</convert>
   </widget>
     <widget source="session.CurrentService" render="Label" position="1223,852" size="674,30" zPosition="1" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="AMBReceiverInfo">FlashInfo</convert>

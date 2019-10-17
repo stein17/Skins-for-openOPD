@@ -1,8 +1,3 @@
-﻿#  GlamourExtra Converter
-#  Modded and recoded by MCelliotG for use in Glamour skins or standalone
-#  HDDtemp new detection added by betacentauri, many thanks!!!
-#  If you use this Converter for other skins and rename it, please keep the first and second line adding your credits below
-
 from Components.Converter.Converter import Converter 
 from Components.Element import cached 
 from Poll import Poll
@@ -10,7 +5,7 @@ from enigma import eConsoleAppContainer
 from os import system, path, popen
 from Tools.Directories import fileExists
 
-class OPDTemp(Poll, Converter):
+class AMBTemp(Poll, Converter):
     CPU_CALC = 0
     CPU_ALL = 1
     CPU_TOTAL = 2
