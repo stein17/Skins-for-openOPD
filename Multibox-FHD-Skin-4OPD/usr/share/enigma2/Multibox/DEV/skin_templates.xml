@@ -348,6 +348,9 @@
     <ePixmap pixmap="Multibox/buttons/key_ok.png" position="1795,1022" size="103,35" zPosition="10" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_exit.png" position="1675,1022" size="103,35" zPosition="10" transparent="1" />
   </screen>
+    <screen name="template_ok">
+    <ePixmap pixmap="Multibox/buttons/key_ok.png" position="1460,1022" size="103,35" zPosition="10" transparent="1" />
+  </screen>
   <screen name="template_info_exit">
     <ePixmap pixmap="Multibox/buttons/key_info.png" position="1795,1022" size="103,35" zPosition="10" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_exit.png" position="1675,1022" size="103,35" zPosition="10" transparent="1" />
