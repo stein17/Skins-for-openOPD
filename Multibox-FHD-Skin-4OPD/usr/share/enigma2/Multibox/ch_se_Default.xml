@@ -46,12 +46,12 @@
   <widget source="ServiceEvent" render="Picon" position="11,484" size="71,40" zPosition="5" alphatest="blend" transparent="1">
     <convert type="AMBRefString">ServicelistRef</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="160,530" size="80,30" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="cyan">
+  <widget source="ServiceEvent" render="Label" position="160,530" size="80,30" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="default">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">
     </convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="610,530" size="80,30" font="Regular; 27" foregroundColor="cyan" backgroundColor="background" transparent="1" zPosition="1">
+  <widget source="ServiceEvent" render="Label" position="610,530" size="80,30" font="Regular; 27" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">
     </convert>

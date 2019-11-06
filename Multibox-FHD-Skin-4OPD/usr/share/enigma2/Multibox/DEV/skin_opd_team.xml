@@ -1350,10 +1350,10 @@
 					}
 			</convert>
   </widget>
-  <widget source="menu" render="Listbox" position="1223,560" size="670,420" backgroundColor="background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+  <widget source="menu" render="Listbox" position="1223,560" size="670,620" backgroundColor="background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
     <convert type="TemplatedMultiContent">
 					{"template": [
-							MultiContentEntryText(pos = (3, 3), size = (620, 400), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+							MultiContentEntryText(pos = (3, 3), size = (620, 600), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 						],
 					"fonts": [gFont("Regular", 32)],
 					"itemHeight": 600

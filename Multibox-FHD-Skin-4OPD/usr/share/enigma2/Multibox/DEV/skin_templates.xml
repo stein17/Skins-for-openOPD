@@ -1492,7 +1492,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
 	 
-	 colorEventProgressbarBorder="grey1" 
+	 colorEventProgressbarBorder="greyblue" 
 	 colorEventProgressbarBorderSelected="greyblue" 
 	 picServiceEventProgressbar="Multibox/menu/Progress_CS_color.png"/>
 	 
@@ -1809,7 +1809,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
 	 
-	 colorEventProgressbarBorder="grey1" 
+	 colorEventProgressbarBorder="greyblue" 
 	 colorEventProgressbarBorderSelected="greyblue" 
 	 picServiceEventProgressbar="Multibox/menu/Progress_CS_color.png"/>
 </screen>
@@ -2099,7 +2099,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	 backgroundColor="background" 
 	 backgroundColorSelected="verydarkgrey"
 	 
-	 colorEventProgressbarBorder="grey1" 
+	 colorEventProgressbarBorder="greyblue" 
 	 colorEventProgressbarBorderSelected="greyblue" 
 	 picServiceEventProgressbar="Multibox/menu/Progress_CS_color.png"/>
 </screen>

@@ -24,8 +24,7 @@
 	<color name="darkblue" value="#0016244b" />
     <color name="darkblue2" value="#00031b5e" />
     <color name="darkbluelabel" value="#00002672" />
-	+
-+<color name="Multiboxlabel" value="#00065c9e" />
++   <color name="Multiboxlabel" value="#00065c9e" />
 	<color name="metrixblue" value="#000050ef" />
     <color name="lightblue" value="#0066ccff" />
     <color name="lightbluelabel" value="#000040c0" />
