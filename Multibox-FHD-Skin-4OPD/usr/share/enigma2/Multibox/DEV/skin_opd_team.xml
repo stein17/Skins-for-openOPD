@@ -1021,7 +1021,7 @@
   <!-- Manual Ipk Installer -->
   <screen name="ManualPanel" title="OPENDROID IPK Tools Panel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="list" position="10,100" size="1180,870" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="10,100" size="1180,870" itemHeight="70" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -1029,27 +1029,27 @@
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
-  <screen name="PanelIPKInstaller" position="0,0" size="1920,1080" title="Manual Install Ipk Packages" flags="wfNoBorder" backgroundColor="background">
+  <screen name="PanelIPKInstaller" position="0,0" size="1920,1080" title="Install Ipk Packages" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
       <convert type="StringList" />
     </widget>
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="template_source_red_o_yellow" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
   <screen name="PanelTGzInstaller" position="0,0" size="1920,1080" title="Manual Install Tgz Packages" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
       <convert type="StringList" />
     </widget>
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="template_source_red_o_yellow" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1098,6 +1098,26 @@
     <panel name="template_name_red_green" />
     <panel name="template_pig_setup" />
   </screen>
+  <!-- downfeed FHD -->
+  <screen backgroundColor="background" flags="wfNoBorder" name="downfeed" position="0,0" size="1920,1080" title="insatall extensions from feed">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,880" backgroundColor="background" itemHeight="50" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (72, 72), png = 4), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (10, 2), size = (1440, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (185, 56), size = (1000, 40), font=1, flags = RT_HALIGN_LEFT, text = 2, color=0x8A8787, color_sel=0x8A8787), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (0, 98), size = (0, 0), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular",36),gFont("Regular",30)],
+				"itemHeight": 105
+				}
+			</convert>
+    </widget>
+    <panel name="template_source_red_green" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_pig_setup" />
+ </screen>
   <!-- RestartNetwork FHD -->
   <screen name="RestartNetwork" position="center,center" size="800,140" title="">
     <ePixmap name="InfoPixmap" pixmap="Multibox/skin_default/icons/input_info.png" position="10,2" size="80,80" alphatest="blend" />
