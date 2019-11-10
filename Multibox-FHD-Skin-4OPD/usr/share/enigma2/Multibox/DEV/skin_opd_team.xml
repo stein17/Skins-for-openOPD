@@ -1559,10 +1559,10 @@
   <widget name="config" position="50,130" size="1120,550" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
   <ePixmap pixmap="Multibox/buttons/key_blue.png" position="47,933" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_menu.png" position="50,798" size="103,35" zPosition="10" transparent="1" />
-  <eLabel text="Weather Setup .... Press Menu Button to get to the weather plugin" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
-  <eLabel text="Help, Skin settings(Weather, Own user logo )" position="92,930" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
+  <widget name="lab11" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
+  <widget name="lab13" position="92,930" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <eLabel text="/Save" position="360,1000" size="160,70" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" valign="center" />
-  <eLabel text="Yellow key press around Skinparts to select" position="92,870" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
+  <widget name="lab12" position="92,870" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <widget name="Picture" position="1265,630" size="612,344" alphatest="on" />
   <ePixmap pixmap="Multibox/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
@@ -1604,18 +1604,18 @@
   </screen>
   <!-- AtileHD_About FHD -->
   <screen name="AtileHD_About" position="0,0" size="1920,1080" title="AtileHD_About" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text=" *Multibox FHD*  FHD Skin for OPD Images by stein17" position="530,20" size="960,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <eLabel text="Skin information" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="lab1" position="530,20" size="960,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="lab2" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <ePixmap pixmap="Multibox/DEV/logo_opendroid.png" position="8,103" size="1180,160" zPosition="10" transparent="1" alphatest="blend" />
-    <eLabel text="*Multibox* FHD Skin for OPD Images by stein17" position="1227,880" size="680,30" font="Replacement; 24" align="left" valign="center" foregroundColor="Line" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
+    <widget name="lab3" position="1227,880" size="680,30" font="Replacement; 24" align="left" valign="center" foregroundColor="Line" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
     <ePixmap pixmap="Multibox/menu/Multibox_Info.png" position="1223,550" size="670,300" zPosition="-15" />
-    <eLabel text=" Support: https://droidsat.org/forum/  " position="1225,961" size="670,40" zPosition="1" font="Regular; 28" halign="center" backgroundColor="background" transparent="1" />
-    <eLabel text="In the skin there is the possibility to integrate your own user logos. The logo should not be bigger than 150x48 pixels. Scale your logo to this size and save it as User_Logo.png. Then copy the logo with FTP to usr / share / enigma2 / Multibox / Skinparts /, this will overwrite the original. Anyone who has requests regarding a user logo, can sign up in the forum. PN's are ignored." position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text="Google DNS Server: The IP addresses of the Google service&#xD;&#xA;IP addresses for the Internet Protocol version 4 (IPv4):&#xD;&#xA;Preferred DNS server: 8.8.8.8 &#xD;&#xA;Alternative DNS server: 8.8.4.4&#xD;&#xA;IP addresses for the Internet Protocol version 6 (IPv6):&#xD;&#xA;Preferred DNS server: 2001:4860:4860::8888&#xD;&#xA;Alternative DNS server: 2001:4860:4860::8844" position="10,605" size="1190,270" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text=" Instructions User logo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text=" If no weather is displayed, it may help to change the DNS address " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text=" DNS server fast and secure: Super fast DNS server from Cloudflare " position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text="Preferred DNSv4-Server die IP 1.1.1.1  &#xD;&#xA; Alternative DNSv4-Server die IP 1.0.0.1" position="10,922" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab4" position="1225,961" size="670,40" zPosition="1" font="Regular; 28" halign="center" backgroundColor="background" transparent="1" />
+    <widget name="lab5" position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab6" position="10,605" size="1190,270" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab7" position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab8" position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab9" position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab10" position="10,922" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel name="" position="10,331" size="1150,2" backgroundColor="Line" />
     <eLabel name="" position="10,600" size="1150,2" backgroundColor="Line" />
     <eLabel name="" position="10,915" size="1150,2" backgroundColor="Line" />
