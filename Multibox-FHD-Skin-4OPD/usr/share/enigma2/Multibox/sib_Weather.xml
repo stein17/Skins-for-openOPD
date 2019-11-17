@@ -106,8 +106,9 @@
     <convert type="FrontendInfo">BER</convert>
   </widget>
   <!--  SNR -->
-  <eLabel text="Temperatur:" position="1223,687" size="174,30" zPosition="1" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
-  <widget source="global.CurrentTime" render="AMBSYSTemp" position="1395,687" size="500,30" font="Regular;30" halign="left" valign="center" backgroundColor="background" foregroundColor="white" noWrap="1" transparent="1" zPosition="3" />
+ <widget source="session.CurrentService" render="Label" position="1223,687" size="674,30" zPosition="1" font="Regular; 30" backgroundColor="background20" transparent="0" foregroundColor="white" text="Temperature" noWrap="1">
+      <convert type="AMBTemp">Temperature</convert>
+  </widget>
   <widget source="session.CurrentService" render="Label" position="1223,852" size="674,30" zPosition="1" font="Regular; 30" halign="left" valign="center" backgroundColor="background" foregroundColor="white" transparent="1">
     <convert type="AMBReceiverInfo">FlashInfo</convert>
   </widget>
@@ -124,7 +125,7 @@
     <convert type="AMBReceiverInfo">MemFree</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1223,885" size="674,30" zPosition="1" font="Regular; 30" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
-    <convert type="AMBCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
+    <convert type="AMBCPUInfo">CPU workload:$0 Core 1:$1  Core 2:$2</convert>
   </widget>
   <!-- <widget source="session.CurrentService" render="Label" font="Regular; 16" position="788,539" size="380,40" halign="left" zPosition="50" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="default">
   <convert type="CryptoInfo">VerboseInfo</convert>
