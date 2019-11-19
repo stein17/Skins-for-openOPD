@@ -1046,7 +1046,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="wizard" position="10,130" size="305,287" pixmap="Multibox/skin_default/system/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="text" position="330,87" size="860,480" font="Regular;36" backgroundColor="background" transparent="1" />
     <widget source="list" render="Listbox" position="10,590" size="1180,400" zPosition="13" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (30, 3), size = (1060, 40), flags = RT_HALIGN_LEFT, text = 0) ],
+      <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (30, 3), size = (1200, 40), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 36)],
 				"itemHeight": 50
 				}</convert>

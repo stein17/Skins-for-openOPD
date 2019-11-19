@@ -4654,10 +4654,10 @@ self['config'].l.setSeperation(int(300*f))
   <screen name="AutoDiseqc" title="AutoDiseqc" position="center,center" size="1200,500" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel position="10,162" size="1180,1" backgroundColor="Line" />
-    <widget source="statusbar" render="Label" position="10,100" zPosition="10" size="1180,500" halign="center" valign="center" font="Regular; 34" transparent="1" />
-    <widget source="tunerstatusbar" render="Label" position="10,165" zPosition="10" size="1180,500" halign="center" valign="center" font="Regular; 34" transparent="1" />
+    <widget source="statusbar" render="Label" position="10,100" zPosition="10" size="1180,420" halign="center" valign="center" font="Regular; 34" transparent="1" />
+    <widget source="tunerstatusbar" render="Label" position="10,165" zPosition="10" size="1180,420" halign="center" valign="center" font="Regular; 34" transparent="1" />
     <eLabel position="10,208" size="1180,1" backgroundColor="Line" />
-    <widget name="config" position="10,211" size="1180,500" itemHeight="50" font="Regular; 34" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget name="config" position="10,211" size="1180,420" itemHeight="50" font="Regular; 34" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <ePixmap pixmap="Multibox/buttons/key_exit.png" position="930,445" size="103,35" alphatest="on" />
     <ePixmap pixmap="Multibox/buttons/key_ok.png" position="1066,445" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="Multibox/Skinparts/BG_3_red.png" position="0,0" zPosition="-20" size="1200,500" />
