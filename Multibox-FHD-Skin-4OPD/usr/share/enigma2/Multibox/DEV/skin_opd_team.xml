@@ -721,11 +721,11 @@
   </widget>
   <ePixmap pixmap="Multibox/icons/fan1.png" position="1295,225" zPosition="3" size="70,70" alphatest="blend" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="1370,257" size="550,25" font="Regular; 26" zPosition="6" foregroundColor="yellow" transparent="0" text="HDDTemp" noWrap="1">
-    <convert type="OPDTemp">FanInfo</convert>
+    <convert type="AMBTemp">FanInfo</convert>
   </widget>
   <ePixmap position="1295,385" zPosition="1" size="70,70" pixmap="Multibox/icons/cpu_1.png" alphatest="blend" />
   <widget font="Regular; 21" backgroundColor="black" halign="left" position="1370,410" render="Label" size="550,25" source="session.CurrentService" transparent="1" foregroundColor="yellow" zPosition="6">
-    <convert type="OPDTemp">Temperature</convert>
+    <convert type="AMBTemp">Temperature</convert>
   </widget>
   <ePixmap position="1295,469" zPosition="1" size="70,70" pixmap="Multibox/icons/cpu_1.png" alphatest="blend" />
   <widget source="session.Event_Now" render="Progress" position="1370,479" size="527,12" foregroundColor="Multiboxlabel" backgroundColor="black" transparent="1" borderColor="Multiboxlabel" borderWidth="1" zPosition="6">
