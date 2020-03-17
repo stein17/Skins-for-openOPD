@@ -373,6 +373,15 @@
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
   </screen>
+  <!-- NetworkPassword FHD  -->
+  <screen name="NetworkPassword" position="0,0" size="1920,1080" title="Password setup" backgroundColor="background" flags="wfNoBorder">
+    <widget name="passwd" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="lab1" position="10,300" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pig_setup" />
+    <panel name="template_pixmap_BG" />
+  </screen>
   <!-- OPD DownloadOnLineImage OPD -->
   <screen name="DownloadOnLineImage" position="0,0" size="1920,1080" title="Download Image" backgroundColor="background" flags="wfNoBorder">
     <widget name="imageList" position="10,100" zPosition="1" size="1180,880" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
@@ -684,7 +693,7 @@
 </screen>
   <!--   EmuManager FHD -->
  <screen name="BluePanel" title="Emu Manager" position="0,0" size="1920,1080" backgroundColor="background" flags="wfNoBorder">
-  <eLabel text="OPENDROID BluePanel" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+  <eLabel text="OPD BluePanel" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
   <eLabel name="vertikalline" position="300,361" size="650,2" foregroundColor="Line" backgroundColor="Line" />
   <eLabel name="vertikalline" position="301,613" size="650,2" foregroundColor="Line" backgroundColor="Line" />
   <eLabel name="vertikalline" position="985,131" size="2,840" foregroundColor="Line" backgroundColor="Line" />
@@ -697,17 +706,14 @@
   <ePixmap pixmap="Multibox/icons/menu_information_device.png" position="21,384" size="256,256" zPosition="2" alphatest="blend" />
   <ePixmap position="1009,695" size="256,256" zPosition="2" pixmap="Multibox/icons/opd_icon.png" transparent="1" />
   <ePixmap pixmap="Multibox/icons/softcam.png" position="20,671" size="256,256" zPosition="2" alphatest="blend" />
-  <widget name="config" position="300,162" size="570,100" font="Regular;30" itemHeight="35" transparent="1" zPosition="1" />
-  <widget name="actifcam" position="300,276" size="670,30" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
-  <widget name="actifcam2" position="300,319" size="670,30" font="Regular;28" foregroundColor="yellow" transparent="1" zPosition="3" />
+  <widget name="config" position="300,162" size="570,400" font="Regular;30" itemHeight="35" transparent="1" zPosition="1" />
+  <widget name="info" position="300,630" size="680,350" font="Regular; 28" zPosition="2" foregroundColor="cyan" transparent="1" />
   <widget font="Regular; 36" name="camcount" position="1675,1014" size="160,50" />
   <!-- is crypted ? -->
   <widget name="lb_channel" position="300,387" size="730,100" font="Regular;35" zPosition="2" foregroundColor="green" transparent="1" />
   <widget name="lb_provider" position="300,439" size="730,100" font="Regular;35" zPosition="2" transparent="1" foregroundColor="green" />
   <widget name="lb_videosize" position="300,494" size="730,100" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
   <widget name="lb_aspectratio" position="300,545" size="730,100" font="Regular;32" zPosition="2" foregroundColor="green" transparent="1" />
-  <widget name="ecminfo" position="300,630" size="730,350" font="Regular; 28" zPosition="2" foregroundColor="cyan" transparent="1" />
-  <widget name="list" position="73,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" transparent="1" zPosition="2" />
   <widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="Multiboxlabel" transparent="1" zPosition="1" />
   <ePixmap position="1295,305" size="70,70" zPosition="1" pixmap="Multibox/icons/itimer.png" alphatest="blend" />
   <widget font="Regular; 21" backgroundColor="black" halign="left" position="1370,340" render="Label" size="550,25" source="session.CurrentService" transparent="1" foregroundColor="yellow" zPosition="6">
@@ -783,12 +789,12 @@
 				}
 			</convert>
     </widget>
-    <widget source="key_ok" render="Label" position="668,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
-    <panel name="template_name_red_green" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
+    <panel name="template_ok" />
+    <panel name="template_name_red_o_yellow" />
+    <widget source="key_ok" render="Label" position="1580,1020" size="225,40" font="Regular;30" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
   </screen>
   <!--  OPD CamStart FHD -->
   <screen name="CamStart" position="0,0" size="1920,1080" title="Starting Softcam" flags="wfNoBorder" backgroundColor="background">
@@ -868,14 +874,14 @@
     <panel name="template_pig_setup" />
   </screen>
   <!--  OscamSmartcard FHD -->
-  <screen name="OscamSmartcard" position="0,0" size="1920,1080" title="Panel OscamSmartcard" backgroundColor="background" flags="wfNoBorder">
+    <screen name="OscamSmartcard" position="0,0" size="1920,1080" title="Panel OscamSmartcard" backgroundColor="background" flags="wfNoBorder">
     <eLabel text="OscamSmartcard" position="180,20" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="config" position="10,100" size="1180,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="HELPTEXT" position="10,600" size="1180,380" font="Regular; 36" backgroundColor="background" transparent="1" zPosition="1" />
-    <widget name="oscamsmartcardhelperimage" position="1223,560" size="680,430" zPosition="1" backgroundColor="black" transparent="1" />
+    <widget name="config" position="10,300" size="1180,480" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="HELPTEXT" position="10,720" size="1180,380" font="Regular; 36" backgroundColor="background" transparent="1" zPosition="1" />
+    <widget name="oscamsmartcardhelperimage" position="1223,167" size="680,430" zPosition="1" backgroundColor="black" transparent="1" />
     <widget name="HEADER" position="10,100" size="1180,180" zPosition="1" font="Regular; 32" halign="left" backgroundColor="black" transparent="1" />
     <widget name="INFOTXT" position="1280,787" size="600,180" zPosition="1" font="Regular; 32" halign="left" backgroundColor="black" transparent="1" />
-    <eLabel text="OscamSmartcard 2.4 by arn354 and Undertaker Mod OPD team" position="1222,1025" size="650,30" zPosition="1" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" />
+    <eLabel text="OscamSmartcard 2.5 by arn354 and Undertaker Mod OPD team" position="1222,1025" size="650,30" zPosition="1" font="Regular; 22" halign="right" backgroundColor="black" transparent="1" />
     <eLabel font="Regular; 30" backgroundColor="background" valign="center" position="63,1005" size="250,70" text="Cancel" transparent="1" zPosition="2" />
     <eLabel font="Regular; 30" backgroundColor="background" valign="center" position="362,1005" size="250,70" text="Save" transparent="1" zPosition="2" />
     <eLabel font="Regular; 30" backgroundColor="background" valign="center" position="663,1005" size="250,70" text="Softcam Restart" transparent="1" zPosition="2" />
@@ -1015,7 +1021,7 @@
   <!-- Manual Ipk Installer -->
   <screen name="ManualPanel" title="OPENDROID IPK Tools Panel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="list" position="10,100" size="1180,870" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="10,100" size="1180,870" itemHeight="70" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -1023,27 +1029,27 @@
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
-  <screen name="PanelIPKInstaller" position="0,0" size="1920,1080" title="Manual Install Ipk Packages" flags="wfNoBorder" backgroundColor="background">
+  <screen name="PanelIPKInstaller" position="0,0" size="1920,1080" title="Install Ipk Packages" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
       <convert type="StringList" />
     </widget>
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="template_source_red_o_yellow" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
   <screen name="PanelTGzInstaller" position="0,0" size="1920,1080" title="Manual Install Tgz Packages" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,870" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand">
       <convert type="StringList" />
     </widget>
     <ePixmap position="1430,650" size="256,256" pixmap="Multibox/icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="template_source_red_o_yellow" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1092,6 +1098,26 @@
     <panel name="template_name_red_green" />
     <panel name="template_pig_setup" />
   </screen>
+  <!-- downfeed FHD -->
+  <screen backgroundColor="background" flags="wfNoBorder" name="downfeed" position="0,0" size="1920,1080" title="insatall extensions from feed">
+    <widget source="menu" render="Listbox" position="10,100" size="1180,880" backgroundColor="background" itemHeight="50" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (72, 72), png = 4), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (10, 2), size = (1440, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (185, 56), size = (1000, 40), font=1, flags = RT_HALIGN_LEFT, text = 2, color=0x8A8787, color_sel=0x8A8787), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (0, 98), size = (0, 0), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular",36),gFont("Regular",30)],
+				"itemHeight": 105
+				}
+			</convert>
+    </widget>
+    <panel name="template_source_red_green" />
+    <panel name="template_fullscreen_title" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_pig_setup" />
+ </screen>
   <!-- RestartNetwork FHD -->
   <screen name="RestartNetwork" position="center,center" size="800,140" title="">
     <ePixmap name="InfoPixmap" pixmap="Multibox/skin_default/icons/input_info.png" position="10,2" size="80,80" alphatest="blend" />
@@ -1155,28 +1181,16 @@
     <panel name="template_source_red_o_blue" />
     <panel name="template_pig_setup" />
   </screen>
-<screen name="MultiBootStartupOPT" position="center,center" size="1220,360" title="MultiBoot STARTUP Selector" flags="wfNoBorder">
-    <eLabel position="10,112" size="1200,2" backgroundColor="Line" />
-    <widget source="key_red" render="Label" position="60,315" size="220,40" noWrap="1" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="334,315" size="220,40" noWrap="1" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
-    <widget source="key_yellow" render="Label" position="609,315" size="220,40" noWrap="1" zPosition="1" valign="center" font="Regular; 27" halign="left" transparent="1" backgroundColor="background" foregroundColor="white" />
-    <ePixmap pixmap="Multibox/buttons/key_red.png" position="15,318" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_green.png" position="289,318" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="563,318" size="35,35" alphatest="blend" />
-    <ePixmap position="11,72" size="56,29" zPosition="10" pixmap="Multibox/buttons/key_leftright.png" transparent="1" alphatest="blend" />
-    <ePixmap position="10,183" size="56,29" zPosition="10" pixmap="Multibox/buttons/key_updown.png" transparent="1" alphatest="blend" />
-    <ePixmap position="1084,316" size="103,35" zPosition="10" pixmap="Multibox/buttons/key_info.png" transparent="1" alphatest="blend" />
-    <eLabel name="" position="0,0" size="1220,310" zPosition="-20" backgroundColor="background" />
-    <widget source="config" render="Label" position="11,8" size="1200,50" itemHeight="40" valign="center" halign="center" font="Regular; 40" enableWrapAround="1" transparent="0" scrollbarMode="showOnDemand" foregroundColor="bluelabel" backgroundColor="white" />
-    <eLabel text="Press left/right to select Image" backgroundColor="background" font="Regular; 36" foregroundColor="default" halign="left" position="80,66" size="1130,45" transparent="1" zPosition="3" />
-    <eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="background" font="Regular; 36" foregroundColor="default" halign="left" position="80,177" size="1130,45" transparent="1" zPosition="3" />
-    <widget source="options" render="Label" position="10,120" size="1200,50" halign="center" valign="center" font="Regular; 36" backgroundColor="white" foregroundColor="bluelabel" transparent="0" />
-    <widget name="description" position="10,227" size="1200,80" halign="center" valign="center" font="Regular; 36" backgroundColor="background" foregroundColor="darkyellow" transparent="1" />
-    <eLabel name="vertikalline" position="9,223" size="1200,2" backgroundColor="Line" />
-    <widget name="cancel" position="0,0" size="0,0" />
-    <widget name="ok" position="0,0" size="0,0" />
-    <eLabel name="" position="10,308" size="1200,2" backgroundColor="Line" />
-  </screen>
+<screen name="MultiBootStartup" position="center,center" size="1050,340" flags="wfNoBorder" title="MultiBoot STARTUP Selector" backgroundColor="background">
+<widget source="Title" render="Label" position="13,7" size="1020,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+<widget source="config" render="Label" position="13,76" size="1020,100" itemHeight="40" valign="center" halign="center" font="Regular; 40" enableWrapAround="1" transparent="0" scrollbarMode="showOnDemand" foregroundColor="bluelabel" backgroundColor="white" />
+<widget source="key_red" render="Label" position="60,273" size="250,40" noWrap="1" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
+<widget source="key_green" render="Label" position="384,273" size="250,40" noWrap="1" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
+<ePixmap pixmap="Multibox/buttons/key_red.png" position="15,275" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Multibox/buttons/key_green.png" position="339,275" size="35,35" alphatest="blend" />
+<eLabel text="Press left/right to select Image" backgroundColor="background" font="Regular; 36" foregroundColor="default" halign="left" position="80,196" size="950,45" transparent="1" zPosition="3" />
+<ePixmap position="11,202" size="56,29" zPosition="10" pixmap="Multibox/buttons/key_leftright.png" transparent="1" alphatest="blend" />
+</screen>
   <!--   BootImageChoose FHD -->
   <screen name="OPDBootImageChoose" position="0,0" size="1920,1080" title="OPENDROID Multiboot Image Choose" backgroundColor="background" flags="wfNoBorder">
     <widget name="label2" position="10,120" size="550,45" zPosition="1" font="Regular;36" backgroundColor="black" transparent="1" foregroundColor="white" />
@@ -1356,10 +1370,10 @@
 					}
 			</convert>
   </widget>
-  <widget source="menu" render="Listbox" position="1223,560" size="670,420" backgroundColor="background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+  <widget source="menu" render="Listbox" position="1223,560" size="670,620" backgroundColor="background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
     <convert type="TemplatedMultiContent">
 					{"template": [
-							MultiContentEntryText(pos = (3, 3), size = (620, 400), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+							MultiContentEntryText(pos = (3, 3), size = (620, 600), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 						],
 					"fonts": [gFont("Regular", 32)],
 					"itemHeight": 600
@@ -1545,10 +1559,10 @@
   <widget name="config" position="50,130" size="1120,550" font="Regular; 36" itemHeight="50" enableWrapAround="1" backgroundColor="dark" transparent="1" />
   <ePixmap pixmap="Multibox/buttons/key_blue.png" position="47,933" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_menu.png" position="50,798" size="103,35" zPosition="10" transparent="1" />
-  <eLabel text="Weather Setup .... Press Menu Button to get to the weather plugin" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
-  <eLabel text="Help, Skin settings(Weather, Own user logo )" position="92,930" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
+  <widget name="lab11" position="170,795" size="1090,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="2" />
+  <widget name="lab13" position="92,930" size="1120,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <eLabel text="/Save" position="360,1000" size="160,70" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" valign="center" />
-  <eLabel text="Yellow key press around Skinparts to select" position="92,870" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
+  <widget name="lab12" position="92,870" size="1020,45" font="Regular; 36" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" />
   <widget name="Picture" position="1265,630" size="612,344" alphatest="on" />
   <ePixmap pixmap="Multibox/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
   <ePixmap pixmap="Multibox/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
@@ -1590,18 +1604,18 @@
   </screen>
   <!-- AtileHD_About FHD -->
   <screen name="AtileHD_About" position="0,0" size="1920,1080" title="AtileHD_About" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text=" *Multibox FHD*  FHD Skin for OPD Images by stein17" position="530,20" size="960,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <eLabel text="Skin information" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="lab1" position="530,20" size="960,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="lab2" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <ePixmap pixmap="Multibox/DEV/logo_opendroid.png" position="8,103" size="1180,160" zPosition="10" transparent="1" alphatest="blend" />
-    <eLabel text="*Multibox* FHD Skin for OPD Images by stein17" position="1227,880" size="680,30" font="Replacement; 24" align="left" valign="center" foregroundColor="Line" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
+    <widget name="lab3" position="1227,880" size="680,30" font="Replacement; 24" align="left" valign="center" foregroundColor="Line" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
     <ePixmap pixmap="Multibox/menu/Multibox_Info.png" position="1223,550" size="670,300" zPosition="-15" />
-    <eLabel text=" Support: https://droidsat.org/forum/  " position="1225,961" size="670,40" zPosition="1" font="Regular; 28" halign="center" backgroundColor="background" transparent="1" />
-    <eLabel text="In the skin there is the possibility to integrate your own user logos. The logo should not be bigger than 150x48 pixels. Scale your logo to this size and save it as User_Logo.png. Then copy the logo with FTP to usr / share / enigma2 / Multibox / Skinparts /, this will overwrite the original. Anyone who has requests regarding a user logo, can sign up in the forum. PN's are ignored." position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text="Google DNS Server: The IP addresses of the Google service&#xD;&#xA;IP addresses for the Internet Protocol version 4 (IPv4):&#xD;&#xA;Preferred DNS server: 8.8.8.8 &#xD;&#xA;Alternative DNS server: 8.8.4.4&#xD;&#xA;IP addresses for the Internet Protocol version 6 (IPv6):&#xD;&#xA;Preferred DNS server: 2001:4860:4860::8888&#xD;&#xA;Alternative DNS server: 2001:4860:4860::8844" position="10,605" size="1190,270" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
-    <eLabel text=" Instructions User logo " position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text=" If no weather is displayed, it may help to change the DNS address " position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text=" DNS server fast and secure: Super fast DNS server from Cloudflare " position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
-    <eLabel text="Preferred DNSv4-Server die IP 1.1.1.1  &#xD;&#xA; Alternative DNSv4-Server die IP 1.0.0.1" position="10,922" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab4" position="1225,961" size="670,40" zPosition="1" font="Regular; 28" halign="center" backgroundColor="background" transparent="1" />
+    <widget name="lab5" position="10,332" size="1190,230" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab6" position="10,605" size="1190,270" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
+    <widget name="lab7" position="10,288" size="670,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab8" position="12,560" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab9" position="10,875" size="1190,40" zPosition="1" font="Regular; 34" halign="left" foregroundColor="default" backgroundColor="background" transparent="1" />
+    <widget name="lab10" position="10,922" size="1190,90" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="background" halign="left" valign="top" />
     <eLabel name="" position="10,331" size="1150,2" backgroundColor="Line" />
     <eLabel name="" position="10,600" size="1150,2" backgroundColor="Line" />
     <eLabel name="" position="10,915" size="1150,2" backgroundColor="Line" />
@@ -1639,9 +1653,9 @@
   </screen>
     <!-- EPGvertical ATV-->
   <screen name="EPGvertical" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="Anadol/menu/Anadol_bg.png" position="1,0" zPosition="-20" size="1920,1080" />
-    <eLabel name="vertikalline" position="0,998" size="1920,2" foregroundColor="anadollabel" backgroundColor="anadollabel" zPosition="5" />
-    <widget source="global.CurrentTime" render="Label" position="1500,20" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="anadollabel" transparent="1">
+    <ePixmap pixmap="Multibox/menu/BG_default.png" position="1,0" zPosition="-20" size="1920,1080" />
+    <eLabel name="vertikalline" position="0,998" size="1920,2" foregroundColor="Multiboxlabel" backgroundColor="Multiboxlabel" zPosition="5" />
+    <widget source="global.CurrentTime" render="Label" position="1500,20" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y</convert>
     </widget>
     <!--  Analog Clock-->
@@ -1654,10 +1668,10 @@
     <widget source="global.CurrentTime" render="ANDWatches" position="1832,22" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
       <convert type="ANDAnalogClock">hourHand</convert>
     </widget>
-    <eLabel text="Electronic Program Guide" position="10,23" size="540,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
-    <ePixmap position="654,29" size="30,29" zPosition="10" pixmap="Anadol/buttons/left.png" alphatest="on" />
-    <ePixmap position="1230,29" size="30,29" zPosition="10" pixmap="Anadol/buttons/right.png" alphatest="on" />
-    <widget source="Title" render="Label" position="690,23" size="540,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <eLabel text="Electronic Program Guide" position="10,23" size="540,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <ePixmap position="654,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/left.png" alphatest="on" />
+    <ePixmap position="1230,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/right.png" alphatest="on" />
+    <widget source="Title" render="Label" position="690,23" size="540,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget source="Event" render="Label" position="10,90" size="800,45" font="Regular;36" backgroundColor="background" foregroundColor="bluetitle" transparent="0">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1672,7 +1686,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Progress" position="945,110" pixmap="Anadol/p_bar_color2.png" size="645,8" borderWidth="1" borderColor="foregroundClock" transparent="1" zPosition="2">
+    <widget source="Event" render="Progress" position="945,110" pixmap="Multibox/p_bar_color2.png" size="645,8" borderWidth="1" borderColor="foregroundClock" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="Event" render="Label" position="1730,90" size="180,45" font="Regular; 36" backgroundColor="background" foregroundColor="bernstein" transparent="1" halign="right" valign="center">
@@ -1721,10 +1735,10 @@
   </screen>
     <!-- EPGvertical ATV-->
   <screen name="EPGvertical" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
-   <eLabel text="Electronic Program Guide" position="170,23" size="570,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+   <eLabel text="Electronic Program Guide" position="170,23" size="570,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <ePixmap position="742,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/left.png" alphatest="on" />
     <ePixmap position="1450,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/right.png" alphatest="on" />
-    <widget source="Title" render="Label" position="780,23" size="660,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="Title" render="Label" position="780,23" size="660,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
   <widget source="Event" render="Label" position="10,90" size="800,45" font="Regular;36" backgroundColor="background" foregroundColor="Line" transparent="0">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1791,10 +1805,10 @@
   <!-- EPGvertical ATV-->
   <!-- EPGvertical PIG ATV-->
   <screen name="EPGverticalPIG" position="0,0" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
-   <eLabel text="Electronic Program Guide" position="170,23" size="570,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+   <eLabel text="Electronic Program Guide" position="170,23" size="570,45" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <ePixmap position="742,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/left.png" alphatest="on" />
     <ePixmap position="1450,29" size="30,29" zPosition="10" pixmap="Multibox/buttons/right.png" alphatest="on" />
-    <widget source="Title" render="Label" position="780,23" size="660,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="anadollabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget source="Title" render="Label" position="780,23" size="660,45" font="Italic; 40" halign="center" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
   <widget source="Event" render="Label" position="1310,180" size="600,45" font="Regular;36" backgroundColor="background" foregroundColor="white" transparent="0">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1804,7 +1818,7 @@
     <!-- DO NOT CHANGE THIS LINE !!!!!!!!!!!!!!! -->
     <widget enableWrapAround="0" itemHeight="30" font="Regular;0" name="list" position="0,0" size="0,90" zPosition="-10" />
     <widget source="session.CurrentService" render="Picon" position="1225,180" size="75,45" zPosition="2" alphatest="blend">
-      <convert type="MetrixHDServiceName2">Reference</convert>
+      <convert type="ServiceName2">Reference</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" position="1313,743" size="435,12" foregroundColor="Line" borderWidth="1" transparent="1" zPosition="2" borderColor="foregroundClock">
       <convert type="EventTime">Progress</convert>
@@ -1874,5 +1888,64 @@
     <panel name="template_menu_info" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
+</screen>
+	<!-- Multiboot Selector -->
+<screen name="MultiBootSelector" position="0,0" size="1920,1080" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="background">
+<eLabel name="vertikalline" position="10,245" size="1180,2" foregroundColor="Line" backgroundColor="Line" />
+<widget source="description" render="Label" position="10,100" size="1180,140" font="Regular;36" foregroundColor="default" halign="center" valign="center" transparent="1" />
+<widget name="config" position="10,270" size="1180,705" transparent="0" zPosition="1" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="Line" scrollbarSliderBorderColor="white" scrollbarMode="showOnDemand" />
+<widget source="options" render="Label" position="1223,558" size="670,420" font="Regular;36" foregroundColor="Line" halign="center" valign="center" transparent="1" />
+<panel name="template_source_red_green" />
+<panel name="template_fullscreen_title" />
+<panel name="template_pixmap_BG" />
+<panel name="template_pig_setup" />
+</screen>
+	<!-- MultiBootWizard -->
+<screen name="MultiBootWizard" position="0,0" size="1920,1080" title="MultiBoot maintenance" flags="wfNoBorder" backgroundColor="background">
+<eLabel name="vertikalline" position="10,245" size="1180,2" foregroundColor="Line" backgroundColor="Line" />
+<widget source="description" render="Label" position="10,100" size="1180,140" font="Regular;36" foregroundColor="default" halign="center" valign="center" transparent="1" />
+<widget name="config" position="10,270" size="1180,705" transparent="0" zPosition="1" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="Line" scrollbarSliderBorderColor="white" scrollbarMode="showOnDemand" />
+<widget source="options" render="Label" position="1223,558" size="670,420" font="Regular;36" foregroundColor="Line" halign="center" valign="center" transparent="1" />
+<panel name="template_ok_exit" />
+<panel name="template_source_red_o_blue" />
+<panel name="template_fullscreen_title" />
+<panel name="template_pixmap_BG" />
+<panel name="template_pig_setup" />
+</screen>
+	<!-- SoftcamSetup -->
+<screen name="SoftcamSetup" position="0,0" size="1920,1080" title="Softcam Setup" flags="wfNoBorder" backgroundColor="background">
+<widget name="config" position="10,100" size="1180,735" enableWrapAround="1" itemHeight="55" font="Regular;36" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="Line" scrollbarSliderBorderColor="white" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+<widget name="info" position="10,420" size="1180,550" font="Regular;36" />
+<panel name="template_source_red_green_blue" />
+<panel name="template_exit" />
+<panel name="template_fullscreen_title" />
+<panel name="template_pixmap_BG" />
+<panel name="template_pig_setup" />
+</screen>
+ <screen name="ClearMem" position="0,0" size="1920,1080" title="Setup ClearMem" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="template_name_red_o_blue" />
+  <panel name="template_exit" />
+  <panel name="template_fullscreen_title" />
+  <panel name="template_pixmap_BG" />
+  <panel name="template_pig_setup" />
+  <widget name="config" position="30,105" size="893,187" itemHeight="42" font="Regular;32" zPosition="1" scrollbarMode="showOnDemand"/>
+  <widget name="slide" position="30,665" render="Progress" borderWidth="2" foregroundColor="white" zPosition="4" size="893,60" transparent="1" />
+  <widget name="memory" position="30,765" size="893,34" zPosition="1" valign="center" halign="left" font="Regular;30" transparent="1"/>
+  </screen>
+  <screen name="ClearMemAutoScreen" title="ClearMem Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="template_exit" />
+  <panel name="template_fullscreen_title" />
+  <panel name="template_pixmap_BG" />
+  <panel name="template_pig_setup" />
+  <widget name="message_label" position="21,100" size="270,880" zPosition="7" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="right" transparent="0" />
+  </screen>
+  <screen name="ClearMemInfoScreen" title="ClearMem Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="template_name_red_o_blue" />
+  <panel name="template_exit" />
+  <panel name="template_fullscreen_title" />
+  <panel name="template_pixmap_BG" />
+  <panel name="template_pig_setup" />
+  <widget name="memtext" position="21,100" size="270,880" zPosition="7" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="right" transparent="0" />
+  <widget name="memvalue" position="308,100" size="220,880" zPosition="8" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="left" transparent="0" />
 </screen>
     </skin>
