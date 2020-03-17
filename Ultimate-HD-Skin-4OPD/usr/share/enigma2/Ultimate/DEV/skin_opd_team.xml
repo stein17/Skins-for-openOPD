@@ -572,11 +572,11 @@
     </widget>
     <ePixmap pixmap="Ultimate/skin_default/icons/fanspeed.png" position="760,60" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="810,68" size="445,24" font="Regular; 18" zPosition="6" foregroundColor="yellow" backgroundColor="background" transparent="1" text="HDDTemp" noWrap="1">
-      <convert type="OPDTemp">FanInfo</convert>
+      <convert type="UltimateTemp">FanInfo</convert>
     </widget>
     <ePixmap position="760,160" zPosition="1" size="40,40" pixmap="Ultimate/skin_default/icons/hddtemp.png" alphatest="blend" />
     <widget font="Regular; 18" halign="left" position="810,168" render="Label" size="445,24" source="session.CurrentService" transparent="1" foregroundColor="yellow" backgroundColor="background" zPosition="6">
-      <convert type="OPDTemp">Temperature</convert>
+      <convert type="UltimateTemp">Temperature</convert>
     </widget>
     <ePixmap position="760,210" zPosition="1" size="40,40" pixmap="Ultimate/skin_default/icons/cpuload.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" position="810,210" size="445,10" transparent="1" foregroundColor="bluetitle" borderWidth="2" borderColor="bluelabel" backgroundColor="background" zPosition="6">
