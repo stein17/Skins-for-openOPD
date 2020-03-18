@@ -3949,31 +3949,32 @@ self['config'].l.setSeperation(int(300*f))
   <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
 </screen>
   <!-- VirtualKeyBoard -->
- <screen name="VirtualKeyBoard" position="0,0" size="1920,1080" zPosition="99" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel text="Virtual KeyBoard" position="214,280" size="788,60" foregroundColor="cyan1" noWrap="1" valign="center" font="Regular; 48" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
-    <widget name="header" conditional="header" position="215,340" size="1150,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
-    <widget name="prompt" conditional="prompt" position="215,340" size="1150,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
-    <eLabel position="211,392" size="1150,69" zPosition="1" backgroundColor="grey" foregroundColor="cyan" />
-    <widget name="text" position="214,395" size="1144,63" backgroundColor="background" foregroundColor="white" zPosition="3" font="Regular;33" noWrap="1" valign="center" halign="right" />
-    <widget name="list" position="222,499" size="960,440" itemHeight="70" selectionDisabled="1" transparent="1" zPosition="1" />
+<screen name="VirtualKeyBoard" position="center,center" size="1280,630" zPosition="99" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="Virtual KeyBoard" position="10,10" size="500,60" foregroundColor="cyan1" noWrap="1" valign="center" font="Regular; 48" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
+    <widget name="header" conditional="header" position="510,35" size="750,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
+    <widget name="prompt" conditional="prompt" position="510,35" size="750,45" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" transparent="1" noWrap="1" />
+    <eLabel position="10,80" size="1260,60" zPosition="1" backgroundColor="grey" foregroundColor="cyan" />
+    <widget name="text" position="12,82" size="1256,56" backgroundColor="background" foregroundColor="white" zPosition="3" font="Regular; 40" noWrap="1" valign="center" halign="right" />
+    <widget name="list" position="10,195" size="960,350" itemHeight="70" selectionDisabled="1" transparent="1" zPosition="1" />
     <widget name="language" conditional="language" position="0,0" size="0,0" font="Regular;33" backgroundColor="background" foregroundColor="white" transparent="1" noWrap="1" />
-    <widget name="mode" conditional="mode" position="221,460" size="225,42" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="left" transparent="1" noWrap="1" />
-    <widget name="locale" conditional="locale" position="1192,500" size="270,250" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" valign="center" transparent="1" />
-    <eLabel position="215,342" size="1150,45" backgroundColor="background" zPosition="-1" />
-    <eLabel position="208,277" size="1266,710" backgroundColor="background" zPosition="-2" />
-    <ePixmap pixmap="Multibox/buttons/key_text.png" position="1401,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_exit.png" position="1330,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_info.png" position="1260,938" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <ePixmap position="1191,711" size="270,220" zPosition="2" pixmap="Multibox/icons/keyboard.png" transparent="1" alphatest="blend" />
-    <widget source="key_red" render="Label" position="267,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget source="key_green" render="Label" position="520,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget source="key_yellow" render="Label" position="775,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget source="key_blue" render="Label" position="1033,950" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <ePixmap pixmap="Multibox/buttons/key_red.png" position="223,950" size="35,35" backgroundColor="Background" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_green.png" position="475,950" size="35,35" backgroundColor="Background" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="729,950" size="35,35" backgroundColor="Background" alphatest="blend" />
-    <ePixmap pixmap="Multibox/buttons/key_blue.png" position="986,950" size="35,35" backgroundColor="Background" alphatest="blend" />
- </screen>
+    <widget name="mode" conditional="mode" position="10,145" size="225,42" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="left" transparent="1" noWrap="1" />
+    <widget name="locale" conditional="locale" position="990,195" size="270,250" font="Regular;33" backgroundColor="background" foregroundColor="white" halign="center" valign="center" transparent="1" />
+    <eLabel position="17,95" size="1150,45" backgroundColor="background" zPosition="-1" />
+    <eLabel position="0,0" size="1280,630" backgroundColor="background" zPosition="-2" />
+    <ePixmap pixmap="Multibox/buttons/button_text.png" position="1220,578" size="35,35" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/button_exit.png" position="1150,578" size="35,35" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/button_info.png" position="1080,578" size="35,35" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap position="1071,448" size="103,35" zPosition="2" pixmap="Multibox/buttons/key_board.png" transparent="1" alphatest="blend" />
+    <widget source="key_red" render="Label" position="65,580" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_green" render="Label" position="320,580" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_yellow" render="Label" position="575,580" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="key_blue" render="Label" position="830,580" size="200,35" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap pixmap="Multibox/buttons/key_red.png" position="20,580" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_green.png" position="275,580" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_yellow.png" position="530,580" size="35,35" backgroundColor="Background" alphatest="blend" />
+    <ePixmap pixmap="Multibox/buttons/key_blue.png" position="785,580" size="35,35" backgroundColor="Background" alphatest="blend" />
+ <eLabel name="" position="10,560" size="1250,2" backgroundColor="grey" />
+</screen>
   <!-- Wizzard's -->
   <screen name="NetworkWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
     <eLabel text="NetworkWizard" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
