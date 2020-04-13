@@ -30,10 +30,6 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
-  <!--   <widget source="session.Event_Now" render="Progress" pixmap="Multibox/Multibox_Progress.png" position="386,964" size="985,11" zPosition="1" transparent="1">
-    <convert type="EventTime">Progress</convert>
-  </widget> -->
- <!--  <ePixmap pixmap="Multibox/Progress_BG.png" position="386,964" size="985,11" zPosition="2" alphatest="blend" /> -->
   <widget source="session.Event_Next" render="Label" position="1223,981" size="150,50" font="Regular; 40" halign="center" foregroundColor="greyblue" backgroundColor="background" transparent="1" zPosition="2">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
