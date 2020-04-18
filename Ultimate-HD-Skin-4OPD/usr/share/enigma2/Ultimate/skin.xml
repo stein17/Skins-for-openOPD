@@ -113,11 +113,11 @@
      <color name="white" value="#00ffffff" />                                     
 	 <color name="black" value="#00000000" />  -->
   <fonts>
-    <font filename="lcd.ttf" name="LCD" scale="100" />
-    <font filename="tuxtxt.ttf" name="Console" scale="100" />
-    <font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
-    <font filename="Ultimate/fonts/digi.ttf" name="DIGI" scale="100" />
-    <font filename="Ultimate/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
+    <font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
+    <font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
+    <font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+    <font filename="/usr/share/enigma2/Ultimate/fonts/digi.ttf" name="DIGI" scale="100" />
+    <font filename="/usr/share/enigma2/Ultimate/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
     
     <!-- Aliases that should be present >-->
     <alias name="ChoiceList" font="Regular" size="20" height="30" />
