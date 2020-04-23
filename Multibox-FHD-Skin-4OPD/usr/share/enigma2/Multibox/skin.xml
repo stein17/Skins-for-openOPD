@@ -3543,6 +3543,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="Frontend" render="Label" position="80,100" size="1000,40" zPosition="2" font="Regular; 36" halign="center" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
+    <!-- ##SNR## -->
     <eLabel name="snr" text="SNR:" position="80,150" size="110,40" font="Regular; 36" halign="right" transparent="1" />
     <widget source="Frontend" render="Progress" position="200,160" size="750,20" borderColor="grey" foregroundColor="default" borderWidth="2" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
@@ -3550,24 +3551,35 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="Frontend" render="Label" position="970,150" size="110,40" font="Regular; 36" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="ber" text="BER:" position="80,200" size="110,40" font="Regular; 36" halign="right" transparent="1" />
-    <widget source="Frontend" render="Progress" position="200,211" size="750,20" borderColor="grey" foregroundColor="default" borderWidth="2" transparent="1">
+    <!-- ##AGC## -->
+    <eLabel name="agc" text="AGC:" position="80,200" size="110,40" font="Regular; 36" halign="right" transparent="1" />
+    <widget source="Frontend" render="Progress" position="200,210" size="750,20" borderColor="grey" foregroundColor="default" borderWidth="2" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="970,202" size="110,40" font="Regular; 36" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <!-- ##BER## -->
+    <eLabel name="ber" text="BER:" position="80,250" size="110,40" font="Regular; 36" halign="right" transparent="1" />
+    <widget source="Frontend" render="Progress" position="200,261" size="750,20" borderColor="grey" foregroundColor="default" borderWidth="2" transparent="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="970,200" size="110,40" font="Regular; 36" transparent="1">
+    <widget source="Frontend" render="Label" position="970,252" size="110,40" font="Regular; 36" transparent="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" text="Lock:" position="80,250" size="110,40" font="Regular; 36" halign="right" transparent="1" />
-    <widget source="Frontend" render="Pixmap" position="200,253" size=" 32,32" zPosition="1" pixmap="Multibox/skin_default/icons/lock_on.png" alphatest="blend">
+    <!-- ##Lock## --> 
+    <eLabel name="lock" text="Lock:" position="80,300" size="110,40" font="Regular; 36" halign="right" transparent="1" />
+    <widget source="Frontend" render="Pixmap" position="200,305" size=" 32,32" zPosition="1" pixmap="Multibox/skin_default/icons/lock_on.png" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="Frontend" render="Pixmap" position="200,253" size=" 32,32" zPosition="1" pixmap="Multibox/skin_default/icons/lock_off.png" alphatest="blend">
+    <widget source="Frontend" render="Pixmap" position="200,300" size=" 32,32" zPosition="1" pixmap="Multibox/skin_default/icons/lock_off.png" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <eLabel position="80,292" size="1000,1" backgroundColor="Line" zPosition="1" />
-    <widget name="config" position="82,300" size="1000,510" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+    <!-- ##Config## -->
+    <eLabel position="80,352" size="1000,1" backgroundColor="Line" zPosition="1" />
+    <widget name="config" position="82,400" size="1000,510" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="introduction" position="80,830" size="1000,150" font="Regular; 36" halign="center" valign="center" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
