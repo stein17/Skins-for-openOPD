@@ -55,7 +55,7 @@
 	<color name="greyblue" value="#0092a8bf" />
  <!--   <color name="greyblue" value="#00aab2ba" /> -->
  <!-- 	<color name="greyblue" value="#009eb2c6" /> -->
-	<color name="verydarkgrey" value="#003a3a3a" />
+    <color name="verydarkgrey" value="#003a3a3a" />
     <color name="verygrey" value="#00666666" />
     <color name="darkgrey" value="#00999999" />
 
@@ -432,6 +432,12 @@
   <widget source="session.CurrentService" render="Pixmap" pixmap="Multibox/icons/icon_subtitle_on.png" position="970,1033" size="82,44" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
     <convert type="ConditionalShowHide" />
+  </widget>
+  <widget backgroundColor="background" font="Regular; 24" noWrap="1" valign="center" halign="right" position="1560,903" render="Label" size="160,30" source="global.CurrentTime" transparent="1" zPosition="1" foregroundColor="white">
+    <convert type="ClockToText">Format:%e. %B</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 24" valign="center" halign="right" noWrap="1" position="1560,872" render="Label" size="160,30" source="global.CurrentTime" transparent="1" zPosition="1" foregroundColor="white">
+    <convert type="ClockToText">Format:%A</convert>
   </widget>
   <widget source="session.FrontendStatus" render="Progress" position="1656,976" size="180,16" zPosition="3" pixmap="Multibox/agc.png" transparent="1">
     <convert type="FrontendInfo">AGC</convert>
@@ -975,20 +981,12 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
   </screen>
-  
-  
-  
-  
   <screen name="EMCSelection" position="0,0" size="1920,1080" title="Enhanced Movie Center" flags="wfNoBorder">
     <widget source="Title" render="Label" position="10,85" size="1200,50" font="Regular; 36" halign="left" valign="center" foregroundColor="default" backgroundColor="background" transparent="1" zPosition="1" />
     <eLabel text="Enhanced Movie Center" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="wait" position="180,20" size="800,45" zPosition="1" font="Regular;36" backgroundColor="background" foregroundColor="yellow" halign="center" valign="center" transparent="1" />
     <panel name="Enhanced_Movie_Center" />
   </screen>
-  
-
-  
-  
   <screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="session.CurrentService" render="Label" position="360,874" size="1060,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1">
       <convert type="ServiceName">Name</convert>

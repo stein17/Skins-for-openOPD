@@ -1,12 +1,12 @@
 Package: enigma2-plugin-skins-multibox
-Version: 0.0.5
+Version: 1.8.0
 Section: base
 Priority: optional
 Architecture: all
 Maintainer: stein17
 Description: Skin Full HD by stein17
 Depends: enigma2-plugin-skincomponents-weathercomponent, minilocale, enigma2-plugin-systemplugins-weathercomponenthandler
-Source: https://github.com/stein17/
-Homepage: http://www.droidsat.org/
+Source: https://github.com/stein17/Skins-for-OPD
+Homepage: https://droidsat.org/
 OE: Enigma2 Skin
 License: open
