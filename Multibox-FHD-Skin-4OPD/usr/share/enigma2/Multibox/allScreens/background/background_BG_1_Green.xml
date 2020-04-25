@@ -6,5 +6,6 @@
  <screen name="template_vertikalline">
  <eLabel name="vertikalline" position="0,1010" size="1920,2" foregroundColor="green" backgroundColor="green" zPosition="5" />
   </screen> 
+
 </skin>
   
