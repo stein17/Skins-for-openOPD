@@ -117,6 +117,7 @@
     <parameter name="PlayListName" value="65,2,1000,50" />
     <parameter name="PlayListIcon" value="10,0,50,50" />
     <parameter name="SelectionListLockOff" value="10, 7, 50, 50" />
+    <parameter name="RSList" value="60, 0, 1920, 38, 5, 6, 38, 38" />
   </parameters>
   <!-- Colors FHD -->
   <colors>
@@ -7345,7 +7346,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel text="OpenDroid" position="70,1020" size="1000,110" zPosition="1" font="Adam; 110" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="top" />
     <ePixmap pixmap="OPD-Blue-Line/icons/atest.png" position="981,699" size="256,256" zPosition="2" alphatest="blend" />
     <ePixmap position="1006,131" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
-    <widget name="list" position="30,130" size="870,820" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+    <widget name="list" position="30,130" size="870,820" font="Regular;34" itemHeight="42" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
   </screen>
   <!--  ButtonSetup FHD -->
   <screen name="ButtonSetup" position="0,0" size="1920,1080" title="Quick Button Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -7597,7 +7598,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="spaceused" position="1503,1020" size="400,30" foregroundColor="white" backgroundColor="blue" zPosition="3" />
   </screen>
   <!--  Manual Addons Install FHD -->
-  <screen name="Installer_Addons" position="0,0" size="1920,1080" title="Installation Process" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="Installer_Addons" position="0,0" size="1920,1080" title="Install IPK" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
@@ -7609,7 +7610,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <widget name="infotext" position="30,130" size="870,820" font="Regular;32" itemHeight="45" halign="center" foregroundColor="cyan1" transparent="1" />
+    <widget name="list" position="30,130" size="870,820" font="Regular;34" itemHeight="42" halign="center" foregroundColor="cyan1" transparent="1" />
     <widget name="info" position="950,130" zPosition="4" size="300,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/icons/menu_setup_reset.png" position="981,699" size="256,256" zPosition="2" alphatest="blend" />
   </screen>
