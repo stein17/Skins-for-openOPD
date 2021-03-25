@@ -829,7 +829,7 @@
   <!--   Internet Addons FHD -->
   <screen name="Connection_Server" position="0,0" size="1920,1080" title="OPENDROID Download Manager" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="OPENDROID Download Manager" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="list" position="16,100" size="1180,870" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="16,100" size="1180,870" itemHeight="42" font="Regular; 34" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="info" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -1009,9 +1009,9 @@
     <panel name="template_name_long_red_o_blue" />
   </screen>
   <!--  Manual Addons Install FHD -->
-  <screen name="Installer_Addons" position="0,0" size="1920,1080" title="Installation Process" flags="wfNoBorder" backgroundColor="background">
+  <screen name="Installer_Addons" position="0,0" size="1920,1080" title="Install IPK" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="infotext" position="10,100" size="1180,870" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="10,100" size="1180,870" itemHeight="42" font="Regular; 34" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="info" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
