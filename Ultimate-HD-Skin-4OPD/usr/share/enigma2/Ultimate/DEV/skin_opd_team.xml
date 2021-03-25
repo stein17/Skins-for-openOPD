@@ -1038,9 +1038,9 @@
     <panel name="template_menu_ok_exit_1280" />
   </screen>
   <!--  Manual Addons Install HD -->
-  <screen name="Installer_Addons" position="0,0" size="1280,720" title="Installation Process" flags="wfNoBorder" backgroundColor="background">
+  <screen name="Installer_Addons" position="0,0" size="1280,720" title="Install IPK" flags="wfNoBorder" backgroundColor="background">
     <widget source="Title" render="Label" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
-    <widget name="infotext" position="30,60" size="700,610" itemHeight="30" font="Regular; 22" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="30,60" size="700,610" itemHeight="30" font="Regular; 22" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="info" position="765,390" size="485,290" font="Regular; 20" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="ScrollBarTemplate size=700,610" />
     <panel name="template_title_date" />
