@@ -183,6 +183,7 @@
     <parameter name="PiconManagerListFont" value="Regular;20" />
     <parameter name="ProgrammlistenUpdaterList" value="10,8,480,200,40" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Regular;22" />
+    <parameter name="RSList" value="50,3,820,30,8,8,30,30" />
   </parameters>
   <windowstyle type="skinned" id="0">
     <title offset="160,4" font="Regular;32" />
