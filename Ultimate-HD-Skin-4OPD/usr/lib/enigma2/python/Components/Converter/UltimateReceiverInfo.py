@@ -1,6 +1,6 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Poll import Poll
+from Components.Converter.Poll import Poll
 from os import popen, statvfs
 SIZE_UNITS = ['B',
  'KB',
@@ -80,15 +80,15 @@ class UltimateReceiverInfo(Poll, Converter):
             if list[0] == 0:
                 text = '%s: Not Available' % entry[1]
             elif self.shortFormat:
-                text = '%s: %s, im Einsatz: %s%%' % (entry[1], self.getSizeStr(list[0]), list[3])
+                text = '%s: %s, in use: %s%%' % (entry[1], self.getSizeStr(list[0]), list[3])
             elif self.fullFormat:
-                text = '%s: %s Frei:%s Verwendet:%s (%s%%)' % (entry[1],
+                text = '%s: %s Free:%s used:%s (%s%%)' % (entry[1],
                  self.getSizeStr(list[0]),
                  self.getSizeStr(list[2]),
                  self.getSizeStr(list[1]),
                  list[3])
             else:
-                text = '%s: %s Verwendet:%s Frei:%s' % (entry[1],
+                text = '%s: %s used:%s Free:%s' % (entry[1],
                  self.getSizeStr(list[0]),
                  self.getSizeStr(list[1]),
                  self.getSizeStr(list[2]))
