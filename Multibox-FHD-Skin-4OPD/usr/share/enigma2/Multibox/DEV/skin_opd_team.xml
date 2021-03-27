@@ -512,7 +512,7 @@
 				}
 		</convert>
     </widget>
-    <widget name="PixmapButton" position="26,545" size="35,35" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" transparent="1" alphatest="on" />
+    <widget name="PixmapButton" position="26,545" size="35,35" pixmaps="Multibox/skin_default/icons/lock_on.png,Multibox/skin_default/icons/lock_error.png" transparent="1" alphatest="on" />
     <widget name="LabelButton" position="72,532" size="1020,90" font="Regular; 36" valign="center" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
