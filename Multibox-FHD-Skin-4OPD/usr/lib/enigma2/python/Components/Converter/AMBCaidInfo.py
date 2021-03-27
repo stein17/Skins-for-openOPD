@@ -1,10 +1,3 @@
-#
-#  CaidInfo2 - Converter
-#
-#  ver 1.1.3 23/12/2012
-#
-#  Coded by bigroma & 2boom
-
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Tools.Directories import fileExists

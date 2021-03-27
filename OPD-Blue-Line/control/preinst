@@ -1,0 +1,18 @@
+#!/bin/sh                                                       
+rm -rf /usr/share/enigma2/OPD-Blue-Line
+rm -rf /usr/lib/enigma2/python/Components/Converter/OPD
+rm -rf /usr/lib/enigma2/python/Components/Renderer/OPD
+echo "aktualisiere Updatequellen... "opkg update 
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "                                                                           "
+echo "  OPD-Blue-Line by stein17 is now being installed...                 "
+echo "                                                                           " 
+echo "                                                                           "
+echo "                                                                           "
+exit 0
+

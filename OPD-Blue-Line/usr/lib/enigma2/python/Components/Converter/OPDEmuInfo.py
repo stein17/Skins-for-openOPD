@@ -1,13 +1,9 @@
-# Embedded file name: /usr/lib/enigma2/python/Components/Converter/MydExtraInfo.py
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, eTimer, eServiceReference, eEPGCache
 from Components.Element import cached
 from Tools.Directories import fileExists
 from os import path, popen
 import re
-
-
-
 
 class OPDEmuInfo(Converter, object):
     TEMPERATURE = 1
@@ -140,7 +136,7 @@ class OPDEmuInfo(Converter, object):
                             sysID = self.getCryptName(caID)
                             return sysID
 
-            file.close()
+                        file.close()
         else:
             return ''
 
@@ -209,7 +205,7 @@ class OPDEmuInfo(Converter, object):
             if ecmtime2 != '':
                 x = line.split('--', 1)
                 msecIndex = x[0].find('msec')
-                if msecIndex is not -1:
+                if msecIndex != -1:
                     ecmtime = x[0].strip()
             ecmtime2 = ecmtime
             emun = 'Unknown EMU'

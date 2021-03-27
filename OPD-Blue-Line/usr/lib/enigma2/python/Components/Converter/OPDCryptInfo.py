@@ -2,10 +2,13 @@ from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Tools.Directories import fileExists
 from Components.Element import cached
-from Poll import Poll
+from Components.Converter.Poll import Poll
 import os
-info = {}
+import os
+import six
+ECM_INFO = '/tmp/ecm.info'
 old_ecm_mtime = None
+data = None
 
 class OPDCryptInfo(Poll, Converter, object):
     CAID = 0

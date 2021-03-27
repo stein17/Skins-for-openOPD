@@ -1,7 +1,7 @@
 <skin>
     <!-- skin_BG_3_green -->
  <screen name="template_pixmap_BG">
-  <ePixmap pixmap="Multibox/Skinparts/BG_3_green.png" position="0,0" zPosition="-20" size="1920,1080" />
+  <ePixmap pixmap="Skinparts/BG_3_green.png" position="0,0" zPosition="-20" size="1920,1080" />
   </screen>
  <screen name="template_vertikalline">
  <eLabel name="vertikalline" position="0,1010" size="1920,2" foregroundColor="green" backgroundColor="green" zPosition="5" />

@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "                                                          "
+echo " ...OPD-Blue-Line by stein17 successful installed.  "
+echo "                                                          "
+exit 0
+

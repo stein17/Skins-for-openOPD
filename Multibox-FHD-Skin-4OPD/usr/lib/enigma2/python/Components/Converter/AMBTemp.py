@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter 
 from Components.Element import cached 
-from Poll import Poll
+from Components.Converter.Poll import Poll
 from enigma import eConsoleAppContainer 
 from os import system, path, popen
 from Tools.Directories import fileExists

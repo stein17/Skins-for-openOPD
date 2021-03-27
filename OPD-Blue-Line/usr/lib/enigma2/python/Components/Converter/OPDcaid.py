@@ -1,16 +1,10 @@
-﻿#  GlamourAccess converter
-#  Modded and recoded by MCelliotG for use in Glamour skins or standalone
-#  Based on CaidInfo2 converter coded by bigroma & 2boom
-#  If you use this Converter for other skins and rename it, please keep the first and second line
-
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Tools.Directories import fileExists
 from Components.Element import cached
 from string import upper
 from Components.config import config
-from Poll import Poll
-import os
+from Components.Converter.Poll import Pollimport os
 info = {}
 old_ecm_mtime = None
 
