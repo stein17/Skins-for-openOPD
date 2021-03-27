@@ -3880,34 +3880,6 @@ self['config'].l.setSeperation(int(300*f))
   <widget name="state" position="245,0" size="160,50" backgroundColor="background" foregroundColor="Line" font="Regular; 44" halign="left" transparent="1" valign="center" />
   <ePixmap pixmap="buttons/key_left_ok_right.png" position="140,10" size="75,30" alphatest="blend" />
 </screen>
-<!--   <screen name="PVRState_Top" position="20,10" zPosition="2" size="1880,102" flags="wfNoBorder" backgroundColor="background20">
-    <widget name="state" position="10,60" size="1860,40" backgroundColor="background20" foregroundColor="transpWhite" font="Regular; 36" halign="center" transparent="1" valign="center" />
-    <widget name="statusicon" position="939,21" zPosition="3" size="20,20" alphatest="on" pixmaps="Multibox/skin_default/system/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" />
-    <widget name="speed" position="979,9" size="250,45" font="Regular; 36" halign="right" transparent="1" zPosition="4" />
-    <eLabel text="Playback Time:" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="1400,9" size="240,45" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1620,9" size="100,45" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="right" transparent="1" valign="center">
-      <convert type="AMBServiceTime">StartTime</convert>
-    </widget>
-    <eLabel text="-" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="center" valign="center" position="1722,9" size="25,45" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1750,9" size="110,45" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="right" transparent="1" valign="center">
-      <convert type="AMBServiceTime">EndTime</convert>
-    </widget>
-    <eLabel text="Current Time:" foregroundColor="white" backgroundColor="background" font="Regular; 30" halign="left" position="35,9" size="225,45" transparent="1" />
-    <widget source="global.CurrentTime" render="Label" position="229,9" size="100,45" font="Regular; 30" halign="left" foregroundColor="white" backgroundColor="background" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="332,9" size="400,45" font="Regular; 30" halign="left" foregroundColor="white" backgroundColor="background" transparent="1">
-      <convert type="ClockToText">Format:, %A , %d.%m.%Y</convert>
-    </widget>
-  </screen>
-  <screen name="Mute" position="90,90" size="100,100" title="Mute" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,0" size="100,100" pixmap="icons/Mute.png" zPosition="22" />
-  </screen>
-  <screen name="Volume" position="650,60" size="551,140" title="Volume" flags="wfNoBorder" backgroundColor="background30" zPosition="99">
-    <widget name="Volume" position="127,62" size="261,17" zPosition="1" pixmap="icons/Volume_bar.png" transparent="1" />
-    <ePixmap position="0,0" size="551,140" zPosition="0" pixmap="icons/Volume.png" borderColor="Multiboxlabel" borderWidth="3" alphatest="blend" />
-    <widget font="LCD;90" render="AMBVolume" valign="center" halign="center" foregroundColor="Multiboxlabel" backgroundColor="background" transparent="1" borderColor="white" borderWidth="3" source="global.CurrentTime" position="390,24" size="120,90" zPosition="20" />
-  </screen>
   <!-- VideoMode -->
   <screen name="VideoMode" position="center,center" size="250,60" title="VideoMode">
     <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
