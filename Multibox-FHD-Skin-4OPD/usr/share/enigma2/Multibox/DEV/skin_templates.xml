@@ -3089,7 +3089,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
     <widget name="Cover" position="1716,98" size="192,260" alphatest="blend" zPosition="2" halign="left" />
-    <widget source="Service" render="AMBXPicon" position="1280,380" zPosition="10" size="64,36" transparent="1" alphatest="blend">
+    <widget source="Service" render="Picon" position="1280,380" zPosition="10" size="64,36" transparent="1" alphatest="blend">
     <convert type="MovieInfo">RecordServiceRef</convert>
     </widget>
     <eLabel  position="1280,339" size="423,1" backgroundColor="Line" zPosition="6" />
@@ -3179,7 +3179,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
     <widget name="Cover" position="1230,649" size="192,260" alphatest="blend" zPosition="2" halign="left" />
-    <widget source="Service" render="AMBXPicon" position="1495,706" zPosition="10" size="347,197" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
+    <widget source="Service" render="Picon" position="1495,706" zPosition="10" size="347,197" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
   <eLabel text="Grösse:" position="1690,965" size="110,37" font="Regular; 28" transparent="1" zPosition="2" foregroundColor="default" />
@@ -3269,7 +3269,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EMCEventName">FullDescription</convert>
     </widget>
     <widget name="Cover" position="1322,100" size="464,650" alphatest="blend" zPosition="2" halign="left" />
-    <widget source="Service" render="AMBXPicon" position="1233,918" zPosition="10" size="64,36" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
+    <widget source="Service" render="Picon" position="1233,918" zPosition="10" size="64,36" transparent="1" alphatest="blend" borderWidth="1" borderColor="grey">
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
   <eLabel text="Grösse:" position="1690,965" size="110,37" font="Regular; 28" transparent="1" zPosition="2" foregroundColor="default" />
@@ -3315,7 +3315,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="Service" render="Label" position="1613,595" size="165,36" font="Regular; 29" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="AMBXPicon" position="1223,595" zPosition="10" size="64,36" transparent="1" alphatest="blend">
+    <widget source="Service" render="Picon" position="1223,595" zPosition="10" size="64,36" transparent="1" alphatest="blend">
      <convert type="MovieInfo">RecordServiceRef</convert>
     </widget>
     <panel name="template_info_menu_exit" />
@@ -3367,7 +3367,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EventName">FullDescription</convert>
     </widget>
    <widget source="Service" render="Cover" position="1322,100" size="464,650" alphatest="blend" zPosition="5"  />
-    <widget source="Service" render="AMBXPicon" position="1233,918" zPosition="10" size="64,36" transparent="1" alphatest="blend" >
+    <widget source="Service" render="Picon" position="1233,918" zPosition="10" size="64,36" transparent="1" alphatest="blend" >
     <convert type="MovieInfo">RecordServiceRef</convert>
   </widget>
   <eLabel text="Grösse:" position="1690,965" size="110,37" font="Regular; 28" transparent="1" zPosition="2" foregroundColor="default" />
