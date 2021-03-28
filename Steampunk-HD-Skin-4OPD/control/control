@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-steampunk
+Version: 0.1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: stein17
+Description: Steampunk HD Skin  for OPD by stein17
+Source: https://github.com/stein17/Skins-for-openOPD
+Homepage: https://droidsat.org/forum/node/559
+OE: Enigma2 Skin
+License: open
