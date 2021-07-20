@@ -590,9 +590,12 @@
     <convert type="OPDTemp">FanInfo</convert>
   </widget>
   <ePixmap position="785,160" zPosition="1" size="40,40" pixmap="Steampunk/skin_default/icons/hddtemp.png" alphatest="blend" />
-  <widget font="Regular; 18" halign="left" position="830,168" render="Label" size="410,24" source="session.CurrentService" transparent="1" foregroundColor="selectedFG" backgroundColor="background" borderWidth="1" borderColor="black" zPosition="6">
+<!--   <widget font="Regular; 18" halign="left" position="830,168" render="Label" size="410,24" source="session.CurrentService" transparent="1" foregroundColor="selectedFG" backgroundColor="background" borderWidth="1" borderColor="black" zPosition="6">
     <convert type="OPDTemp">Temperature</convert>
-  </widget>
+  </widget> -->
+  <widget source="global.CurrentTime" render="Label" position="830,168" size="420,25" zPosition="1" font="Regular;18" borderColor="black" borderWidth="1" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1">
+ <convert type="SteampunkSTBinfo">CPUtemp</convert>
+ </widget>
   <ePixmap position="785,210" zPosition="1" size="40,40" pixmap="Steampunk/skin_default/icons/cpuload.png" alphatest="blend" />
   <widget source="session.Event_Now" render="Progress" position="830,210" size="410,10" transparent="1" alphatest="blend" foregroundColor="red4" borderWidth="2" borderColor="brown3" backgroundColor="background" zPosition="6">
     <convert type="CpuUsage">$0</convert>
