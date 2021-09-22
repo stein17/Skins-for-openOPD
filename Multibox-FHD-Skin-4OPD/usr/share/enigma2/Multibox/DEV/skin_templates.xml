@@ -25,11 +25,11 @@
  </screen>
    <!-- TEMPLATES Clocks-->
   <screen name="template_pixmap_Clock">
-  <ePixmap pixmap="icons/Clock.png" position="1812,3" zPosition="1" size="90,90" transparent="1" alphatest="on" />
+  <ePixmap pixmap="icons/Clock.png" position="1812,3" zPosition="1" size="90,90" transparent="1" alphatest="blend" />
   </screen>
      <!-- TEMPLATES Clocks no Icon-->
   <screen name="template_no_pixmap_Clock">
-  <ePixmap pixmap="icons/Clock.png" position="1930,-80" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+  <ePixmap pixmap="icons/Clock.png" position="1930,-80" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
   </screen>
   <!-- TEMPLATES Userlogos-->
  <screen name="template_pixmap_Userlogo">
@@ -157,7 +157,7 @@
     <convert type="ClockToText">Format:%M</convert>
   </widget>
   <widget alphatest="blend" render="MSNWeatherPixmap" position="1585,858" size="300,183" source="session.MSNWeather" transparent="1" zPosition="1">
-<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Multibox/Android/,png</convert>
+   <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Multibox/Android/,png</convert>
 </widget>
   <widget noWrap="1" font="Regular;30" foregroundColor="black" backgroundColor="grey" borderWidth="1" borderColor="bluelabel" render="Label" position="1708,989" size="150,37" source="session.MSNWeather" zPosition="2" halign="right" valign="center" transparent="1">
     <convert type="MSNWeather">temperature_current</convert>
@@ -257,6 +257,10 @@
  <screen name="template_pixmap_Infobar_full">
   <ePixmap pixmap="menu/Infobar_full_default.png" position="0,856" zPosition="-20" size="1920,226" />
  </screen>
+ <screen name="template_pixmap_Infobar_color">
+  <ePixmap pixmap="Skinparts/Infobar_Color_default.png" position="0,830" zPosition="-10" size="1920,250" />
+  <ePixmap pixmap="Skinparts/Color_Progress_background.png" position="370,949" zPosition="-5" size="998,18" />
+ </screen>
  <screen name="template_pixmap_Infobar">
   <ePixmap pixmap="menu/Infobar_default.png" position="0,810" zPosition="-20" size="1920,271" />
  </screen>
@@ -288,6 +292,11 @@
 <ePixmap pixmap="Progress_BG.png" position="284,1013" zPosition="2" size="985,10" alphatest="blend" />
   </screen> 
   <!-- TEMPLATES Progress -->
+   <screen name="template_progress_color">
+   <widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Color_Progress_default.png" position="372,952" size="994,12" zPosition="5" transparent="1" borderWidth="1" borderColor="verygrey">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+ </screen>
   <screen name="template_progress_default">
     <widget source="session.Event_Now" render="Progress" pixmap="Progress.png" position="386,964" size="985,10" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" >
       <convert type="EventTime">Progress</convert>
@@ -296,6 +305,11 @@
   
   <screen name="template_progress_verlauf">
 <widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Progress_Verlauf.png" position="386,964" size="985,10" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" >
+  <convert type="EventTime">Progress</convert>
+  </widget>
+  </screen>
+    <screen name="template_progress_verlauf_2">
+<widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Progress_Verlauf_2.png" position="386,964" size="985,10" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" >
   <convert type="EventTime">Progress</convert>
   </widget>
   </screen>
@@ -341,6 +355,11 @@
 </screen>
  <screen name="template_progress_light_verlauf">
 <widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Progress_Verlauf.png" position="284,1013"  size="985,10" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey">
+  <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
+ <screen name="template_progress_light_verlauf_2">
+<widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Progress_Verlauf_2.png" position="284,1013"  size="985,10" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey">
   <convert type="EventTime">Progress</convert>
   </widget>
 </screen>
@@ -545,6 +564,32 @@
   <screen name="template_exit">
     <ePixmap pixmap="buttons/key_exit.png" position="1795,1022" size="103,35" zPosition="10" transparent="1" />
   </screen>
+  
+    <!--  Caminfo_fake-->
+  <screen name="template_cam_info_fake">
+  <eLabel name="cam_info" backgroundColor="background" zPosition="-20" position="1,1" size="1,1" />
+  </screen>
+  
+   <!--  Caminfo-->
+  <screen name="template_cam_info">
+    <widget font="Regular;20" foregroundColor="white" backgroundColor="background" halign="left" position="970,835" render="Label" size="150,24" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <convert type="AMBEmuInfo">Emu</convert>
+  </widget>
+  <widget font="Regular; 20" foregroundColor="white" backgroundColor="background" halign="left" position="1120,835" render="Label" size="430,24" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <convert type="AMBEmuInfo">Address</convert>
+  </widget>
+  <widget font="Regular; 20" foregroundColor="white" backgroundColor="background" halign="left" position="1440,860" render="Label" size="110,24" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <convert type="AMBEmuInfo">Hops</convert>
+  </widget>
+  <widget font="Regular; 20" foregroundColor="white" backgroundColor="background" halign="left" position="1220,860" render="Label" size="220,24" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <convert type="AMBEmuInfo">Ecmtime</convert>
+  </widget>
+  <widget font="Regular; 20" foregroundColor="white" backgroundColor="background" halign="left" position="970,860" render="Label" size="250,24" source="session.CurrentService" transparent="1" valign="center" zPosition="1" noWrap="1">
+    <convert type="AMBEmuInfo">Caid</convert>
+  </widget>
+  </screen>
+  
+  
    <screen name="template_crypt_info">
     <!--  Crypt-->
     <eLabel text="Crypt:" position="401,963" size="110,36" font="Regular; 30" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="default" zPosition="5" />
@@ -1477,9 +1522,9 @@
     <widget source="Title" render="Label" position="109,28" size="1080,60" font="Italic; 50" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <eLabel name="line1" position="8,91" size="1880,2" backgroundColor="Line" zPosition="1" />
     <widget name="text" position="10,97" size="1180,60" font="Regular; 40" valign="center" halign="center" foregroundColor="Line" />
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="8,8" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="8,8" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Multibox/skin_default/icons/input_error.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Multibox/skin_default/icons/input_question.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Multibox/skin_default/icons/input_info.png" position="8,8" size="80,80" alphatest="blend" />
     <widget name="list" position="14,163" size="1180,330" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
@@ -1560,7 +1605,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		</applet>
   </screen>
   <screen name="template_wizard">
-    <widget name="wizard" position="10,130" size="305,287" pixmap="skin_default/system/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="wizard" position="10,130" size="305,287" pixmap="Multibox/skin_default/system/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="text" position="330,87" size="860,480" font="Regular;36" backgroundColor="background" transparent="1" />
     <widget source="list" render="Listbox" position="10,590" size="1180,400" zPosition="13" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (30, 3), size = (1060, 40), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1578,10 +1623,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <screen name="template_wizardrc">
     <widget name="rc" position="1300,560" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
-    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
-    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="Multibox/skin_default/arrowup.png" zPosition="11" alphatest="blend" />
   </screen>
   <screen name="template_setup_config">
     <widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="1535,1022" size="103,35" />

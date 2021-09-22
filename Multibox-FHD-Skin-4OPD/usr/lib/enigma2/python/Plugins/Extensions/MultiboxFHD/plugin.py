@@ -37,10 +37,15 @@ from os import listdir, remove, rename, system, path, symlink, chdir, makedirs, 
 import shutil
 
 cur_skin = config.skin.primary_skin.value.replace('/skin.xml', '')
-if cur_skin == "skin.xml":
-        cur_skin = "skin_default"
 
 config.plugins.Multibox = ConfigSubsection()
+config.plugins.Multibox.refreshInterval = ConfigNumber(default=10)
+config.plugins.Multibox.woeid = ConfigNumber(default = 638242)
+config.plugins.Multibox.tempUnit = ConfigSelection(default="Celsius", choices = [
+                                ("Celsius", _("Celsius")),
+                                ("Fahrenheit", _("Fahrenheit"))
+                                ])
+
 def Plugins(**kwargs):
     return [PluginDescriptor(name=_("Multibox FHD Configtool"), description=_("Personalize your Multibox FHD (Skin by stein17)"), where = [PluginDescriptor.WHERE_PLUGINMENU],
     icon="plugin.png", fnc=main)]
@@ -58,6 +63,55 @@ def isInteger(s):
         return True
     except ValueError:
         return False
+
+class WeatherLocationChoiceList(Screen):
+    skin = """
+            <screen name="WeatherLocationChoiceList" position="center,center" size="1280,720" title="Location list" >
+                    <widget source="Title" render="Label" position="70,47" size="950,43" font="Regular;35" transparent="1" />
+                    <widget name="choicelist" position="70,115" size="700,480" scrollbarMode="showOnDemand" scrollbarWidth="6" transparent="1" />
+                    <eLabel position=" 55,675" size="290, 5" zPosition="-10" backgroundColor="red" />
+                    <eLabel position="350,675" size="290, 5" zPosition="-10" backgroundColor="green" />
+                    <eLabel position="645,675" size="290, 5" zPosition="-10" backgroundColor="yellow" />
+                    <eLabel position="940,675" size="290, 5" zPosition="-10" backgroundColor="blue" />
+                    <widget name="key_red" position="70,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" transparent="1" />
+                    <widget name="key_green" position="365,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" transparent="1" />
+            </screen>
+            """
+
+    def __init__(self, session, location_list):
+        self.session = session
+        self.location_list = location_list
+        list = []
+        Screen.__init__(self, session)
+        self.title = _("Location list")
+        self["choicelist"] = MenuList(list)
+        self["key_red"] = Label(_("Cancel"))
+        self["key_green"] = Label(_("OK"))
+        self["myActionMap"] = ActionMap(["SetupActions", "ColorActions"],
+        {
+                "ok": self.keyOk,
+                "green": self.keyOk,
+                "cancel": self.keyCancel,
+                "red": self.keyCancel,
+        }, -1)
+        self.createChoiceList()
+
+    def createChoiceList(self):
+        list = []
+        print(self.location_list)
+        for x in self.location_list:
+            list.append((str(x[1]), str(x[0])))
+        self["choicelist"].l.setList(list)
+
+    def keyOk(self):
+        returnValue = self["choicelist"].l.getCurrentSelection()[1]
+        if returnValue is not None:
+            self.close(returnValue)
+        else:
+            self.keyCancel()
+
+    def keyCancel(self):
+        self.close(None)
 
 
 class Multibox_Config(Screen, ConfigListScreen):

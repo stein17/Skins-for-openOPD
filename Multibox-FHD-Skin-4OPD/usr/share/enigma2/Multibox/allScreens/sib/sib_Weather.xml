@@ -173,7 +173,7 @@
     <convert type="FrontendInfo">BER</convert>
   </widget>
   <!-- Python 2 -->
- <!--  <eLabel text="CPU-Temp:" position="1223,680" size="140,30" font="Regular; 27" halign="left" valign="center" backgroundColor="background" noWrap="1" transparent="1" zPosition="3" />
+  <!-- <eLabel text="CPU-Temp:" position="1223,680" size="140,30" font="Regular; 27" halign="left" valign="center" backgroundColor="background" noWrap="1" transparent="1" zPosition="3" />
   <widget source="global.CurrentTime" position="1370,680" size="80,30" font="Regular; 27" halign="left" valign="center" backgroundColor="background" noWrap="1" transparent="1" zPosition="3" render="AMBSYSTemp" /> -->
   <!-- Python 3 -->
   <widget source="global.CurrentTime" render="Label" position="1223,680" size="240,30" font="Regular; 27" halign="left" valign="center" backgroundColor="background" noWrap="1" transparent="1" zPosition="3">
@@ -195,7 +195,7 @@
     <convert type="AMBReceiverInfo">MemFree</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1223,860" size="674,30" zPosition="1" font="Regular; 27" halign="left" valign="center" noWrap="1" backgroundColor="background" foregroundColor="white" transparent="1">
-    <convert type="AMBCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
+    <convert type="AMBCPUInfo">CPU Usage:$0 Core 1:$1  Core 2:$2</convert>
   </widget>
     <!--  Caid Info -->
   <widget font="Regular;27" backgroundColor="background" halign="left" position="1223,890" render="Label" size="175,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
