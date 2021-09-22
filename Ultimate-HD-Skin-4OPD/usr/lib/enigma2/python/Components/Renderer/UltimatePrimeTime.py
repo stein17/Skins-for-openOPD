@@ -1,6 +1,6 @@
 from Components.VariableText import VariableText
 from enigma import eLabel, eEPGCache
-from Components.Renderer.Renderer import Renderer
+from Renderer import Renderer
 from time import localtime, mktime, time
 from datetime import datetime
 from Components.config import config

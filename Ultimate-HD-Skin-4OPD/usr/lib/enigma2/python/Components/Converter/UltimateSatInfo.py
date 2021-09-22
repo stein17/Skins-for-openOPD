@@ -1,8 +1,16 @@
+#
+#  Coded by Vali
+#
+
+
+
 from enigma import iServiceInformation
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.config import config
-from Components.Converter.Poll import Poll
+from Poll import Poll
+
+
 
 class UltimateSatInfo(Poll, Converter, object):
 	SMART_INFO_H = 1
