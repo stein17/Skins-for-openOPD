@@ -51,7 +51,7 @@ def Plugins(**kwargs):
     icon="plugin.png", fnc=main)]
 
 def main(session, **kwargs):
-    if config.skin.primary_skin.value == "Blue-Line-OE-4ATV/skin.xml":
+    if config.skin.primary_skin.value == "OPD-Blue-Line/skin.xml":
         session.open(BlueLine_Config)
     else:
         AddPopup(_('Please activate BlueLine FHD Skin before run the Config Plugin'), type=MessageBox.TYPE_ERROR, timeout=10)
