@@ -5470,10 +5470,17 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 </widget>
 <ePixmap pixmap="mmp/ico_player.png" position="445,14" size="125,18" alphatest="blend" />
 </screen>
-<screen name="Volume" position="50,100" size="150,110" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+<!-- Volume -->
+<!-- <screen name="Volume" position="50,100" size="150,110" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
 <widget name="Volume" position="9,20" size="8,56" zPosition="0" orientation="orBottomToTop" pixmap="menu/Volume_Progress.png" transparent="1" />
 <ePixmap position="0,0" size="150,110" zPosition="1" pixmap="menu/Volume.png" alphatest="blend" />
 <widget position="47,8" size="66,66" font="Steampunk-digital;40" render="SteampunkVolume" valign="center" halign="center" foregroundColor="selectedFG" backgroundColor="grey" transparent="1" borderColor="black" borderWidth="2" source="global.CurrentTime" zPosition="20" />
+</screen> -->
+<!-- Volume -->
+<screen name="Volume" position="50,100" size="150,110" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+<widget name="Volume" position="9,20" size="8,56" zPosition="0" orientation="orBottomToTop" pixmap="menu/Volume_Progress.png" transparent="1" />
+<ePixmap position="0,0" size="150,110" zPosition="1" pixmap="menu/Volume.png" alphatest="blend" />
+<widget position="47,8" size="66,66" font="LCD;40" render="SteampunkVolume" valign="center" halign="center" foregroundColor="selectedFG" backgroundColor="grey" transparent="1" borderColor="black" borderWidth="2" source="global.CurrentTime" zPosition="20" />
 </screen>
 <screen name="Mute" title="Mute" position="50,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 <ePixmap pixmap="icons/mute.png" position="0,0" size="64,64" alphatest="on" zPosition="0" />
