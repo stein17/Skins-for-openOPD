@@ -1756,10 +1756,11 @@
     <widget source="Service" render="Progress" position="497,658" size="435,18" pixmap="mmp/Progress.png" transparent="1" zPosition="5">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="Ultimate/mmp/Progress_rec.png:420,4" position="497,658" size="435,18" zPosition="4" transparent="1">
+    <widget source="Service" render="EMCPositionGauge" pointer="mmp/Progress_rec.png:420,4" position="497,658" size="435,18" zPosition="4" transparent="1">
       <convert type="EMCRecordPosition">Position</convert>
     </widget>
     <panel name="template_pixmap_Infobar_Player" />
+	<panel name="template_EMCMediaCenter_Backdrop_Poster0" />
   </screen>
   <screen name="MovieListTags" position="0,0" size="1280,720" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="background">
     <widget source="windowtitle" render="Label" position="160,4" size="600,44" font="Regular;32" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" borderColor="black" borderWidth="2" transparent="1" zPosition="1" />
@@ -1885,6 +1886,7 @@
     </widget>
     <ePixmap pixmap="mmp/Progress_rec.png" position="497,658" size="435,18" zPosition="3" transparent="1" />
     <panel name="template_pixmap_Infobar_Player" />
+	<panel name="template_EMCMediaCenter_Backdrop_Poster0" />
   </screen>
   <!-- DVDPlayer -->
   <screen name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser" flags="wfNoBorder" backgroundColor="background">
@@ -3232,8 +3234,8 @@
     <eLabel position="1,1" size="69,69" zPosition="1" />
     <widget name="UnhandledKeyPixmap" position="3,3" size="64,64" zPosition="2" pixmap="icons/error.png" alphatest="blend" />
   </screen>
-  <screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="185,60" size="670,570" itemHeight="34" font="Regular; 20" scrollbarMode="showOnDemand" sliderpixmap="menu/Scrollbar.png" enableWrapAround="1" backgroundColor="background" transparent="1" />
+<!--   <screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="185,60" size="670,570" itemHeight="34" font="Regular; 20" scrollbarMode="showOnDemand" sliderPixmap="menu/Scrollbar.png" enableWrapAround="1" backgroundColor="background" transparent="1" />
     <widget name="long_key" position="30,640" size="825,30" font="Regular; 24" halign="center" valign="center" zPosition="2" transparent="1" foregroundColor="selectedFG" />
     <ePixmap pixmap="Ultimate/skin_default/system/Wizard.png" position="900,314" size="350,360" alphatest="blend" transparent="1" />
     <ePixmap pixmap="BG-Pixmaps/Line_Hor/Line_Hor_Org.png" alphatest="blend" transparent="1" position="30,632" zPosition="2" size="830,5" />
@@ -3249,7 +3251,7 @@
     <panel name="template_pixmap_rahmen" />
     <panel name="template_pixmap_Userlogo" />
     <panel name="template_pixmap_center" />
-  </screen>
+  </screen> -->
   <screen name="InputBox" position="center,center" size="1200,100" title="" zPosition="1">
     <eLabel name="b" position="0,0" size="1200,100" zPosition="-10" />
     <eLabel name="a" position="1,1" size="1198,98" zPosition="-9" />

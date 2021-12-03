@@ -235,7 +235,7 @@
   <!-- Restart Panel FHD -->
   <screen name="QuitMainloopScreen" position="0,0" backgroundColor="black" flags="wfNoBorder" size="1920,1080">
     <ePixmap pixmap="icons/start.png" zPosition="1" position="418,399" size="207,236" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="416,225" size="80,80" zPosition="4" alphatest="blend" />
+    <ePixmap pixmap="skin_default/icons/input_info.png" position="416,225" size="80,80" zPosition="4" alphatest="blend" />
     <widget name="text" position="656,335" size="800,400" font="Regular; 44" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" />
     <eLabel position="397,201" size="2,550" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
     <eLabel position="1511,202" size="2,550" backgroundColor="backgroundBlue" foregroundColor="backgroundBlue" />
@@ -327,7 +327,7 @@
     <eLabel name="a" position="3,3" size="994,294" backgroundColor="background" zPosition="-9" />
     <widget name="text" position="25,121" size="955,60" font="Regular;42" valign="center" halign="center" backgroundColor="background" foregroundColor="grey" noWrap="0" transparent="1" />
     <widget name="input" position="23,211" size="955,60" halign="center" valign="center" font="Regular;42" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <ePixmap pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="28,20" size="80,80" alphatest="blend" />
+    <ePixmap pixmap="skin_default/icons/input_info.png" position="28,20" size="80,80" alphatest="blend" />
   </screen>
   <!-- Minute input FHD -->
   <screen name="MinuteInput" position="center,center" size="400,100" title="Seek">
@@ -341,7 +341,7 @@
   </screen>
   <!-- Subservice quickzap FHD -->
   <screen name="SubservicesQuickzap" position="center,center" size="600,300" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.RecordState" render="Pixmap" pixmap="OPD-Blue-Line/skin_default/icons/record.png" position="450,5" zPosition="2" size="20,20" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="/skin_default/icons/record.png" position="450,5" zPosition="2" size="20,20" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <eLabel text="Subservices" position="0,0" size="600,30" font="Regular;24" backgroundColor="background20" />
@@ -440,7 +440,7 @@
     <eLabel position="422,3" size="2,134" backgroundColor="lightblue" transparent="0" zPosition="5" />
   </screen>
   <!-- Help menu FHD -->
-  <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder" backgroundColor="transparent">
+ <!--  <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="help..." position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <ePixmap pixmap="menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -455,7 +455,7 @@
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
     <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
     <ePixmap pixmap="buttons/key_exit.png" position="1152,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-  </screen>
+  </screen> -->
   <!-- ********** SKIN PANELS ********** -->
   <!-- Menu FHD -->
   <screen name="Menu" position="0,-1" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
@@ -1898,9 +1898,9 @@
   <!-- RemoveTimerQuestions FHD -->
   <screen name="RemoveTimerQuestion" position="360,240" size="1200,500" zPosition="10" title="Message" flags="wfNoBorder" backgroundColor="background">
     <widget name="text" position="165,20" size="1020,140" font="Regular;35" valign="center" backgroundColor="background" foregroundColor="white" halign="center" />
-    <widget name="ErrorPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_error.png" position="45,50" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_question.png" position="45,50" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="45,50" size="80,80" alphatest="blend" />
     <eLabel position="165,21" size="1020,140" backgroundColor="background" zPosition="-1" />
     <widget name="list" position="15,175" size="1170,315" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
     <applet type="onLayoutFinish">
@@ -3397,8 +3397,8 @@
     <widget name="labpass" position="280,555" size="500,45" font="Regular; 30" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="alias" position="30,645" size="225,45" font="Regular;33" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="labalias" position="280,645" size="500,45" font="Regular; 30" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="sinactive" position="30,735" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
-    <widget name="sactive" position="30,735" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="sinactive" position="30,735" zPosition="1" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="sactive" position="30,735" zPosition="2" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
     <widget name="system" position="90,735" size="150,45" font="Regular;33" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="labsys" position="280,735" size="500,45" font="Regular; 30" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
     <ePixmap pixmap="buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
@@ -3465,14 +3465,14 @@
     <widget name="sharedir" position="30,735" size="360,45" font="Regular;33" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="labsharedir" position="400,735" size="400,45" font="Regular; 30" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="inotify" position="80,825" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="inotifyactive" position="35,825" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="inotifyinactive" position="30,825" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="inotifyactive" position="35,825" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="inotifyinactive" position="30,825" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <widget name="tivo" position="470,825" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="tivoactive" position="430,825" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="tivoinactive" position="425,825" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="tivoactive" position="430,825" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="tivoinactive" position="425,825" zPosition="2" pixmap="Oskin_default/icons/redx.png" size="48,48" alphatest="on" />
     <widget name="dlna" position="80,870" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="dlnaactive" position="35,870" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="dlnainactive" position="30,870" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="dlnaactive" position="35,870" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="dlnainactive" position="30,870" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <ePixmap pixmap="menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
@@ -3636,17 +3636,17 @@
     <widget name="sharedir" position="30,735" size="225,45" font="Regular;33" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="labsharedir" position="400,735" size="400,45" font="Regular; 30" valign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
     <widget name="web" position="74,818" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="webactive" position="32,825" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="webinactive" position="27,820" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="webactive" position="32,825" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="webinactive" position="27,820" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <widget name="telnet" position="472,818" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="telnetactive" position="429,824" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="telnetinactive" position="424,820" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="telnetactive" position="429,824" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="telnetinactive" position="424,820" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <widget name="xbox" position="74,873" size="350,90" font="Regular; 30" valign="center" halign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="xboxactive" position="33,880" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="xboxinactive" position="27,875" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="xboxactive" position="33,880" zPosition="1" pixmap="skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="xboxinactive" position="27,875" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <widget name="dlna" position="472,873" size="350,45" font="Regular; 30" valign="center" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="dlnaactive" position="429,882" zPosition="1" pixmap="OPD-Blue-Line/skin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
-    <widget name="dlnainactive" position="424,875" zPosition="2" pixmap="OPD-Blue-Line/skin_default/icons/redx.png" size="48,48" alphatest="on" />
+    <widget name="dlnaactive" position="429,882" zPosition="1" pixmap="Oskin_default/icons/selectioncross.png" size="48,48" alphatest="on" />
+    <widget name="dlnainactive" position="424,875" zPosition="2" pixmap="skin_default/icons/redx.png" size="48,48" alphatest="on" />
     <ePixmap pixmap="buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
@@ -5845,9 +5845,9 @@
     </widget>
     <ePixmap position="975,687" size="256,256" zPosition="2" pixmap="icons/menu_system_VFD_INI.png" transparent="1" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="ErrorPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_error.png" position="70,200" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_question.png" position="72,200" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="70,200" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="70,200" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="72,200" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="70,200" size="80,80" alphatest="blend" />
     <widget name="text" position="70,280" size="640,270" font="Regular;30" foregroundColor="lightblue" backgroundColor="dark" transparent="1" zPosition="1" />
     <widget source="list" render="Listbox" position="70,320" size="820,400" scrollbarMode="showOnDemand" foregroundColor="lightblue" backgroundColor="dark" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
@@ -6030,9 +6030,9 @@
   <!-- MessageBox FHD -->
   <screen name="MessageBox" title="Message" position="center,255" size="900,85">
     <widget name="text" position="120,10" size="620,80" font="Regular;32" halign="center" valign="center" foregroundColor="white" backgroundColor="dark" transparent="1" zPosition="1" />
-    <widget name="ErrorPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_error.png" position="20,10" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_question.png" position="20,10" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="20,10" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="20,10" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="20,10" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="20,10" size="80,80" alphatest="blend" />
     <widget name="list" position="20,90" font="Regular;30" size="860,350" itemHeight="35" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -6070,9 +6070,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- MessageBoxSimple FHD -->
   <screen name="MessageBoxSimple" title="Message" position="center,255" size="900,100">
-    <widget name="ErrorPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="OPD-Blue-Line/skin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Oskin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
     <widget name="text" position="140,20" size="720,80" font="Regular;36" halign="center" transparent="1" />
     <widget name="list" position="30,120" size="840,350" font="Regular;30" itemHeight="40" transparent="1" />
     <applet type="onLayoutFinish">

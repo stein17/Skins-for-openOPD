@@ -2853,7 +2853,7 @@ CoolTitleColor="1" DefaultColor="foreground" WatchingColor="#D8C100" FinishedCol
 <eLabel position="1,1" size="69,69" zPosition="1" />
 <widget name="UnhandledKeyPixmap" position="3,3" size="64,64" zPosition="2" pixmap="icons/error.png" alphatest="blend" />
 </screen>
-<screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder" backgroundColor="background">
+<!-- <screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder" backgroundColor="background">
 <widget name="list" position="210,70" size="620,530" itemHeight="34" font="Regular;18" borderColor="black" borderWidth="1" scrollbarMode="showOnDemand" sliderPixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" enableWrapAround="1" backgroundColor="background" transparent="1" />
 <widget name="long_key" position="50,610" size="780,30" font="Regular;22" borderColor="black" borderWidth="1" halign="center" valign="center" zPosition="2" transparent="1" foregroundColor="selectedFG" />
 <ePixmap pixmap="Icons-Steampunk/Icons-Rechts-04-Steampunk.png" position="891,314" size="350,360" alphatest="blend" transparent="1" />
@@ -2863,8 +2863,7 @@ CoolTitleColor="1" DefaultColor="foreground" WatchingColor="#D8C100" FinishedCol
 <panel name="template_wizardrc" />
 <panel name="template_pig_smal" />
 <panel name="template_Steampunk_Background_Channel" />  
-
-</screen>
+</screen> -->
 <screen name="InputBox" position="center,center" size="1150,100" title="" zPosition="1">
 <ePixmap pixmap="Skinparts/Line_Hor.png" position="0,50" zPosition="2" size="1150,3" alphatest="blend" transparent="1" />
 <widget name="text" position="0,5" size="1150,40" font="Regular;28" valign="center" halign="center" noWrap="0" transparent="1" />

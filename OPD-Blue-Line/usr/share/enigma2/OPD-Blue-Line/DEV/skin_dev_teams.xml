@@ -2408,7 +2408,142 @@
     <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   </screen>
-  
-  <!--######################################### -->
-  
+	<!-- NEW_Python3_Screens -->  
+
+<!-- NEW-Automatic-BUTTONS-ALL -->
+  <screen name="TemplateAllColorButtons_Automatic">
+    <panel name="TemplateButtonRed_Automatic" />
+	<panel name="TemplateButtonGreen_Automatic" />
+	<panel name="TemplateButtonYellow_Automatic" />
+	<panel name="TemplateButtonBlue_Automatic" />
+  </screen>
+<!-- NEW-Automatic-BUTTONS -->
+ <!-- red -->
+ <screen name="TemplateButtonRed_Automatic">
+  <ePixmap pixmap="buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" transparent="1" objectTypes="key_red,Button,Label" />
+  <widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" transparent="1" objectTypes="key_red,StaticText">
+	<convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="key_red" position="68,1000" size="250,70" zPosition="+1" font="Regular; 27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_red,Button,Label" />
+  <widget source="key_red" render="Label" position="68,1000" size="250,70" zPosition="+1" font="Regular;27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_red,StaticText" />
+ </screen>
+  <!-- green -->
+ <screen name="TemplateButtonGreen_Automatic">
+  <ePixmap pixmap="buttons/key_green.png" position="323,1018" size="35,35" alphatest="blend" transparent="1" objectTypes="key_green,Button,Label" />
+  <widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" position="323,1018" size="35,35" alphatest="blend" transparent="1" objectTypes="key_green,StaticText">
+	<convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="key_green" position="368,1000" size="250,70" zPosition="+1" font="Regular; 27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_green,Button,Label" />
+  <widget source="key_green" render="Label" position="368,1000" size="250,70" zPosition="+1" font="Regular;27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_green,StaticText" />
+ </screen>
+ <!-- yellow -->
+ <screen name="TemplateButtonYellow_Automatic">
+  <ePixmap pixmap="buttons/key_yellow.png" position="623,1018" size="35,35" alphatest="blend" objectTypes="key_yellow,Button,Label" transparent="1" />
+  <widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" position="623,1018" size="35,35" alphatest="blend" objectTypes="key_yellow,StaticText" transparent="1">
+	<convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="key_yellow" position="668,1000" size="250,70" zPosition="+1" font="Regular; 27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_yellow,Button,Label" />
+  <widget source="key_yellow" render="Label" position="668,1000" size="250,70" zPosition="+1" font="Regular;27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_yellow,StaticText" />
+ </screen>
+  <!-- blue -->
+ <screen name="TemplateButtonBlue_Automatic">
+  <ePixmap pixmap="buttons/key_blue.png" position="923,1018" size="35,35" alphatest="blend" objectTypes="key_blue,Button,Label" transparent="1" />
+  <widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="923,1018" size="35,35" alphatest="blend" objectTypes="key_blue,StaticText" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="key_blue" position="968,1000" size="250,70" zPosition="+1" font="Regular; 27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_blue,Button,Label" />
+  <widget source="key_blue" position="968,1000" size="250,70" render="Label" zPosition="+1" font="Regular;27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_blue,StaticText" />
+</screen>
+ <!-- Help menu FHD -->
+  <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="help..." position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel name="vertikalline" position="31,898" size="980,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+    <widget source="list" render="Listbox" position="30,130" size="980,765" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{
+					"templates": {
+						# Simple help with no headings ("flat")
+						# data[1:] = [helpText]
+						"default": (84,[
+							MultiContentEntryText(pos=(8, 0), size=(1035, 84), font=1, flags=RT_WRAP | RT_VALIGN_CENTER, text=1),
+							]
+						),
+						# Simple help with headings
+						# data[1:] = [heading, None]  # For heading entries
+						# data[1:] = [None, helpText]  # For help entries
+						"default+headings": (84,[
+							MultiContentEntryText(pos=(8, 0), size=(1035, 84), font=0, flags=RT_WRAP | RT_VALIGN_CENTER, text=1),
+							MultiContentEntryText(pos=(42, 0), size=(993, 84), font=1, flags=RT_WRAP | RT_VALIGN_CENTER, text=2),
+							]
+						),
+						# Extended help with no headings
+						# data[1:] = [helpText, extendedHelpText]
+						"extended": (255,[
+							MultiContentEntryText(pos=(8, 0), size=(1035, 119), font=1, flags=RT_WRAP | RT_VALIGN_CENTER, text=1),
+							MultiContentEntryText(pos=(8, 120), size=(1035, 135), color=0x009e9fa4, color_sel=0x009e9fa4, font=3, flags=RT_WRAP | RT_VALIGN_TOP, text=2),
+							],
+						),
+						# Extended help with headings
+						# data[1:] = [heading, None, None]  # For heading entries
+						# data[1:] = [None, helpText, extendedHelpText]  # For help entries
+						"extended+headings": (255,[
+							MultiContentEntryText(pos=(8, 0), size=(1035, 255), font=0, flags=RT_WRAP | RT_VALIGN_CENTER, text=1),
+							MultiContentEntryText(pos=(42, 0), size=(993, 84), font=1, flags=RT_WRAP | RT_VALIGN_CENTER, text=2),
+							MultiContentEntryText(pos=(42, 90), size=(993, 135), color=0x009e9fa4, color_sel=0x009e9fa4, font=3, flags=RT_WRAP | RT_VALIGN_TOP, text=3),
+							],
+						),
+					},
+					"fonts": [gFont("Regular", 45), gFont("Regular", 30), gFont("Regular", 36), gFont("Regular", 29)],
+					"itemHeight": 45
+				}
+			</convert>
+		</widget>
+    <widget name="buttonlist" position="30,920" size="980,51" font="Regular;38" halign="center" zPosition="2" foregroundColor="blue" backgroundColor="background" transparent="1" />
+	<widget name="description" position="2040,638" size="825,953" font="Regular;30" halign="center" valign="center" backgroundColor="background" transparent="1" zPosition="2" />
+    <ePixmap pixmap="buttons/key_menu.png" position="1307,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_info.png" position="1387,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="buttons/key_help.png" position="1467,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
+    <eLabel name="" position="1288,999" size="260,80" />
+	<panel name="wizard_rc_templateNew" />
+  </screen>
+  <!-- wizard_rc_templateNew -->
+	<screen name="wizard_rc_templateNew">
+		<widget name="rc" position="1065,250" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
+		<widget alphatest="blend" name="indicatorU0" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU1" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU2" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU3" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU4" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU5" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU6" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU7" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU8" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU9" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU10" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU11" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU12" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend"  name="indicatorU13" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicatorU14" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorU15" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL0"  pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL1" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL2" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL3" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL4" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL5" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL6" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL7" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL8" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL9" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL10" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL11" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL12" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL13" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL14" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+		<widget alphatest="blend" name="indicatorL15" pixmap="skin_default/yellow_circle23x23.png" position="1325,600" offset="11,11" size="23,23" zPosition="11" />
+  </screen>
 </skin>
