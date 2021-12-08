@@ -2251,8 +2251,8 @@ self['config'].l.setSeperation(int(300*f))
   </screen>
   <screen name="SoftwareManagerSetup" position="0,0" size="1920,1080" title="SoftwareManager Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Software manager setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget name="config" position="16,100" size="1180,870" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="introduction" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="config" position="16,100" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="Regular; 36" backgroundColor="background" transparent="1" />
+    <widget source="introduction" render="Label" position="1223,560" size="670,400" font="Regular; 36" halign="center" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_source_red_green_blue" />
