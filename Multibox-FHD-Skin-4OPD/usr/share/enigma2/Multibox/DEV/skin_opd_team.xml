@@ -15,7 +15,7 @@
     <panel name="template_pixmap_BG" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!-- OPD QuickMenuDevices FHD  -->
   <screen name="QuickMenuDevices" position="0,0" size="1920,1080" title="Devices" flags="wfNoBorder" backgroundColor="background">
@@ -52,7 +52,7 @@
   <!--OPD SetupInfo FHD -->
   <screen name="SetupInfo" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder">
     <eLabel text="Setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -62,7 +62,7 @@
   <!--OPD setup_osd3d FHD -->
   <screen name="setup_osd3d" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder">
     <eLabel text="OSD 3D Setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -72,7 +72,7 @@
   <!--OPD VideoSetup FHD -->
   <screen name="VideoSetup" position="0,0" size="1920,1080" title="Video Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Basic settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -82,7 +82,7 @@
   <!--OPD AudioSetup FHD -->
   <screen name="AudioSetup" position="0,0" size="1920,1080" title="Audio Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Basic settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -92,7 +92,7 @@
   <!--OPD setup_epgsettings FHD -->
   <screen name="setup_epgsettings" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="EPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -102,7 +102,7 @@
   <!--OPD setup_epgmulti FHD -->
   <screen name="setup_epgmulti" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="MultiEPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -112,7 +112,7 @@
   <!--OPD setup_epgenhanced FHD -->
   <screen name="setup_epgenhanced" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="SingleEPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -122,7 +122,7 @@
   <!--OPD setup_epginfobar FHD -->
   <screen name="setup_epginfobar" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="InfobarEPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -132,7 +132,7 @@
   <!--OPD setup_epginfobargraphical FHD -->
   <screen name="setup_epginfobargraphical" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Graphical InfobarEPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -142,7 +142,7 @@
   <!--OPD setup_epggraphical FHD -->
   <screen name="setup_epggraphical" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="GraphicalEPG settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -152,7 +152,7 @@
   <!--OPD setup_subtitlesetup FHD -->
   <screen name="setup_subtitlesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Subtitle settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -162,7 +162,7 @@
   <!--OPD setup_dvdplayer FHD -->
   <screen name="setup_dvdplayer" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="DVD-Player Setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -172,7 +172,7 @@
   <!--OPD setup_logs FHD -->
   <screen name="setup_logs" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Logs settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -182,7 +182,7 @@
   <!--OPD setup_time FHD -->
   <screen name="setup_time" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Time settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -192,7 +192,7 @@
   <!--OPD setup_keyboard FHD -->
   <screen name="setup_keyboard" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Keyboard setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -202,7 +202,7 @@
   <!--OPD setup_userinterface FHD -->
   <screen name="setup_userinterface" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Settings..." position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -212,7 +212,7 @@
   <!--OPD setup_recording FHD -->
   <screen name="setup_recording" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Recording settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -222,7 +222,7 @@
   <!--OPD setup_timeshift FHD -->
   <screen name="setup_timeshift" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Setup Timeshift" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -232,7 +232,7 @@
   <!--OPD setup_specialfeatures FHD -->
   <screen name="setup_specialfeatures" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Special Features" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -242,7 +242,7 @@
   <!--OPD setup_display FHD -->
   <screen name="setup_display" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Display settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -252,7 +252,7 @@
   <!--OPD setup_channelselection FHD -->
   <screen name="setup_channelselection" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Channel selection settings" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -272,7 +272,7 @@
   <!--OPD setup_remotesetup FHD -->
   <screen name="setup_remotesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Button Setup" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -282,7 +282,7 @@
   <!--OPD setup_autolanguagesetup FHD -->
   <screen name="setup_autolanguagesetup" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Auto language selection" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -292,7 +292,7 @@
   <!--OPD setup_harddisk FHD -->
   <screen name="setup_harddisk" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Setup Harddisk" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_source_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_ok_exit" />
     <panel name="template_pig_setup" />
     <panel name="template_fullscreen" />
@@ -309,7 +309,7 @@
     <widget font="Regular; 36" name="actifcam" position="10,280" size="600,150" transparent="1" foregroundColor="white" backgroundColor="background" />
     <widget font="Regular; 36" name="actifcam2" position="639,280" size="550,150" transparent="1" foregroundColor="white" backgroundColor="background" />
     <widget font="Regular; 36" name="ecminfo" position="10,462" size="1180,510" foregroundColor="white" backgroundColor="background" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -320,7 +320,7 @@
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <widget name="driverfile" position="10,100" size="1180,90" transparent="1" zPosition="5" font="Regular; 36" foregroundColor="bernstein" halign="center" valign="center" />
     <widget name="filelist" position="10,200" size="1180,780" font="Regular;36" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -335,14 +335,14 @@
     <widget name="description" position="10,780" size="1180,200" font="Regular; 36" halign="center" valign="center" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_green_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- OPD HistoryZapBrowser FHD  -->
   <screen name="ZapHistoryBrowser" position="0,0" size="1920,1080" title="ZapHistoryBrowser" flags="wfNoBorder">
     <widget name="list" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -360,7 +360,7 @@
     <widget name="lmemtext" position="21,100" size="270,880" zPosition="7" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="right" transparent="0" />
     <widget name="lmemvalue" position="308,100" size="220,880" zPosition="8" scrollbarMode="showOnDemand" font="Regular; 30" itemHeight="50" halign="left" transparent="0" />
     <widget name="params" rowsincolumn="25" size="1210,900" position="6,85" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
@@ -368,7 +368,7 @@
   <!-- PasswdScreen FHD  -->
   <screen name="PasswdScreen" position="0,0" size="1920,1080" title="Change root password" backgroundColor="background" flags="wfNoBorder">
     <widget name="passwd" position="10,100" size="1180,880" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
@@ -446,7 +446,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_info_exit" />
     <widget name="Commits" position="543,100" size="280,50" font="Regular; 32" backgroundColor="dark" halign="left" transparent="1" zPosition="1" />
     <widget name="boxpic" position="1235,538" size="650,380" zPosition="10" alphatest="blend" transparent="1" />
@@ -530,7 +530,7 @@
 					"itemHeight": 52
 		}</convert>
     </widget>
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -548,7 +548,7 @@
 					"itemHeight": 52
 		}</convert>
     </widget>
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -559,7 +559,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!-- OPD HddFastRemove FHD  -->
   <screen backgroundColor="background" flags="wfNoBorder" name="HddFastRemove" position="0,0" size="1920,1080" title="Hard Drive Fast Umount">
@@ -573,7 +573,7 @@
 					"itemHeight": 85
 				}</convert>
     </widget>
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -593,7 +593,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--BootLogoSelector -->
   <screen name="opdBootLogoSelector" position="0,0" size="1920,1080" title="OPD BootLogo Selector" flags="wfNoBorder" backgroundColor="background">
@@ -606,7 +606,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_exit" />
   </screen>
   <screen name="AboutOE" position="0,0" size="1920,1080" title="Image Information" flags="wfNoBorder" backgroundColor="background">
@@ -622,7 +622,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_info_exit" />
   </screen>
   <!-- OPD FlashOnline FHD -->
@@ -637,7 +637,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_menu_ok_exit" />
   </screen>
   <!-- OPD doFlashImage FHD  -->
@@ -653,7 +653,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_menu_ok_exit" />
   </screen>
   <!-- OPD Subtitle FHD -->
@@ -772,7 +772,7 @@
   </widget>
   <panel name="template_fullscreen" />
   <panel name="template_pixmap_BG" />
-  <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
 </screen>
   <!-- SoftCam Panel Install -->
   <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="Install Softcams" flags="wfNoBorder" backgroundColor="background">
@@ -794,7 +794,7 @@
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
     <panel name="template_ok" />
-    <panel name="template_name_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <widget source="key_ok" render="Label" position="1580,1020" size="225,40" font="Regular;30" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
   </screen>
   <!--  OPD CamStart FHD -->
@@ -825,7 +825,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--   Internet Addons FHD -->
   <screen name="Connection_Server" position="0,0" size="1920,1080" title="OPENDROID Download Manager" flags="wfNoBorder" backgroundColor="background">
@@ -871,7 +871,7 @@
 		</applet>
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--  OscamSmartcard FHD -->
@@ -888,12 +888,10 @@
     <eLabel font="Regular; 30" backgroundColor="background" valign="center" position="663,1005" size="250,70" text="Softcam Restart" transparent="1" zPosition="2" />
     <eLabel font="Regular; 30" backgroundColor="background" valign="center" position="964,1005" size="250,70" text="Info" transparent="1" zPosition="2" />
     <ePixmap pixmap="buttons/key_red.png" position="18,1022" size="35,35" />
-    <ePixmap pixmap="buttons/key_green.png" position="318,1022" size="35,35" />
-    <ePixmap pixmap="buttons/key_yellow.png" position="618,1022" size="35,35" />
-    <ePixmap pixmap="buttons/key_blue.png" position="918,1022" size="35,35" />
     <panel name="template_fullscreen" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--  Mount Manager FHD -->
   <screen name="HddMount" position="0,0" size="1920,1080" title="Devices Panel" flags="wfNoBorder" backgroundColor="background">
@@ -913,7 +911,7 @@
     <widget name="lab1" zPosition="2" position="100,100" size="980,80" font="Regular;36" halign="center" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_menu_exit" />
     <panel name="template_pig_setup" />
   </screen>
@@ -925,7 +923,7 @@
     <panel name="template_menu_exit" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_green_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--   NetBrowser FHD -->
@@ -934,7 +932,7 @@
       <convert type="StringList" />
     </widget>
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -949,7 +947,7 @@
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--  Backup Panel Step 2 FHD -->
@@ -960,7 +958,7 @@
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--  Backup Panel FHD -->
@@ -975,7 +973,7 @@
     <ePixmap pixmap="icons/opd_icon.png" position="1430,650" size="256,256" zPosition="2" alphatest="blend" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--  RestorePanel Step 3 FHD -->
@@ -993,7 +991,7 @@
     <widget name="spaceused" position="914,110" size="280,20" foregroundColor="Line" zPosition="1" transparent="1" borderWidth="1" borderColor="verygrey" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_long_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pixmap_BG" />
   </screen>
   <!-- OPD Addons Install FHD  -->
@@ -1007,7 +1005,7 @@
     <panel name="template_pixmap_BG" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_long_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--  Manual Addons Install FHD -->
   <screen name="Installer_Addons" position="0,0" size="1920,1080" title="Install IPK" flags="wfNoBorder" backgroundColor="background">
@@ -1016,7 +1014,7 @@
     <widget name="info" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Manual Ipk Installer -->
@@ -1026,7 +1024,7 @@
     <ePixmap position="1430,650" size="256,256" pixmap="icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1038,7 +1036,7 @@
     <ePixmap position="1430,650" size="256,256" pixmap="icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1050,7 +1048,7 @@
     <ePixmap position="1430,650" size="256,256" pixmap="icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1062,7 +1060,7 @@
     <ePixmap position="1430,650" size="256,256" pixmap="icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Packet Manager FHD -->
@@ -1074,7 +1072,7 @@
     <ePixmap position="1430,650" size="256,256" pixmap="icons/opd_icon.png" alphatest="blend" zPosition="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_yellow" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- Download Addons FHD -->
@@ -1096,7 +1094,7 @@
     <widget name="list" position="16,100" size="1180,870" itemHeight="80" font="Regular; 36" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!-- downfeed FHD -->
@@ -1170,7 +1168,7 @@
     <widget name="header" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
   <!--   News Updates Info FHD -->
@@ -1179,7 +1177,7 @@
     <widget name="header" position="1223,560" size="670,400" font="Regular; 36" zPosition="1" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
   </screen>
 <screen name="MultiBootStartup" position="center,center" size="1050,340" flags="wfNoBorder" title="MultiBoot STARTUP Selector" backgroundColor="background">
@@ -1215,7 +1213,7 @@
     <widget name="device_icon" position="587,327" size="80,80" alphatest="blend" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pixmap_BG" />
   </screen>
   <!-- ChooseOnLineImage FHD -->
@@ -1243,7 +1241,7 @@
     <widget name="HelpWindow" position="50,450" size="1,1" transparent="1" zPosition="2" alphatest="on" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pixmap_BG" />
   </screen>
   <!--   BootImageInstall FHD -->
@@ -1251,7 +1249,7 @@
     <widget name="config" position="10,100" size="1180,620" itemHeight="50" font="Regular;36" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
     <widget name="HelpWindow" position="10,740" size="1180,240" transparent="1" alphatest="blend" zPosition="2" backgroundColor="black" font="Regular; 36" />
     <panel name="template_fullscreen_title" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_pig_setup" />
     <panel name="template_pixmap_BG" />
   </screen>
@@ -1270,7 +1268,7 @@
 			  </convert>
     </widget>
     <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1278,7 +1276,7 @@
   <!-- Plugin Addons FHD -->
   <screen name="AddonsUtility" position="0,0" size="1920,1080" title="OPENDROID Addons Manager" flags="wfNoBorder" backgroundColor="background">
     <widget name="list" position="10,100" size="1180,870" itemHeight="72" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1306,7 +1304,7 @@
     <widget name="vPrio" position="1758,950" size="50,50" transparent="1" font="Regular;30" valign="center" halign="center" zPosition="1" foregroundColor="yellow" />
     <widget name="Page" position="1367,950" size="120,40" transparent="1" font="Regular;30" valign="center" halign="right" zPosition="0" />
     <widget name="page" position="1522,950" size="205,50" transparent="1" font="Regular;30" valign="center" halign="right" zPosition="0" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1356,7 +1354,7 @@
   <panel name="template_fullscreen_title" />
   <panel name="template_pixmap_BG" />
   <panel name="template_pig_setup" />
-  <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
 </screen>
   <!--  OPENDROID Softwaremanager... -->
 <screen name="UpdatePluginMenu" position="0,0" size="1920,1080" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="background">
@@ -1401,7 +1399,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--  Execute FHD -->
   <screen name="CCcamConfigEdit" position="0,0" size="1280,1080" title="Config Edit" flags="wfNoBorder" backgroundColor="background">
@@ -1411,7 +1409,7 @@
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--  ExtraMenu FHD -->
   <screen name="OPDExtrasMenu" position="0,0" size="1920,1080" title=" Extras Panel" flags="wfNoBorder" backgroundColor="background">
@@ -1439,7 +1437,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!--  FileManager FHD -->
   <!--  File Comander Setup FHD -->
@@ -1468,7 +1466,7 @@
   <!--  Choose Mount FHD -->
   <screen name="DeviceManager_Setup" position="0,0" size="1920,1080" title="Devices Panel" flags="wfNoBorder" backgroundColor="background">
     <widget name="config" position="10,100" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1489,7 +1487,7 @@
 			      }
 		      </convert>
     </widget>
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1509,7 +1507,7 @@
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
   <!-- OPD VFD Skin Selector -->
   <screen name="VFDSkinSelector" position="0,0" size="1920,1080" title="VFDSkin Selector" flags="wfNoBorder">
@@ -1524,7 +1522,7 @@
     <panel name="template_pixmap_BG" />
     <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic" />
   </screen>
  
   <!-- About FHD -->
@@ -1544,7 +1542,7 @@
   <!-- UsbFormat FHD -->
   <screen name="UsbFormat" position="0,0" size="1920,1080" title="UsbFormat" flags="wfNoBorder" backgroundColor="background">
     <widget name="lab1" position="10,100" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1554,7 +1552,7 @@
   <!-- StreamingClientsInfo -->
   <screen name="StreamingClientsInfo" position="0,0" size="1920,1080" title="Streaming clients info" flags="wfNoBorder" backgroundColor="background">
     <widget name="ScrollLabel" position="10,100" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1563,7 +1561,7 @@
   <!-- OPDbootInfo -->
   <screen name="info" position="0,0" size="1920,1080" title="OPDboot info" flags="wfNoBorder" backgroundColor="background">
     <widget name="lab1" position="10,100" size="1180,870" itemHeight="50" scrollbarMode="showOnDemand" font="Regular; 36" zPosition="3" transparent="1" />
-    <panel name="template_name_red_green" />
+    <panel name="TemplateAllColorButtons_Automatic" />
     <panel name="template_fullscreen_title" />
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
@@ -1647,7 +1645,7 @@
     <widget name="list3" position="775,363" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
     <widget name="list4" position="1158,361" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
     <widget name="list5" position="1540,363" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
-    <panel name="template_name_long_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic_Long" />
     <panel name="template_menu_info" />
     <eLabel name="vertikalline" position="10,295" size="1900,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
@@ -1714,7 +1712,7 @@
     <widget name="list3" position="775,363" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
     <widget name="list4" position="1158,361" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
     <widget name="list5" position="1540,363" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
-    <panel name="template_name_long_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic_Long" />
     <panel name="template_menu_info" />
 <panel name="template_fullscreen" />
 <panel name="template_pixmap_BG" />
@@ -1802,7 +1800,7 @@
     <widget name="list3" position="775,363" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="bluelabel" scrollbarMode="showAlways" size="370,620" zPosition="1" TimeforegroundColor="bernstein" TimeBackgroundColor="background" PrimeTimeForegroundColor="green" PrimeTimeBackgroundColor="black" EntryforegroundColor="white" EntrybackgroundColor="dark" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="bluelabel" EntryForegroundColorNow="white" EntryBackgroundColorNow="black" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="bluelabel" EntryForegroundColorPast="darkgrey" EntryBackgroundColorPast="black" EntryForegroundColorPastSelected="white" EntryBackgroundColorPastSelected="bluelabel" EntryborderColor="foregroundClock" TimeFontVertical="Regular;29" EventFontVertical="Regular;27" font="Regular; 30" />
     <eLabel name="vertikalline" position="10,295" size="1130,2" foregroundColor="Line" backgroundColor="Line" />
     <eLabel name="" position="1227,253" size="674,423" zPosition="-15" backgroundColor="Line" />
-    <panel name="template_name_long_red_o_blue" />
+    <panel name="TemplateAllColorButtons_Automatic_Long" />
     <panel name="template_menu_info" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -1855,6 +1853,13 @@
   <widget source="key_blue" position="964,1005" size="250,70" render="Label" zPosition="+1" font="Regular;27" backgroundColor="background" halign="left" valign="center" transparent="1" noWrap="1" objectTypes="key_blue,StaticText" />
  </screen>        
 <!-- NEW-Automatic-BUTTONS -->
+<!-- NEW-Automatic-BUTTONS-ALL -->
+  <screen name="TemplateAllColorButtons_Automatic_Long">
+    <panel name="TemplateButtonRed_Automatic_Long" />
+	<panel name="TemplateButtonGreen_Automatic_Long" />
+	<panel name="TemplateButtonYellow_Automatic_Long" />
+	<panel name="TemplateButtonBlue_Automatic_Long" />
+  </screen>
  <!-- NEW-Automatic-BUTTONS-Long -->
  <screen name="TemplateButtonRed_Automatic_Long">
   <ePixmap pixmap="buttons/key_red.png" position="18,1022" size="35,35" alphatest="blend" transparent="1" objectTypes="key_red,Button,Label" />
@@ -2049,6 +2054,17 @@
   <widget name="slide" position="30,665" render="Progress" borderWidth="2" foregroundColor="white" zPosition="4" size="893,60" transparent="1" />
   <widget name="memory" position="30,765" size="893,34" zPosition="1" valign="center" halign="left" font="Regular;30" transparent="1"/>
   </screen>
+      <screen name="Opkg" position="0,0" size="1920,1080" title="Installing Software..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Installing Software..." position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
+    <widget name="activityslider" position="30,160" size="1000,40" borderColor="grey" foregroundColor="Multiboxlabel" borderWidth="3" transparent="1" />
+    <widget name="package" position="30,280" size="1100,50" font="Regular; 40" transparent="1" foregroundColor="greenlight" />
+    <widget name="status" position="30,360" size="1100,50" font="Regular; 40" transparent="1" foregroundColor="default" />
+    <widget name="slider" position="30,480" size="1000,40" borderColor="Multiboxlabel" foregroundColor="grey" borderWidth="3" transparent="1" />
+    <panel name="template_fullscreen" />
+    <panel name="template_pixmap_BG" />
+    <panel name="template_menu_exit" />
+    <panel name="template_pig_setup" />
+  </screen>
   <screen name="ClearMemAutoScreen" title="ClearMem Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
   <panel name="template_exit" />
   <panel name="template_fullscreen_title" />
@@ -2133,6 +2149,23 @@
     <eLabel name="" position="10,915" size="1150,2" backgroundColor="Line" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
+    <panel name="template_menu_ok_exit" />
     <panel name="template_pig_setup" />
+    </screen>
+	<!-- FlashImage -->
+	<screen name="FlashImage" position="center,center" size="640,150" flags="wfNoBorder" backgroundColor="#54242424">
+		<widget name="header" position="5,10" size="e-10,50" font="Regular;40" backgroundColor="#54242424"/>
+		<widget name="info" position="5,60" size="e-10,130" font="Regular;24" backgroundColor="#54242424"/>
+		<widget name="progress" position="5,e-39" size="e-10,24" backgroundColor="#54242424"/>
+	</screen>
+	<!-- MultiBootManager -->
+	<screen name="MultiBootManager" position="0,0" size="1920,1080" title="Multiboot Image Manager" flags="wfNoBorder" backgroundColor="background">
+		<widget name="slotlist" position="10,100" size="1180,470" backgroundColor="background" enableWrapAround="1" itemHeight="65" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+		<widget name="description" position="10,650" size="1180,340" font="Regular;34" conditional="description" foregroundColor="white" halign="center" backgroundColor="background" valign="center" transparent="1" />
+		<panel name="TemplateAllColorButtons_Automatic" />
+		<panel name="template_fullscreen_title" />
+		<panel name="template_pixmap_BG" />
+		<panel name="template_pig_setup" />
+		<panel name="template_ok_exit" />
   </screen>
     </skin>
