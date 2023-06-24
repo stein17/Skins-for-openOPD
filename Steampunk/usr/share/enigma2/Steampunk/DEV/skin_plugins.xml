@@ -2425,7 +2425,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="session.CurrentService" render="Label" position="50,560" size="680,25" font="Regular;20" halign="center" valign="center" backgroundColor="background" transparent="1">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget name="Timeline" position="50,597" size="680,20" backgroundColor="verydarkgrey" pointer="Steampunk/skin_default/position_arrow.png:3,5" foregroundColor="verydarkgrey" />
+    <widget name="Timeline" position="50,597" size="680,20" backgroundColor="verydarkgrey" pointer="skin_default/position_arrow.png:3,5" foregroundColor="verydarkgrey" />
     <eLabel position="800,130" size="440,440" zPosition="1" backgroundColor="selFG" />
     <eLabel position="802,132" size="436,436" zPosition="2" backgroundColor="background" />
     <widget source="cutlist" render="Listbox" position="802,132" size="436,436" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="Skinparts/Scrollbar.png" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderBorderColor="brown" scrollbarSliderForegroundColor="red5"  backgroundColor="background" transparent="1">

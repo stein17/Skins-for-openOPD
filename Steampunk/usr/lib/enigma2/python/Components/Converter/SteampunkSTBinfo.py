@@ -161,4 +161,3 @@ class SteampunkSTBinfo(Converter, object):
 		return info
 
 	text = property(getText)
-

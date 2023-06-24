@@ -11,7 +11,7 @@
   serviceItemHeight="30" 
   progressPercentWidth="100" 
   transparent="1" 
-  sliderPixmap="Steampunk/Skinparts/Scrollbar.png" 
+  sliderPixmap="Skinparts/Scrollbar.png" 
   scrollbarMode="showOnDemand" 
   scrollbarSliderBorderWidth="1" 
   scrollbarWidth="10" 

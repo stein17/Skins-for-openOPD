@@ -222,19 +222,19 @@
 <!-- <widget source="session.Event_Now" render="Progress" pixmap="Skinparts/Progress_menu.png" orientation="orBottomToTop" position="1195,219" size="34,222" zPosition="-20" transparent="1">
 <convert type="EventTime">Progress</convert>
 </widget>
-<widget font="Regular; 32" halign="right" position="937,480" render="Label" size="150,40" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
+<widget font="Regular; 32" halign="right" position="937,480" render="Label" size="150,40" source="session.Event_Now" transparent="1" foregroundColor="selFG">
 <convert type="EventTime">Remaining</convert>
 <convert type="RemainingToText">InMinutes</convert>
 </widget>
-<widget font="Regular; 32" halign="left" position="786,480" render="Label" size="100,40" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
+<widget font="Regular; 32" halign="left" position="786,480" render="Label" size="100,40" source="session.Event_Now" transparent="1" foregroundColor="selFG">
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Default</convert>
 </widget>
-<widget font="Regular; 32" halign="right" position="656,480" render="Label" size="100,40" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
+<widget font="Regular; 32" halign="right" position="656,480" render="Label" size="100,40" source="session.Event_Now" transparent="1" foregroundColor="selFG">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText">Default</convert>
 </widget>
-<eLabel font="Regular; 32" halign="center" position="758,480" size="25,40" text="-" transparent="1" foregroundColor="selectedFG" /> -->
+<eLabel font="Regular; 32" halign="center" position="758,480" size="25,40" text="-" transparent="1" foregroundColor="selFG" /> -->
 <panel name="template_menu_listbox_430" />
 <panel name="template_pig_large" />
 <panel name="template_Steampunk_Background_Menu" />  
@@ -2301,9 +2301,9 @@ CoolTitleColor="1" DefaultColor="foreground" WatchingColor="#D8C100" FinishedCol
 <ePixmap pixmap="icons/menu_information_dmn_info.png" position="805,380" size="415,255" alphatest="blend" transparent="1" />
 <widget source="TunerHeader" render="Label" position="50,70" size="680,30" font="Regular;20" borderColor="black" borderWidth="1" zPosition="1" transparent="1" />
 <widget source="nims" render="Label" position="50,100" size="680,160" font="Regular;22" borderColor="black" borderWidth="1" zPosition="1" enableWrapAround="0" transparent="1" />
-<widget source="HDDHeader" render="Label" position="50,270" size="680,30" font="Regular;22" borderColor="black" borderWidth="1" zPosition="1" foregroundColor="selectedFG" transparent="1" />
+<widget source="HDDHeader" render="Label" position="50,270" size="680,30" font="Regular;22" borderColor="black" borderWidth="1" zPosition="1" foregroundColor="selFG" transparent="1" />
 <widget source="hdd" render="Label" position="50,310" size="680,160" font="Regular;22" borderColor="black" borderWidth="1" transparent="1" zPosition="1" enableWrapAround="0" />
-<widget source="MountsHeader" render="Label" position="50,490" size="680,30" font="Regular;20" borderColor="black" borderWidth="1" zPosition="1" foregroundColor="selectedFG" transparent="1" />
+<widget source="MountsHeader" render="Label" position="50,490" size="680,30" font="Regular;20" borderColor="black" borderWidth="1" zPosition="1" foregroundColor="selFG" transparent="1" />
 <widget source="mounts" render="Label" position="50,530" size="680,140" font="Regular;22" borderColor="black" borderWidth="1" transparent="1" zPosition="1" enableWrapAround="0" />
 <panel name="template_title_date" />
 <panel name="template_ok_exit_1280" />

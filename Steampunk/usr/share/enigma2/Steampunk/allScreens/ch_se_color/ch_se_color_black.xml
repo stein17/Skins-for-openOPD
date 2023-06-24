@@ -11,7 +11,7 @@
   serviceItemHeight="30" 
   progressPercentWidth="100" 
   transparent="1" 
-  sliderPixmap="Steampunk/Skinparts/Scrollbar.png" 
+  sliderPixmap="Skinparts/Scrollbar.png" 
   scrollbarMode="showOnDemand" 
   scrollbarSliderBorderWidth="1" 
   scrollbarWidth="10" 
@@ -32,7 +32,7 @@
   backgroundColorSelected="black" 
   foregroundColor="lightblue" 
   foregroundColorSelected="red3" 
-  picServiceEventProgressbar="Steampunk/Skinparts/Progress_CS.png" />
+  picServiceEventProgressbar="Skinparts/Progress_CS.png" />
 </screen>
 <screen name="ChannelSelection_color_default_3_Fields">
   <widget name="list" position="380,70" size="487,540" 
@@ -66,7 +66,7 @@
   backgroundColorSelected="black" 
   foregroundColor="lightblue" 
   foregroundColorSelected="red3" 
-  picServiceEventProgressbar="Steampunk/Skinparts/Progress_CS.png" />
+  picServiceEventProgressbar="Skinparts/Progress_CS.png" />
   </screen>
   </skin>
 
